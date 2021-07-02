@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["pbx"],
+  "plugins": ["prettier", "cypress"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-uses-react": 1,
+    "react/no-array-index-key": "off",
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off",
+    "no-underscore-dangle": "off",
+    "prefer-destructuring": "off",
+    "import/no-named-as-default": "off",
+    "import/no-extraneous-dependencies": [
+      "error", { "devDependencies": true }
+    ]
+  },
+  "globals": {
+    "DEV": true,
+    "APP_STATE": true,
+    "CONFIG": true
+  },
+  "env": {
+    "cypress/globals": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  }
+}

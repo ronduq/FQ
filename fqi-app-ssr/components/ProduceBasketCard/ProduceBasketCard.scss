@@ -1,0 +1,98 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.basketCard {
+  li {
+    box-sizing: border-box;
+    background-color: $white; 
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+
+    /* IE11 hack */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      width: 30% !important;
+    }
+
+    @include respond-to('tablet', min-width) {
+      margin-bottom: 32px;
+    }
+
+    button {
+      border: 2px solid $white;
+      position: relative;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+      background: none;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+      overflow: visible;
+
+      @include respond-to('tablet', min-width) {
+        display: block;
+        padding: 0;
+      }
+  
+    }
+
+    img {
+      display: block;
+      width: 40%;
+      box-sizing: border-box;
+      pointer-events: none;
+
+      @include respond-to('tablet', min-width) {
+        width: 100%;
+        border-bottom: 1px solid $colour-grey-medium;
+        padding: 16px;
+      }
+    }
+
+    .produceLabel {
+      @include font-size('medium');
+
+      @include respond-to('tablet', min-width) {
+        padding: 16px;
+        @include font-size('medium-20');
+      }
+    }
+
+    &.selected {
+      button{
+        border: 2px solid $colour-secondary;
+      }
+      
+      .produceLabel {
+        @include font-family('proxima-bold');
+        color: $colour-secondary;
+      }
+    }
+
+    .checkmark {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      border-radius: 50%;
+      background-color: $colour-secondary;
+
+      &::after {
+        content:'';
+        background-color: transparent;
+        position: absolute;
+        left: 11px;
+        top: 6px;
+        width: 5px;
+        border-bottom: 3px solid $white;
+        height: 11px;
+        border-right: 3px solid $white;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

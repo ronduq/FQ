@@ -1,0 +1,38 @@
+﻿@model UploadViewModel
+
+@{
+    ViewData["Title"] = "Upload";
+}
+
+<partial name="_UploadFileNavigation" />
+
+<h1>Location file upload</h1>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div style="color:red">
+        <p> @Model.ErrorMessage </p>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Model.UploadSuccessMessage))
+{
+    <div style="color:green">
+        <p> @Model.UploadSuccessMessage </p>
+    </div>
+}
+
+<br />
+<br />
+
+<h2>Upload a new location file.</h2>
+<p>
+    You cannot upload two files with same name. Each file must have a unique name.
+</p>
+
+<br />
+
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit" style="border:solid">Upload</button>
+</form>

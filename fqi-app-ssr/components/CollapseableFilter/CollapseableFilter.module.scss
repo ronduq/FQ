@@ -1,0 +1,79 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+
+.header{
+  cursor: pointer;
+  background: white;
+  border:none;
+  border-bottom: solid 1px $colour-grey-medium;
+  padding: 15px;
+  height: 60px;
+  width:100%;
+  @include font-family('proxima-light');
+  @include font-size('medium');
+
+  &:focus {
+    outline: solid #32a1ce;
+  }
+
+  &:hover {
+    .title {
+      text-decoration: underline;
+    }
+  }
+}
+
+.content{
+  cursor: pointer;
+  padding: 15px;
+}
+
+.title {
+  padding-left: 10px;
+  float: left;
+  transform: translateY(2px);
+}
+
+.titleIcon {
+  transform: translateY(2px);
+  float: left;
+}
+
+.arrowIcon {
+  float: right;
+  transform: translateY(4px) rotate(180deg);
+  transition: ease-in-out transform .2s;
+}
+
+.arrowDown {
+  transform: translateY(4px);
+}
+
+.list {
+  list-style-type: none;
+  padding: 15px;
+  animation: fadein .4s;
+}
+
+.listItem {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 50%;
+  vertical-align: top;
+}
+
+.listItemMain {
+  display: block;
+}
+
+// Animation
+@keyframes fadein {
+  from { 
+    opacity: 0; 
+    transform: translateY(-30px);
+  }
+  to   { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}

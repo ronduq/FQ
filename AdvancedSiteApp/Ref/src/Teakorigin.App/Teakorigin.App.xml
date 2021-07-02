@@ -1,0 +1,1464 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Teakorigin.App</name>
+    </assembly>
+    <members>
+        <member name="T:Teakorigin.App.Constants.CacheKeys">
+            <summary>
+            Cache keys.
+            </summary>
+        </member>
+        <member name="F:Teakorigin.App.Constants.CacheKeys.MaxDate">
+            <summary>
+            The maximum date.
+            </summary>
+        </member>
+        <member name="F:Teakorigin.App.Constants.CacheKeys.CacheColectionKey">
+            <summary>
+            The cache colection key.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.AccountController.SignedOut">
+            <summary>
+            Signeds the out.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.AdvancedSiteController">
+            <summary>
+            Advance site controller.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Teakorigin.App.Controllers.AdvancedSiteController.#ctor(Teakorigin.Domain.Models.AppSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.AdvancedSiteController"/> class.
+            </summary>
+            <param name="appSettings">The application settings.</param>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.AdvancedSiteController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>Returns the view for advance site.</returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.CacheController">
+            <summary>
+            The Cache Controller.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Teakorigin.App.Controllers.CacheController.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Logging.ILogger{Teakorigin.App.Controllers.CacheController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.CacheController" /> class.
+            </summary>
+            <param name="cache">The cache.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.CacheController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>
+            Returns the view.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.CacheController.Process">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>Return the view.</returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.ContentController">
+            <summary>
+            Content redirect controller.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:Teakorigin.App.Controllers.ContentController.#ctor(Teakorigin.Domain.Interfaces.IContentService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.ContentController" /> class.
+            </summary>
+            <param name="contentService">The content service.</param>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.ContentController.Get(System.String)">
+            <summary>
+            Gets the content from underlying CMS.
+            </summary>
+            <param name="keys">The comma separated keys for the collections for which content is needed. Default value is produce,locations,retailers.</param>
+            <returns>
+            Returns the content from brightspot CMS.
+            </returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.HomeController">
+            <summary>
+            Home xontroller.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.HomeController.#ctor(Teakorigin.Domain.Models.AppSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.HomeController" /> class.
+            </summary>
+            <param name="appSettings">The application settings.</param>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.HomeController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>Redirects to swagger.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.HomeController.Privacy">
+            <summary>
+            Privacies this instance.
+            </summary>
+            <returns>Privacy view.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.HomeController.Error">
+            <summary>
+            Errors this instance.
+            </summary>
+            <returns>Returns error view.</returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.LocationUploadController">
+            <summary>
+            Class for retailers.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.LocationUploadController.#ctor(Teakorigin.DataAccess.TeakOriginContext,Teakorigin.Domain.Models.AppSettings,Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Logging.ILogger{Teakorigin.App.Controllers.LocationUploadController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.LocationUploadController" /> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="appSettings">The application settings.</param>
+            <param name="cache">The cache.</param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:System.Exception">Storage string exception.</exception>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.LocationUploadController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>Returns the view.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.LocationUploadController.Index(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Indexes the specified file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns>Returns message if file sucessfully uploaded.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.LocationUploadController.Process(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Processes this instance.
+            </summary>
+            <returns>rETURNS TRUE OR FALSE.</returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.ProduceController">
+            <summary>
+            Gets the Produce by Location.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:Teakorigin.App.Controllers.ProduceController.#ctor(Teakorigin.DataAccess.TeakOriginContext,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.ProduceController" /> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="cache">The cache.</param>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.ProduceController.GetLocationProduce(System.String)">
+            <summary>
+            Gets the produce for the given location in URL path.
+            </summary>
+            <param name="location">The location.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.ProduceController.GetLocationProduceBycode(System.String,System.String)">
+            <summary>
+            Gets the produce by ProduceCode [like 'apple', 'grapes' etc.] for a given location in the URL path.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="produceCode">The produce code.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.ProduceController.GetTopPicksForLocation(System.String,System.String,System.String,Teakorigin.App.Models.SortBy)">
+            <summary>
+            Gets the top produce picks for a location and retailers these picks belong to.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="produceCodes">The produce codes.</param>
+            <param name="retailerCodes">The retailer codes.</param>
+            <param name="sortBy">The sort by.</param>
+            <returns>
+            Top picks for retailer for a location.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.ProduceController.GetTrendsForRetailers(System.String,System.String,Teakorigin.App.Models.TrendType,Teakorigin.App.Models.TrendFrequency,System.Int32)">
+            <summary>
+            Gets the retailer trends for the Produce Trends page.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="produceCode">The produce codes.</param>
+            <param name="trendType">Type of the trend.</param>
+            <param name="trendFrequency">The trend frequency.</param>
+            <param name="periodCount">The period count.</param>
+            <returns>
+            Returns the trends data for retailers.
+            </returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.RetailerController">
+            <summary>
+            Controller that deals with Retailers.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:Teakorigin.App.Controllers.RetailerController.#ctor(Teakorigin.DataAccess.TeakOriginContext,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.RetailerController" /> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="cache">The cache.</param>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.RetailerController.GetRetailer(System.String,Teakorigin.App.Models.SortDirection)">
+            <summary>
+            Gets all the retailers for a given location(e.g. 'boston', 'los-angeles' etc.) in the URL path.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="sortDirection">The sort direction.</param>
+            <returns>
+            A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.RetailerController.GetRetailerBycode(System.String,System.String)">
+            <summary>
+            Gets a retailer by RetailerCode ('walmart', 'target' etc.) for a given location(e.g. 'boston', 'los-angeles' etc.) in URL path.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="retailerCode">The retailer code.</param>
+            <returns>
+            A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.RetailerController.GetRanksForRetailers(System.String,System.String,System.String,Teakorigin.App.Models.SortBy,Teakorigin.App.Models.SortDirection)">
+            <summary>
+            Gets the ranks for retailers for a given location(e.g. 'boston', 'los-angeles' etc.) and a given set of produceCodes.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="produceCodes">The produce codes.</param>
+            <param name="retailerCodes">The retailer codes wanted for the view. If no retailerCodes provided, then all the retailers would be returned.</param>
+            <param name="sortBy">The sort by.</param>
+            <param name="sortDirection">The sort direction.</param>
+            <returns>
+            A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.RetailerController.GetRankForSingleRetailer(System.String,System.String,System.String)">
+            <summary>
+            Gets the rank for single retailer.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="produceCodes">The produce codes.</param>
+            <param name="retailerCode">The retailer code.</param>
+            <returns>
+            Returns the rank data for a single retailer.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.RetailerController.GetTopPicksForRetailer(System.String,System.String,System.String,Teakorigin.App.Models.SortBy,Teakorigin.App.Models.SortDirection)">
+            <summary>
+            Gets the top picks for retailer.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="produceCodes">The produce codes.</param>
+            <param name="retailerCode">The retailer code.</param>
+            <param name="sortBy">The sort by.</param>
+            <param name="sortDirection">The sort direction.</param>
+            <returns>Top picks for retailer for a location.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.RetailerController.GetTopPickDetailsForRetailer(System.String,System.String,System.String,Teakorigin.App.Models.SortBy,Teakorigin.App.Models.SortDirection)">
+            <summary>
+            Gets the analyte detail for a given produce for a given location and retailer.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="retailerCode">The retailer code.</param>
+            <param name="produceCode">The produce code.</param>
+            <param name="sortBy">The sort by.</param>
+            <param name="sortDirection">The sort direction.</param>
+            <returns>
+            Top picks for retailer for a location.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.RetailerController.GetProduceTrends(System.String,System.String,System.String,Teakorigin.App.Models.TrendType,Teakorigin.App.Models.TrendFrequency,System.Int32)">
+            <summary>
+            Gets the produce trends for the Retailer Trends page.
+            </summary>
+            <param name="location">The location.</param>
+            <param name="retailerCode">The retailer code.</param>
+            <param name="produceCodes">The produce codes.</param>
+            <param name="trendType">Type of the trend.</param>
+            <param name="trendFrequency">The trend frequency.</param>
+            <param name="periodCount">The period count.</param>
+            <returns>
+            Returns the produce trends for a defined period.
+            </returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.SitemapController">
+            <summary>
+            Sitemap file.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Teakorigin.App.Controllers.SitemapController.#ctor(Teakorigin.DataAccess.TeakOriginContext,Teakorigin.Domain.Models.AppSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.SitemapController"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="appSettings">The application settings.</param>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.SitemapController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>Returns view.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.SitemapController.SitemapAsync">
+            <summary>
+            Sitemaps the asynchronous.
+            </summary>
+            <returns>Return sitemap.</returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.UploadController">
+            <summary>
+            Class for retailers.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Teakorigin.App.Controllers.UploadController.#ctor(Teakorigin.DataAccess.TeakOriginContext,Teakorigin.Domain.Models.AppSettings,Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Logging.ILogger{Teakorigin.App.Controllers.UploadController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.UploadController" /> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="appSettings">The application settings.</param>
+            <param name="cache">The cache.</param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:System.Exception">Storage string exception.</exception>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.UploadController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>
+            Returns the view.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.UploadController.Index(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Indexes the specified file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns>Returns message if file sucessfully uploaded.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.UploadController.Process(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Processes the specified file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns>Returned process file.</returns>
+        </member>
+        <member name="T:Teakorigin.App.Controllers.UserController">
+            <summary>
+            Content redirect controller.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:Teakorigin.App.Controllers.UserController.#ctor(Teakorigin.Domain.Interfaces.ISubscriptionService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Controllers.UserController"/> class.
+            </summary>
+            <param name="subscriptionService">The subscription service.</param>
+        </member>
+        <member name="M:Teakorigin.App.Controllers.UserController.Subscribe(System.String)">
+            <summary>
+            Accepts the email for the subscribe action.
+            </summary>
+            <param name="email">The email.</param>
+            <returns>
+            Returns the content from brightspot CMS.
+            </returns>
+        </member>
+        <member name="T:Teakorigin.App.Extentions.ContextExtentions">
+            <summary>
+            Context Extentions.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.ContextExtentions.GetScanData(Teakorigin.DataAccess.TeakOriginContext,System.String,System.String,System.DateTime,System.DateTime,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Gets the scan data.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="location">The location.</param>
+            <param name="produceCodes">The produce codes.</param>
+            <param name="fromDate">From date.</param>
+            <param name="toDate">To date.</param>
+            <param name="cache">The cache.</param>
+            <returns>Retailer ranks. Also cached if required.</returns>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.ContextExtentions.GetMaxScanDateWeekend(Teakorigin.DataAccess.TeakOriginContext,System.String,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Gets the maximum scan date weekend.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="location">The location.</param>
+            <param name="cache">The cache.</param>
+            <returns>
+            Returns Weekend of the Maximum scan date.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.ContextExtentions.SanitiseAndOrderProduceCodes(Teakorigin.DataAccess.TeakOriginContext,System.String,System.String,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Sanitises the and order produce codes.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="location">The location.</param>
+            <param name="produceCodes">The produce codes.</param>
+            <param name="cache">The cache.</param>
+            <returns>
+            Sanitised produce codes.
+            </returns>
+            <exception cref="T:System.NullReferenceException">Null reference.</exception>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.ContextExtentions.SanitiseAndOrderRetailerCodes(Teakorigin.DataAccess.TeakOriginContext,System.String,System.String,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Sanitises the and order produce codes.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="location">The location.</param>
+            <param name="retailerCodes">The retailer codes.</param>
+            <param name="cache">The cache.</param>
+            <returns>
+            Sanitised produce codes.
+            </returns>
+            <exception cref="T:System.NullReferenceException">Null reference exception.</exception>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.ContextExtentions.GetValidProduceCodes(Teakorigin.DataAccess.TeakOriginContext)">
+            <summary>
+            Gets the valid produce codes.
+            </summary>
+            <param name="context">The context.</param>
+            <returns>Extention method for getting valid produce.</returns>
+        </member>
+        <member name="T:Teakorigin.App.Extentions.GeneralExtentions">
+            <summary>
+            Response extentions class.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.GeneralExtentions.ToHttpResponse(Teakorigin.App.Models.IResponse)">
+            <summary>
+            Converts to httpresponse.
+            </summary>
+            <param name="response">The response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.GeneralExtentions.GetLastNWeeks(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            Dates the time month.
+            </summary>
+            <param name="dt">The dt.</param>
+            <param name="numberOfweeks">The number ofweeks.</param>
+            <param name="lastdataFound">The lastdata found.</param>
+            <returns>
+            Returns Last Weeks
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.GeneralExtentions.GetNextWeekday(System.DateTime,System.DayOfWeek,System.DateTime)">
+            <summary>
+            Gets the next weekday.
+            </summary>
+            <param name="dt">The dt.</param>
+            <param name="day">The day.</param>
+            <param name="start">The start.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.GeneralExtentions.GetLastNMonths(System.DateTime,System.Int32)">
+            <summary>
+            Dates the time month.
+            </summary>
+            <param name="dt">The dt.</param>
+            <param name="numberOfMonths">The number of months.</param>
+            <returns>
+            Returns Last Weeks
+            </returns>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.GeneralExtentions.PercentToDouble(System.String)">
+            <summary>
+            Percents to double.
+            </summary>
+            <param name="percent">The percent.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Teakorigin.App.Extentions.ServiceExtentions">
+            <summary>
+            Service Extentions.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.ServiceExtentions.ConfigurePoco``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Func{``0})">
+            <summary>
+            The configure poco.
+            </summary>
+            <typeparam name="TConfig">The type of the configuration.</typeparam>
+            <param name="services">The services.</param>
+            <param name="configuration">The configuration.</param>
+            <param name="pocoProvider">The poco provider.</param>
+            <returns>returns poco from config.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            services
+            or
+            configuration
+            or
+            pocoProvider.
+            </exception>
+            <exception cref="T:System.ArgumentNullException"> returns exception.</exception>
+        </member>
+        <member name="M:Teakorigin.App.Extentions.ServiceExtentions.AddDistributedCache(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Teakorigin.Domain.Models.AppSettings},System.Action{Teakorigin.Domain.Models.AppSettings.ConnectionString})">
+            <summary>
+            Configures the distributed cache.
+            </summary>
+            <param name="services">The services.</param>
+            <param name="appSettingsOptions">The application settings options.</param>
+            <param name="connectionStringOptions">The connection string options.</param>
+            <exception cref="T:System.ArgumentNullException">services or appSettingsOptions.</exception>
+        </member>
+        <member name="T:Teakorigin.App.Models.AdvanceSiteViewModel">
+            <summary>
+            Advanced site view midel.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.AdvanceSiteViewModel.AdvancedSiteLink">
+            <summary>
+            Gets or sets the advanced site link.
+            </summary>
+            <value>
+            The advanced site link.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.Analyte">
+            <summary>
+            The class for analyte.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.Analyte.Score">
+            <summary>
+            Gets or sets the score.
+            </summary>
+            <value>
+            The score.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Analyte.RecentScan">
+            <summary>
+            Gets or sets the recent scan.
+            </summary>
+            <value>
+            The recent scan.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Analyte.Usda">
+            <summary>
+            Gets or sets the usda.
+            </summary>
+            <value>
+            The usda.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Analyte.RecentScanFormatted">
+            <summary>
+            Gets the recent scan.
+            </summary>
+            <value>
+            The recent scan.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Analyte.UsdaFormatted">
+            <summary>
+            Gets the usda.
+            </summary>
+            <value>
+            The usda.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Analyte.Status">
+            <summary>
+            Gets the status.
+            </summary>
+            <value>
+            The status.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Analyte.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Analyte.ShouldAdd">
+            <summary>
+            Gets a value indicating whether [should add].
+            </summary>
+            <value>
+              <c>true</c> if [should add]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Analyte.Uom">
+            <summary>
+            Gets or sets the uom.
+            </summary>
+            <value>
+            The uom.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.CacheViewModel">
+            <summary>
+            Cache view model class.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.CacheViewModel.CacheList">
+            <summary>
+            Gets the file blobs.
+            </summary>
+            <value>
+            The file blobs.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.CacheViewModel.ErrorMessage">
+            <summary>
+            Gets or sets the error message.
+            </summary>
+            <value>
+            The error message.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.CacheViewModel.SuccessMessage">
+            <summary>
+            Gets the upload success message.
+            </summary>
+            <value>
+            The upload success message.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.Criteria">
+            <summary>
+            The criteria.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.Criteria.LocationCode">
+            <summary>
+            Gets or sets the location code.
+            </summary>
+            <value>
+            The location code.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Criteria.SortBy">
+            <summary>
+            Gets or sets the sort by.
+            </summary>
+            <value>
+            The sort by.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Criteria.SortDirection">
+            <summary>
+            Gets or sets the sort direction.
+            </summary>
+            <value>
+            The sort direction.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Criteria.ProduceCodes">
+            <summary>
+            Gets the produce codes.
+            </summary>
+            <value>
+            The produce codes.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Criteria.RetailerCodes">
+            <summary>
+            Gets the retailer codes.
+            </summary>
+            <value>
+            The retailer codes.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.CsvModel">
+            <summary>
+            Csv model
+            </summary>
+        </member>
+        <member name="T:Teakorigin.App.Models.ErrorDetails">
+            <summary>
+            Error details.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.ErrorDetails.ErrorMessage">
+            <summary>
+            Gets or sets the error message.
+            </summary>
+            <value>
+            The error message.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.ErrorDetails.ErrorCode">
+            <summary>
+            Gets or sets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.ErrorViewModel">
+            <summary>
+            Error view model.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.ErrorViewModel.RequestId">
+            <summary>
+            Gets or sets the request identifier.
+            </summary>
+            <value>
+            The request identifier.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.ErrorViewModel.ShowRequestId">
+            <summary>
+            Gets a value indicating whether [show request identifier].
+            </summary>
+            <value>
+              <c>true</c> if [show request identifier]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.FileItem">
+            <summary>
+            File item.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.FileItem.FileName">
+            <summary>
+            Gets the name of the file.
+            </summary>
+            <value>
+            The name of the file.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.FileItem.FileLink">
+            <summary>
+            Gets the file URL.
+            </summary>
+            <value>
+            The file URL.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.GraphDataResponse">
+            <summary>
+            Graph data model.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.Response" />
+        </member>
+        <member name="P:Teakorigin.App.Models.GraphDataResponse.Data">
+            <summary>
+            Gets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.IResponse">
+            <summary>
+            Response interface.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.IResponse.Criteria">
+            <summary>
+            Gets or sets the criteria.
+            </summary>
+            <value>
+            The criteria.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.IResponse.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>
+            The message.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.IResponse.DidError">
+            <summary>
+            Gets or sets a value indicating whether [did error].
+            </summary>
+            <value>
+              <c>true</c> if [did error]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.IResponse.ErrorDetails">
+            <summary>
+            Gets or sets the error.
+            </summary>
+            <value>
+            The error.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.LocationTopPicks">
+            <summary>
+            Scan data response.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.Response" />
+        </member>
+        <member name="P:Teakorigin.App.Models.LocationTopPicks.TopPicks">
+            <summary>
+            Gets the top produce.
+            </summary>
+            <value>
+            The top produce.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.LocationTopPicks.RetailerTopPicks">
+            <summary>
+            Gets the retailer top picks.
+            </summary>
+            <value>
+            The retailer top picks.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.LocationTopPicksResponse">
+            <summary>
+            Scan data response.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.Response" />
+        </member>
+        <member name="P:Teakorigin.App.Models.LocationTopPicksResponse.Data">
+            <summary>
+            Gets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.PeriodProduceData">
+            <summary>
+            Graph data for a period.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.PeriodProduceData.PeriodEndDate">
+            <summary>
+            Gets or sets the ending period.
+            </summary>
+            <value>
+            The ending period.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.PeriodProduceData.TrendType">
+            <summary>
+            Gets or sets the type of the trend.
+            </summary>
+            <value>
+            The type of the trend.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.PeriodProduceData.RetailerRanksPerProduce">
+            <summary>
+            Gets the retailer ranks.
+            </summary>
+            <value>
+            The retailer ranks.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.PeriodProduceData.GraphData">
+            <summary>
+            Gets the graph data.
+            </summary>
+            <value>
+            The graph data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.PeriodRetailerData">
+            <summary>
+            Graph data for a period.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.PeriodRetailerData.PeriodEndDate">
+            <summary>
+            Gets or sets the ending period.
+            </summary>
+            <value>
+            The ending period.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.PeriodRetailerData.TrendType">
+            <summary>
+            Gets or sets the type of the trend.
+            </summary>
+            <value>
+            The type of the trend.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.PeriodRetailerData.RetailerRanks">
+            <summary>
+            Gets the retailer ranks.
+            </summary>
+            <value>
+            The retailer ranks.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.PeriodRetailerData.GraphData">
+            <summary>
+            Gets the graph data.
+            </summary>
+            <value>
+            The graph data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.ProduceResponse">
+            <summary>
+            Produce response.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.Response" />
+        </member>
+        <member name="P:Teakorigin.App.Models.ProduceResponse.Data">
+            <summary>
+            Gets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.Response">
+            <summary>
+            Abstract class for response object.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.IResponse" />
+        </member>
+        <member name="P:Teakorigin.App.Models.Response.Criteria">
+            <summary>
+            Gets or sets the criteria.
+            </summary>
+            <value>
+            The criteria.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Response.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>
+            The message.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Response.DidError">
+            <summary>
+            Gets or sets a value indicating whether [did error].
+            </summary>
+            <value>
+              <c>true</c> if [did error]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.Response.ErrorDetails">
+            <summary>
+            Gets or sets the error.
+            </summary>
+            <value>
+            The error.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.RetailerPicks">
+            <summary>
+            Top picks response class.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.Response" />
+        </member>
+        <member name="P:Teakorigin.App.Models.RetailerPicks.RetailerCode">
+            <summary>
+            Gets or sets the retailer code.
+            </summary>
+            <value>
+            The retailer code.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.RetailerPicks.Score">
+            <summary>
+            Gets or sets the quality average.
+            </summary>
+            <value>
+            The quality average.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.RetailerPicks.IsSameRankValue">
+            <summary>
+            Gets or sets a value indicating whether this instance is score value.
+            </summary>
+            <value>
+              <c>true</c> if this instance is score value; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.RetailerPicks.TopPicks">
+            <summary>
+            Gets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.RetailerResponse">
+            <summary>
+            Retailer response model.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.Response" />
+        </member>
+        <member name="P:Teakorigin.App.Models.RetailerResponse.Data">
+            <summary>
+            Gets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.ScanDataResponse">
+            <summary>
+            Scan data response.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.Response" />
+        </member>
+        <member name="P:Teakorigin.App.Models.ScanDataResponse.Data">
+            <summary>
+            Gets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.TopPicks">
+            <summary>
+            Top picks class.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.ProduceCode">
+            <summary>
+            Gets or sets the produce code.
+            </summary>
+            <value>
+            The produce code.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.RetailerCode">
+            <summary>
+            Gets or sets the retailer code.
+            </summary>
+            <value>
+            The retailer code.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.Quality">
+            <summary>
+            Gets or sets the quality.
+            </summary>
+            <value>
+            The quality.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.QualAvg">
+            <summary>
+            Gets or sets the qual average.
+            </summary>
+            <value>
+            The qual average.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.PerceptionScore">
+            <summary>
+            Gets or sets the perception score.
+            </summary>
+            <value>
+            The perception score.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.RelevantScanData">
+            <summary>
+            Gets or sets the relevant scan data.
+            </summary>
+            <value>
+            The relevant scan data.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.AnalyteUom">
+            <summary>
+            Gets or sets the analyte uom.
+            </summary>
+            <value>
+            The analyte uom.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.CountriesOfOrigin">
+            <summary>
+            Gets the countries of origin.
+            </summary>
+            <value>
+            The countries of origin.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.ScanDateTime">
+            <summary>
+            Gets the scan date time.
+            </summary>
+            <value>
+            The scan date time.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.ScanDate">
+            <summary>
+            Gets the scan date.
+            </summary>
+            <value>
+            The scan date.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicks.ScanTime">
+            <summary>
+            Gets the scan time.
+            </summary>
+            <value>
+            The scan time.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.TopPicksDetails">
+            <summary>
+            Top picks details.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.TopPicks" />
+        </member>
+        <member name="M:Teakorigin.App.Models.TopPicksDetails.#ctor(System.Collections.Generic.List{Teakorigin.Domain.Model.AnalyteUom})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Models.TopPicksDetails"/> class.
+            </summary>
+            <param name="analyteUoms">The analyte uoms.</param>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Analytes">
+            <summary>
+            Gets the analytes.
+            </summary>
+            <value>
+            The analytes.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Sucrose">
+            <summary>
+            Gets the sucrose.
+            </summary>
+            <value>
+            The sucrose.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Fructose">
+            <summary>
+            Gets the fructose.
+            </summary>
+            <value>
+            The fructose.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Glucose">
+            <summary>
+            Gets the glucose.
+            </summary>
+            <value>
+            The glucose.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.VitaminC">
+            <summary>
+            Gets the vitamin c.
+            </summary>
+            <value>
+            The vitamin c.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Water">
+            <summary>
+            Gets the water.
+            </summary>
+            <value>
+            The water.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Anthocyanins">
+            <summary>
+            Gets the anthocyanins.
+            </summary>
+            <value>
+            The anthocyanins.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Antioxidants">
+            <summary>
+            Gets the antioxidants.
+            </summary>
+            <value>
+            The antioxidants.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.CitricAcid">
+            <summary>
+            Gets the citric acid.
+            </summary>
+            <value>
+            The citric acid.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.MalicAcid">
+            <summary>
+            Gets the malic acid.
+            </summary>
+            <value>
+            The malic acid.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.OxalicAcid">
+            <summary>
+            Gets the oxalic acid.
+            </summary>
+            <value>
+            The oxalic acid.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Tartaric">
+            <summary>
+            Gets the tartaric.
+            </summary>
+            <value>
+            The tartaric.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.OilTotal">
+            <summary>
+            Gets the oil total.
+            </summary>
+            <value>
+            The oil total.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Oleic">
+            <summary>
+            Gets the oleic.
+            </summary>
+            <value>
+            The oleic.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Linoleic">
+            <summary>
+            Gets the linoleic.
+            </summary>
+            <value>
+            The linoleic.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Palmitic">
+            <summary>
+            Gets the palmitic.
+            </summary>
+            <value>
+            The palmitic.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Palmitoleic">
+            <summary>
+            Gets the palmitoleic.
+            </summary>
+            <value>
+            The palmitoleic.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Lycopene">
+            <summary>
+            Gets the lycopene.
+            </summary>
+            <value>
+            The lycopene.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Carotenoids">
+            <summary>
+            Gets the carotenoids.
+            </summary>
+            <value>
+            The carotenoids.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Lutein">
+            <summary>
+            Gets the lutein.
+            </summary>
+            <value>
+            The lutein.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.Potassium">
+            <summary>
+            Gets the lutein.
+            </summary>
+            <value>
+            The lutein.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.ProduceUsdaData">
+            <summary>
+            Gets or sets the produce usda data.
+            </summary>
+            <value>
+            The produce usda data.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetails.AnalyteUom">
+            <summary>
+            Gets the analyte uom.
+            </summary>
+            <value>
+            The analyte uom.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.TopPicksDetailsResponse">
+            <summary>
+            Top picks details.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.Response" />
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksDetailsResponse.Data">
+            <summary>
+            Gets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.TopPicksResponse">
+            <summary>
+            Top picks response class.
+            </summary>
+            <seealso cref="T:Teakorigin.App.Models.Response" />
+        </member>
+        <member name="P:Teakorigin.App.Models.TopPicksResponse.Data">
+            <summary>
+            Gets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Models.UploadViewModel">
+            <summary>
+            Upload view model class.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.App.Models.UploadViewModel.FileBlobs">
+            <summary>
+            Gets the file blobs.
+            </summary>
+            <value>
+            The file blobs.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.UploadViewModel.UploadSuccess">
+            <summary>
+            Gets or sets a value indicating whether [upload success].
+            </summary>
+            <value>
+              <c>true</c> if [upload success]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.UploadViewModel.ErrorMessage">
+            <summary>
+            Gets or sets the error message.
+            </summary>
+            <value>
+            The error message.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.UploadViewModel.FileItems">
+            <summary>
+            Gets the file items.
+            </summary>
+            <value>
+            The file items.
+            </value>
+        </member>
+        <member name="P:Teakorigin.App.Models.UploadViewModel.UploadSuccessMessage">
+            <summary>
+            Gets the upload success message.
+            </summary>
+            <value>
+            The upload success message.
+            </value>
+        </member>
+        <member name="T:Teakorigin.App.Program">
+            <summary>
+            The main program.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.App.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:Teakorigin.App.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Creates the web host builder.
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns>Returns the web host builder.</returns>
+        </member>
+        <member name="T:Teakorigin.App.Startup">
+            <summary>
+            .The startup class.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.App.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{Teakorigin.App.Startup})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.App.Startup"/> class.
+            </summary>
+            <param name="configuration">Configuration parameters.</param>
+        </member>
+        <member name="P:Teakorigin.App.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="M:Teakorigin.App.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            // This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Services collection.</param>
+        </member>
+        <member name="M:Teakorigin.App.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">The app name.</param>
+            <param name="env">The environment name.</param>
+        </member>
+    </members>
+</doc>

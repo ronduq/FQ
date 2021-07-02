@@ -1,0 +1,74 @@
+project:
+  buildStage:
+    - name: install-deps
+      image: quay.io/photobox/node-10-builder:10.15-stretch-slim
+      args: export HOME=${WORKSPACE}; npm-cli-adduser -u "${NPM_USER}" -p "${NPM_PASS}" -e "${NPM_EMAIL}"; rm -fr node_modules; yarn install && yarn bootstrap
+      withCredentials:
+        credentialsId: 'npm'
+        usernameVariable: 'NPM_USER'
+        passwordVariable: 'NPM_PASS'
+    - name: lint
+      image: quay.io/photobox/node-10-builder:10.15-stretch-slim
+      args: export HOME=${WORKSPACE}; yarn lint
+    - name: unit-tests
+      image: quay.io/photobox/node-10-builder:10.15-stretch-slim
+      args: export HOME=${WORKSPACE}; yarn test
+    - name: build-application
+      image: quay.io/photobox/node-10-builder:10.15-stretch-slim
+      args: export HOME=${WORKSPACE}; yarn build
+    - name: npm-publish
+      image: quay.io/photobox/node-10-builder:10.15-stretch-slim
+      branch: master
+      args: export HOME=${WORKSPACE}; yarn publish:npm
+      withCredentials:
+        credentialsId: 'npm'
+        usernameVariable: 'NPM_USER'
+        passwordVariable: 'NPM_PASS'
+    - name: runtime-deps
+      image: quay.io/photobox/node-10-builder:10.15-stretch-slim
+      args: export HOME=${WORKSPACE}; yarn install --prod
+  unitStage:
+    - name: deploy-assets-to-s3
+      image: quay.io/photobox/docker-webops-awscli
+      branch: master
+      args: aws s3 sync --acl=public-read packages/ecom-editor-web/build/public/range s3://cdn-photobox-com/range
+  deployStage:
+    - name: deploy-staging
+      type: deployment
+      environment: staging
+      branch: master
+    - name: post-deploy-staging
+      image: busybox
+      args: echo "running post development deployment task"; env;
+      branch: master
+    - name: cypress-staging
+      image: cypress/base:10.15.3
+      args: export HOME=${WORKSPACE}; yarn cypress:staging && yarn cypress:report
+      branch: master
+    - name: cypress-staging-archive
+      image: quay.io/photobox/docker-webops-awscli
+      args: aws s3 sync packages/ecom-editor-cypress/report s3://photobox-test-artifacts/${JOB_NAME}/${BUILD_NUMBER}
+      branch: master
+    - name: cypress-staging-status
+      image: quay.io/photobox/node-10-builder:10.15-stretch-slim
+      args: export HOME=${WORKSPACE}; yarn cypress:report:logs ${JOB_NAME}/${BUILD_NUMBER} && yarn cypress:status
+      branch: master
+    - name: photon-editor-web-staging
+      type: executejob
+      job: photobox/photon-v3-jobs/ecom-editor-web
+      branch: master
+      parameters:
+        env: "staging"
+        tags: "--parallel"
+    - name: deploy-production
+      type: deployment
+      environment: production
+      input:
+          message: "deploy to production"
+      branch: master
+    - name: photon-editor-web-production
+      type: executejob
+      job: photobox/photon-v3-jobs/ecom-editor-web
+      branch: master
+      parameters:
+        env: "production"

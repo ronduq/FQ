@@ -1,0 +1,27 @@
+# Further options at https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: '443'
+    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: '5'
+    service.beta.kubernetes.io/aws-load-balancer-healthcheck-unhealthy-threshold: '3'
+    service.beta.kubernetes.io/aws-load-balancer-healthcheck-healthy-threshold: '2'
+    service.beta.kubernetes.io/aws-load-balancer-healthcheck-timeout: '2'
+  labels:
+    app: ecom-editor-web
+  name: ecom-editor-web
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  - name: https
+    port: 443
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: ecom-editor-web
+  type: LoadBalancer

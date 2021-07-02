@@ -1,0 +1,45 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.bestPicks {
+
+  @include respond-to('tablet', min-width) {
+    margin-top: 35px;
+  }
+
+  .pageTitle {
+    padding: 16px 0;
+    text-align: center;
+    margin-top: 8px;
+    @include font-size('medium');
+
+    @include respond-to('tablet', min-width) {
+      text-align: left;
+      @include font-size('xlarge');
+      margin-top: 0
+    }
+
+    @include respond-to('tablet') {
+      margin: 10px 0;
+      padding: 16px 40px;
+    }
+  }
+
+  .columnHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    flex-wrap: wrap;
+  
+    @include respond-to('tablet', min-width) {
+      padding: 0;
+    }
+  }
+
+  .pageSubtitle {
+    flex: 0 0 100%;
+    transform: translateY(-10px);
+  }
+
+}

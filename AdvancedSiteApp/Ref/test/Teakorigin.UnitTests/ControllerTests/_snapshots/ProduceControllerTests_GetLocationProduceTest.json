@@ -1,0 +1,282 @@
+{
+  "child_boston": {
+    "Data": [
+      {
+        "ProduceCode": "apple",
+        "ProduceName": "Apple",
+        "IsParent": true,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#00405C",
+        "id": "apple"
+      },
+      {
+        "ProduceCode": "apple-fuji",
+        "ProduceName": "Apple Fuji",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "apple",
+        "Colour": "#8DD5B3",
+        "id": "apple-fuji"
+      },
+      {
+        "ProduceCode": "apple-gala",
+        "ProduceName": "Apple Gala",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "apple",
+        "Colour": "#168451",
+        "id": "apple-gala"
+      },
+      {
+        "ProduceCode": "apple-honeycrisp",
+        "ProduceName": "Apple Honey Crisp",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "apple",
+        "Colour": "#FFAD4B",
+        "id": "apple-honeycrisp"
+      },
+      {
+        "ProduceCode": "apple-red-delicious",
+        "ProduceName": "Apple Red delicious",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "apple",
+        "Colour": "#FFD5A5",
+        "id": "apple-red-delicious"
+      },
+      {
+        "ProduceCode": "avocado",
+        "ProduceName": "Avocado",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#FB5440",
+        "id": "avocado"
+      },
+      {
+        "ProduceCode": "banana",
+        "ProduceName": "Banana",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#FDA99F",
+        "id": "banana"
+      },
+      {
+        "ProduceCode": "blueberry",
+        "ProduceName": "Blueberry",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#C44031",
+        "id": "blueberry"
+      },
+      {
+        "ProduceCode": "grape",
+        "ProduceName": "Grape",
+        "IsParent": true,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#1CAC69",
+        "id": "grape"
+      },
+      {
+        "ProduceCode": "grape-green",
+        "ProduceName": "Grape green",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "grape",
+        "Colour": "#6715EB",
+        "id": "grape-green"
+      },
+      {
+        "ProduceCode": "grape-red",
+        "ProduceName": "Grape red",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "grape",
+        "Colour": "#B389F5",
+        "id": "grape-red"
+      },
+      {
+        "ProduceCode": "spinach",
+        "ProduceName": "Spinach",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#410C97",
+        "id": "spinach"
+      },
+      {
+        "ProduceCode": "strawberry",
+        "ProduceName": "Strawberry",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#005B82",
+        "id": "strawberry"
+      },
+      {
+        "ProduceCode": "tomato",
+        "ProduceName": "Tomato",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#7FADC0",
+        "id": "tomato"
+      }
+    ],
+    "Criteria": {
+      "LocationCode": "boston",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_los-angeles": {
+    "Data": [
+      {
+        "ProduceCode": "apple",
+        "ProduceName": "Apple",
+        "IsParent": true,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#00405C",
+        "id": "apple"
+      },
+      {
+        "ProduceCode": "apple-fuji",
+        "ProduceName": "Apple Fuji",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "apple",
+        "Colour": "#8DD5B3",
+        "id": "apple-fuji"
+      },
+      {
+        "ProduceCode": "apple-gala",
+        "ProduceName": "Apple Gala",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "apple",
+        "Colour": "#168451",
+        "id": "apple-gala"
+      },
+      {
+        "ProduceCode": "apple-honeycrisp",
+        "ProduceName": "Apple Honey Crisp",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "apple",
+        "Colour": "#FFAD4B",
+        "id": "apple-honeycrisp"
+      },
+      {
+        "ProduceCode": "apple-red-delicious",
+        "ProduceName": "Apple Red delicious",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "apple",
+        "Colour": "#FFD5A5",
+        "id": "apple-red-delicious"
+      },
+      {
+        "ProduceCode": "avocado",
+        "ProduceName": "Avocado",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#FB5440",
+        "id": "avocado"
+      },
+      {
+        "ProduceCode": "banana",
+        "ProduceName": "Banana",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#FDA99F",
+        "id": "banana"
+      },
+      {
+        "ProduceCode": "blueberry",
+        "ProduceName": "Blueberry",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#C44031",
+        "id": "blueberry"
+      },
+      {
+        "ProduceCode": "grape",
+        "ProduceName": "Grape",
+        "IsParent": true,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#1CAC69",
+        "id": "grape"
+      },
+      {
+        "ProduceCode": "grape-green",
+        "ProduceName": "Grape green",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "grape",
+        "Colour": "#6715EB",
+        "id": "grape-green"
+      },
+      {
+        "ProduceCode": "grape-red",
+        "ProduceName": "Grape red",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "grape",
+        "Colour": "#B389F5",
+        "id": "grape-red"
+      },
+      {
+        "ProduceCode": "spinach",
+        "ProduceName": "Spinach",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#410C97",
+        "id": "spinach"
+      },
+      {
+        "ProduceCode": "strawberry",
+        "ProduceName": "Strawberry",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#005B82",
+        "id": "strawberry"
+      },
+      {
+        "ProduceCode": "tomato",
+        "ProduceName": "Tomato",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#7FADC0",
+        "id": "tomato"
+      }
+    ],
+    "Criteria": {
+      "LocationCode": "los-angeles",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  }
+}

@@ -1,0 +1,40 @@
+@import '../style/settings/breakpoints';
+
+.homepage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background: 50% 0% no-repeat;
+  background-size: auto 100vh;
+  
+
+  :global {
+    .headerSpacing {
+      flex: 1 1 auto;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  @include respond-to('large', min-width) {
+    background-size: 100% auto;
+  }
+}
+
+.homepageImage {
+  height: 100vh;
+  min-width: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position:top center;
+  @include respond-to('mobile') {
+    background-size: auto 100%;
+  }
+}

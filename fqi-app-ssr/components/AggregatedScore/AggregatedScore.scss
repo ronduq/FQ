@@ -1,0 +1,127 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+
+.aggregatedScore {
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid $colour-grey-medium;
+  border-bottom: 1px solid $colour-grey-medium;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px 0;
+  flex-direction: column;
+
+  @include respond-to('tablet', min-width) {
+    flex-direction: row;
+    padding: 16px 16px;
+    border: 1px solid $colour-grey-medium;
+  }
+
+  .retailerRank {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include respond-to('tablet', min-width) {
+      width: auto;
+    }
+
+    .title {
+      @include font-family('proxima-bold');
+      @include font-size('medium-20');
+
+      @include respond-to('mobile') {
+        @include font-size('medium');
+      }
+    }
+
+    .desc {
+      @include font-family('proxima-regular');
+      @include font-size('medium');
+
+      @include respond-to('mobile') {
+        @include font-size('xsmall');
+      }
+    }
+  }
+
+  .retailerData {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include respond-to('tablet', min-width) {
+      flex-direction: row;
+      width: auto;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0px;
+      height: 46px;
+      border-bottom: 1px solid $colour-grey-medium;
+
+      @include respond-to('tablet', min-width) {
+        border-bottom: none;
+        border-right: 1px solid $colour-grey-medium;
+        padding: 0 16px;
+        height: 72px;
+      }
+    
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        border-right: none;
+      }
+
+      .heading {
+        @include font-family('proxima-bold');
+        @include font-size('small');
+        margin-right: 10px;
+
+        @include respond-to('tablet', min-width) {
+          margin-right: 6px;
+          @include font-size('medium');
+        }
+      }
+
+      .score {
+        @include font-family('proxima-bold');
+        @include font-size('medium');
+        margin-left: auto;
+
+        @include respond-to('tablet', min-width) {
+          @include font-size('xlarge');
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .starIcon,
+    .dollarIcon,
+    .diamondIcon {
+      color: $colour-main;
+      width: 20px;
+      height: 20px;
+    }
+   
+  }
+
+  .linkWrapper {
+    text-align: right;
+    @include respond-to('tablet') {
+      height: 46px;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+  }
+}

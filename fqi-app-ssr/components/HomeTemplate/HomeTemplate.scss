@@ -1,0 +1,151 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+@import '../../style/settings/mixins';
+
+.indexContainer {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+
+  @include respond-to('large', min-width) {
+    max-width: 1000px;
+    min-height: 60vh;
+  }
+
+  .intro {
+    padding: 0 16px;
+  }
+
+  h1 {
+    @include font-size('large-32');
+    text-align: center;
+    color: $white;
+    margin: 32px 0 16px;
+
+    @include respond-to('large', min-width) {
+      @include font-size('large-64');
+      margin-top: 64px;
+    }
+  }
+
+  .introText {
+    @include font-size('medium-20');
+    @include font-family('proxima-regular');
+    text-align: center;
+    color: $white;
+    margin-bottom: 32px;
+
+    @include respond-to('large', min-width) {
+      @include font-size('large-32');
+    }
+  }
+
+  .showMeTabs {
+    
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+
+    @include respond-to('large', min-width) {
+      background-color: $white;
+    }
+
+    h3 {
+      @include font-family('proxima-regular');
+      @include font-size('medium');
+      margin-bottom: 16px;
+
+      @include respond-to('large', min-width) {
+        @include font-size('large');
+      }
+    }
+    @include respond-to('mobile') {
+      width: 96%;
+    }
+  }
+
+  .exploreButton {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    margin: 16px auto 0;
+    color: $white;
+    background-color: $colour-secondary;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    @include font-family('futura');
+    @include font-size('medium');
+    line-height: 50px;
+    transition: .1s ease-in-out all;
+
+    
+    @include respond-to('large', min-width) {
+      @include font-size('large');
+      line-height: 50px;
+      margin: 0;
+      float: right;
+      width: 250px;
+    }
+    
+    &:hover {
+      background: $colour-secondary-dark;
+    }
+  }
+  label {
+    @include font-size('medium');
+    @include font-family('proxima-bold');
+
+    @include respond-to('large', min-width) {
+      @include font-size('large');
+      @include font-family('proxima-bold');
+    }
+  }
+
+  select {
+    @include customSelect();
+    width: calc(100% - 105px);    
+    height: 50px;
+    margin: 0;
+    display: inline-block;
+    border: none;
+
+    @include respond-to('large', min-width) {
+      margin-left: 16px;
+      padding: 0;
+      background-color: $white;
+      
+    }
+  }
+
+  .inlineSelect {
+    display: inline-block;
+    margin: 10px 0 0 ;
+    width: 100%;
+    padding: 0 15px;
+    background-color: $white;
+    box-sizing: border-box;
+
+    @include respond-to('large', min-width) {
+      background-color: $white;
+      padding: 0 0 0 15px;
+      box-sizing: border-box;
+      width: calc(50% - 125px);
+      margin: 0;
+  
+      &:nth-child(2) {
+        border-left: 1px solid $colour-grey-dark;
+      }
+    }
+
+    @include respond-to('tablet') {
+      line-height: 3.75;
+      select {
+        float: right;
+      }
+    }
+   
+  }
+}

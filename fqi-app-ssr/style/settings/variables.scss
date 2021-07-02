@@ -1,0 +1,43 @@
+$container-width: 1440px;
+$grid-width: 1440px;
+$column-width: 1fr;
+$column-gap: 33px;
+$column-width-fallback: 8.3333%;
+
+$space-xs: 16px;
+$space-s: 32px;
+$space-m: 64px;
+$space-l: 96px;
+$space-xl: 160px;
+
+$space-mb-xs: 8px;
+$space-mb-s: 16px;
+$space-mb-m: 32px;
+$space-mb-l: 64px;
+$space-mb-xl: 112px;
+
+// stylelint-disable
+$spacing: (
+  'space-xs': (space: $space-xs,
+    breakpoints: (
+      tablet: (space: $space-mb-xs)
+    )),
+  'space-s': (space: $space-s,
+    breakpoints: (
+      tablet: (space: $space-mb-s)
+    )),
+  'space-m': (space: $space-m,
+    breakpoints: (
+      tablet: (space: $space-mb-m)
+    )),
+  'space-l': (space: $space-l,
+    breakpoints: (
+      tablet: (space: $space-mb-l)
+    )),
+  'space-xl': (space: $space-xl,
+    breakpoints: (
+      tablet: (space: $space-mb-xl)
+    ))
+);
+
+$container-width: 1440px;

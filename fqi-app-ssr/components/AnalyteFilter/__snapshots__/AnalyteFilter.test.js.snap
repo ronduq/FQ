@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnalyteFilter AnalyteFilter snapshot" 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="title"
+  >
+    <div
+      className="wrapper"
+    >
+      <span
+        className="content"
+      >
+        <h3>
+          test
+        </h3>
+      </span>
+      
+    </div>
+  </div>
+  <div
+    className="body"
+  >
+    <ul
+      className="filter"
+    >
+      <li
+        className="highlight"
+        id="AnalyteFilterListItem0"
+      >
+        <button
+          className="filterButton"
+          onClick={[Function]}
+        >
+           
+          <span
+            className="buttonInfo"
+          >
+            99.75
+            %
+          </span>
+        </button>
+      </li>
+      <li
+        className=""
+        id="AnalyteFilterListItem1"
+      >
+        <button
+          className="filterButton"
+          onClick={[Function]}
+        >
+           
+          <span
+            className="buttonInfo"
+          >
+            98
+            %
+          </span>
+        </button>
+      </li>
+      <li
+        className=""
+        id="AnalyteFilterListItem2"
+      >
+        <button
+          className="filterButton"
+          onClick={[Function]}
+        >
+           
+          <span
+            className="buttonInfo"
+          >
+            92.5
+            %
+          </span>
+        </button>
+      </li>
+      <li
+        className=""
+        id="AnalyteFilterListItem3"
+      >
+        <button
+          className="filterButton"
+          onClick={[Function]}
+        >
+           
+          <span
+            className="buttonInfo"
+          >
+            65.25
+            %
+          </span>
+        </button>
+      </li>
+      <li
+        className=""
+        id="AnalyteFilterListItem4"
+      >
+        <button
+          className="filterButton"
+          onClick={[Function]}
+        >
+           
+          <span
+            className="buttonInfo"
+          >
+            94
+            %
+          </span>
+        </button>
+      </li>
+    </ul>
+    <div
+      className="content"
+    >
+      <div
+        className="container"
+      >
+        <ul
+          className="readingMetrics"
+        >
+          <li>
+            <h3>
+               
+            </h3>
+          </li>
+          <li
+            className="metric"
+          >
+            <span
+              className="metricTitle"
+            />
+             
+            <span
+              className="metricText"
+            >
+              99.75
+            </span>
+            <span
+              className="metricSuffix"
+            />
+          </li>
+          <li
+            className="metric"
+          >
+            <span
+              className="metricTitle"
+            />
+             
+            <span
+              className="metricText"
+            >
+              113
+            </span>
+            <span
+              className="metricSuffix"
+            />
+          </li>
+          <li
+            className="metric"
+          >
+            <span
+              className="metricTitle"
+            />
+             
+            <span
+              className="metricText"
+            >
+              73
+            </span>
+            <span
+              className="metricSuffix"
+            />
+          </li>
+        </ul>
+        <div
+          className="status"
+        >
+          <div
+            className="statusLabel"
+          />
+          <div
+            className="statusText"
+          >
+             
+             
+             
+          </div>
+        </div>
+        <div>
+          <h3>
+             & 
+          </h3>
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "undefined",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

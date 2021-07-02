@@ -1,0 +1,37 @@
+// Brand colours
+$colour-main: #02917F;
+$colour-main-light: #8DD5B3;
+$colour-secondary: #FE744A;
+$colour-secondary-light: #FEBAA5;
+$colour-secondary-dark: #CD5937;
+
+// Shades of grey
+$colour-grey-dark: #333333;
+$colour-grey: #A9A9A9;
+$colour-grey-medium: #D8D8D8;
+$colour-grey-light: #F7F7F7;
+$colour-grey-pearl: #FAFAFA;
+
+$white: #FFFFFF;
+
+// Graph colours
+$colour-green:#1CAC69;
+$colour-green-light: #8DD5B3;
+$colour-green-dark:#168451;
+$colour-gold:#FFAD4B;
+$colour-gold-light: #FFD5A5;
+$colour-gold-dark: #D18D3B;
+$colour-red:#FB5440;
+$colour-red-light: #FDA99F;
+$colour-red-dark: #C44031;
+$colour-purple:#6715EB;
+$colour-purple-light: #B389F5;
+$colour-purple-dark: #410C97;
+$colour-blue:#005B82;
+$colour-blue-light: #7FADC0;
+$colour-blue-dark: #00405C;
+$colour-chart-background:#F2F9F8;
+
+.recharts-bar-rectangle {
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}

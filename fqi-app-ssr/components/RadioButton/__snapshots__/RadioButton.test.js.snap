@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing RadioButton snapshot" 1`] = `
+<div
+  className="radio"
+>
+  <input
+    autoComplete="off"
+    onChange={[Function]}
+    tabIndex="0"
+    type="radio"
+  />
+  <label />
+</div>
+`;

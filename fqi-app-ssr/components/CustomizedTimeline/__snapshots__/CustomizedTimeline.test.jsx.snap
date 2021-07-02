@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomizedTimeline CustomizedTimeline snapshot" 1`] = `
+<svg
+  height={600}
+  style={
+    Object {
+      "cursor": "grabbing",
+    }
+  }
+  version="1.1"
+  viewBox="0 0 18 605"
+  width="18"
+  x={-8}
+  xmlns="http://www.w3.org/2000/svg"
+  y={2}
+>
+  <g
+    fill="none"
+    fillRule="evenodd"
+    stroke="none"
+    strokeWidth="1"
+  >
+    <g
+      stroke="#006F60"
+      strokeWidth="2"
+      transform="translate(1, 1)"
+    >
+      <g>
+        <path
+          d="M8,601.987194 L8,1.13341357"
+        />
+        <circle
+          cx="7.55072441"
+          cy="6"
+          fill="#02917F"
+          r="6"
+        />
+        <circle
+          cx="8"
+          cy="596.408577"
+          fill="#02917F"
+          r="6"
+        />
+        <g
+          fill="#02917F"
+          transform="translate(0.000000, 253.469370)"
+        >
+          <rect
+            height="67.8930825"
+            rx="5"
+            width="16"
+            x="0"
+            y="0"
+          />
+        </g>
+      </g>
+      <g
+        transform="translate(4.000000, 290.475649)"
+      >
+        <path
+          d="M0.533333333,0.578648325 L7.96666667,0.578648325"
+          transform="rotate(270)"
+        />
+        <path
+          d="M0.533333333,7.52242823 L7.96666667,7.52242823"
+          transform="rotate(270)"
+        />
+        <path
+          d="M0.533333333,3.8662081 L7.96666667,3.8662081"
+          transform="rotate(270)"
+        />
+      </g>
+    </g>
+  </g>
+</svg>
+`;

@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing CollapseableFilter snapshot" 1`] = `
+<fieldset>
+  <button
+    aria-expanded={true}
+    className="header"
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden="true"
+      className="titleIcon iconMedium iconTeal"
+      focusable="false"
+    >
+      <use
+        xlinkHref="#undefined"
+      />
+    </svg>
+    <legend
+      className="title"
+    />
+    <svg
+      aria-hidden="true"
+      className="arrowIcon iconSmall iconOrange arrowDown"
+      focusable="false"
+    >
+      <use
+        xlinkHref="#chevron"
+      />
+    </svg>
+  </button>
+  <ul
+    className="list"
+  >
+    <li
+      className="listItem listItemMain"
+    >
+      <div
+        className="checkbox"
+      >
+        <input
+          autoComplete="off"
+          checked={true}
+          id="Allundefined"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <label
+          aria-hidden="true"
+          htmlFor="Allundefined"
+        >
+          <span>
+            All
+             (2)
+          </span>
+        </label>
+      </div>
+    </li>
+    <li
+      className="listItem"
+    >
+      <div
+        className="checkbox checkboxChild"
+      >
+        <input
+          autoComplete="off"
+          checked={true}
+          id="Avocadoundefined"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <label
+          aria-hidden="true"
+          htmlFor="Avocadoundefined"
+        >
+          <span>
+            Avocado
+            
+          </span>
+        </label>
+      </div>
+    </li>
+    <li
+      className="listItem listItemMain"
+    >
+      <div
+        className="checkbox checkboxParent"
+      >
+        <input
+          autoComplete="off"
+          checked={true}
+          id="Bananaundefined"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <label
+          aria-hidden="true"
+          htmlFor="Bananaundefined"
+        >
+          <span>
+            Banana
+            
+          </span>
+        </label>
+      </div>
+    </li>
+  </ul>
+</fieldset>
+`;

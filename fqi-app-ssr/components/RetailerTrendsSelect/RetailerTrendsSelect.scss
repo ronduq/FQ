@@ -1,0 +1,29 @@
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+@import '../../style/settings/mixins';
+
+.locationSelector {
+  display: flex;
+  flex: 1 1 auto;
+  
+  img { 
+    height: 40px;
+    display: none;
+
+    @include respond-to('tablet', min-width) {
+      display: block;
+    }
+  }
+
+  .customSelect {
+    label {
+      @include font-size('medium');
+      @include font-family('proxima-bold');
+    }
+  
+    select {
+      @include customSelect();
+    }
+  }
+  
+}

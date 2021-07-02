@@ -1,0 +1,17 @@
+
+@import '../../style/settings/colours';
+
+.container {
+  background: white;
+  padding: 45px 15px 15px;
+  border-left: 1px solid $colour-grey-medium;
+  border-right: 1px solid $colour-grey-medium;
+  border-bottom: 1px solid $colour-grey-medium;
+  position: relative;
+
+  legend {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
+}

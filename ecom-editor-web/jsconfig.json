@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "components/*": ["packages/ecom-editor-web/src/components/*"],
+      "utils/*": ["packages/ecom-editor-web/src/utilities/*"],
+      "@photobox/ecom-editor-smartbook/*": ["packages/ecom-editor-smartbook/*"],
+      "@photobox/ecom-editor-web/*": ["packages/ecom-editor-web/*"],
+      "@photobox/ecom-editor-uploader/*": ["packages/ecom-editor-uploader/*"]
+    }
+  },
+  "include": [
+    "packages/ecom-editor-smartbook/src/**/*",
+    "packages/ecom-editor-uploader/src/**/*",
+    "packages/ecom-editor-web/src/**/*"
+  ]
+}

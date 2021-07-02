@@ -1,0 +1,74 @@
+{
+  "child_boston_apple": {
+    "Data": [
+      {
+        "ProduceCode": "apple",
+        "ProduceName": "Apple",
+        "IsParent": true,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#00405C",
+        "id": "apple"
+      }
+    ],
+    "Criteria": null,
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_boston_empty": {
+    "Data": [],
+    "Criteria": null,
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_boston_all": {
+    "Data": [],
+    "Criteria": null,
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_boston_apple-fuji": {
+    "Data": [
+      {
+        "ProduceCode": "apple-fuji",
+        "ProduceName": "Apple Fuji",
+        "IsParent": false,
+        "IsChild": true,
+        "ParentCode": "apple",
+        "Colour": "#8DD5B3",
+        "id": "apple-fuji"
+      }
+    ],
+    "Criteria": null,
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_los-angeles_": {
+    "Data": [],
+    "Criteria": null,
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_los-angeles_avocado": {
+    "Data": [
+      {
+        "ProduceCode": "avocado",
+        "ProduceName": "Avocado",
+        "IsParent": false,
+        "IsChild": false,
+        "ParentCode": null,
+        "Colour": "#FB5440",
+        "id": "avocado"
+      }
+    ],
+    "Criteria": null,
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  }
+}

@@ -1,0 +1,109 @@
+@import './settings/colours';
+@import './settings/fonts';
+@import './settings/variables';
+@import './settings/mixins';
+@import './grid';
+@import './layouts';
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0;
+  
+  @include respond-to('tablet', min-width) {
+    padding: 0 16px;
+  }
+
+  @include respond-to('two-column', min-width) {
+    padding: 0 32px;
+  }
+
+}
+.container--body {
+  min-height: calc(100vh - 170px);
+}
+.headerSpacing {
+  padding-top: 64px;
+  z-index: 1;
+
+  @include respond-to('large') {
+    padding-top: 40px;
+  }
+}
+
+body {
+  background: $colour-grey-light;
+  color: $colour-grey-dark;
+  @include font-family('proxima-light');
+  @include font-size('medium');
+}
+
+a {
+  color: $colour-grey-dark;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: $colour-secondary;
+  }
+}
+
+h1 {
+  @include font-family('proxima-bold');
+  @include font-size('xlarge');
+}
+
+h2 {
+  @include font-family('proxima-bold');
+  @include font-size('large');
+}
+
+h3 {
+  @include font-family('proxima-bold');
+  @include font-size('large');
+}
+
+section {
+  margin-bottom: 40px;
+
+  &:last-child { 
+    margin-bottom: 0;
+  }
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+.mobile-hide {
+  @include respond-to('mobile') {
+    display: none !important;
+  }
+}

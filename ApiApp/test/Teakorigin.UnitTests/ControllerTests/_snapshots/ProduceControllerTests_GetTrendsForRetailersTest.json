@@ -1,0 +1,318 @@
+{
+  "child_boston_strawberry_Quality_Weekly_10": {
+    "Value": {
+      "Data": [
+        {
+          "timestamp": 1567724400000,
+          "target": 91,
+          "whole-foods": 87,
+          "trader-joes": 86,
+          "walmart": 83
+        },
+        {
+          "timestamp": 1571353200000,
+          "whole-foods": 94,
+          "trader-joes": 71
+        },
+        {
+          "timestamp": 1571958000000,
+          "amazon-fresh": 102,
+          "wegmans": 96,
+          "bjs": 84,
+          "target": 78,
+          "aldi": 75,
+          "costco": 73
+        },
+        {
+          "timestamp": 1576800000000,
+          "trader-joes": 112,
+          "costco": 94,
+          "amazon-fresh": 86,
+          "whole-foods": 86,
+          "wegmans": 83,
+          "walmart": 81,
+          "aldi": 79,
+          "bjs": 74,
+          "stop-n-shop": 74
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 0,
+        "SortDirection": 0,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_boston_tomato_Value_Weekly_10": {
+    "Value": {
+      "Data": [
+        {
+          "timestamp": 1567724400000,
+          "walmart": 1,
+          "whole-foods": 2,
+          "target": 3,
+          "trader-joes": 4
+        },
+        {
+          "timestamp": 1571353200000,
+          "whole-foods": 1,
+          "stop-n-shop": 2,
+          "trader-joes": 3
+        },
+        {
+          "timestamp": 1571958000000,
+          "aldi": 1,
+          "costco": 2,
+          "walmart": 3,
+          "bjs": 4,
+          "amazon-fresh": 5
+        },
+        {
+          "timestamp": 1576800000000,
+          "aldi": 1,
+          "stop-n-shop": 2,
+          "walmart": 3,
+          "bjs": 4,
+          "wegmans": 5,
+          "costco": 6,
+          "whole-foods": 7,
+          "trader-joes": 8
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 0,
+        "SortDirection": 0,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_boston_blueberry_Value_Monthly_10": {
+    "Value": {
+      "Data": [
+        {
+          "timestamp": 1569884400000,
+          "walmart": 1,
+          "trader-joes": 2,
+          "whole-foods": 3
+        },
+        {
+          "timestamp": 1572566400000,
+          "aldi": 1,
+          "costco": 2,
+          "target": 3,
+          "bjs": 4,
+          "wegmans": 5,
+          "walmart": 6,
+          "stop-n-shop": 7,
+          "whole-foods": 8,
+          "amazon-fresh": 9
+        },
+        {
+          "timestamp": 1577836800000,
+          "aldi": 1,
+          "costco": 2,
+          "bjs": 3,
+          "walmart": 4,
+          "wegmans": 5,
+          "amazon-fresh": 6,
+          "trader-joes": 7,
+          "stop-n-shop": 8,
+          "whole-foods": 9
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 0,
+        "SortDirection": 0,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles_apple-fuji_Quality_Weekly_10": {
+    "Value": {
+      "Data": [
+        {
+          "timestamp": 1573171200000,
+          "walmart": 61,
+          "trader-joes": 61,
+          "gelsons": 60,
+          "target": 60,
+          "whole-foods": 59,
+          "sprouts": 56,
+          "aldi": 56,
+          "amazon-fresh": 51,
+          "ralphs": 45
+        },
+        {
+          "timestamp": 1574380800000,
+          "trader-joes": 59,
+          "sprouts": 59,
+          "ralphs": 57,
+          "whole-foods": 57,
+          "aldi": 51,
+          "amazon-fresh": 51,
+          "gelsons": 51,
+          "costco": 51,
+          "walmart": 46
+        },
+        {
+          "timestamp": 1576800000000,
+          "target": 71,
+          "walmart": 70,
+          "aldi": 66,
+          "ralphs": 59,
+          "trader-joes": 59,
+          "costco": 54,
+          "sprouts": 52,
+          "gelsons": 48,
+          "amazon-fresh": 47,
+          "whole-foods": 45
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 0,
+        "SortDirection": 0,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles_avocado_Value_Weekly_10": {
+    "Value": {
+      "Data": [
+        {
+          "timestamp": 1573171200000,
+          "walmart": 1,
+          "aldi": 2,
+          "target": 3,
+          "costco": 4,
+          "trader-joes": 5,
+          "amazon-fresh": 6,
+          "sprouts": 7,
+          "whole-foods": 8,
+          "ralphs": 9,
+          "gelsons": 10
+        },
+        {
+          "timestamp": 1574380800000,
+          "sprouts": 1,
+          "walmart": 2,
+          "target": 3,
+          "costco": 4,
+          "trader-joes": 5,
+          "amazon-fresh": 6,
+          "ralphs": 7,
+          "whole-foods": 8,
+          "gelsons": 9
+        },
+        {
+          "timestamp": 1576800000000,
+          "aldi": 1,
+          "trader-joes": 2,
+          "costco": 3,
+          "amazon-fresh": 4,
+          "walmart": 5,
+          "target": 6,
+          "sprouts": 7,
+          "ralphs": 8,
+          "whole-foods": 9,
+          "gelsons": 10
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 0,
+        "SortDirection": 0,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles_avocado_Quality_Monthly_10": {
+    "Value": {
+      "Data": [
+        {
+          "timestamp": 1575158400000,
+          "walmart": 143,
+          "gelsons": 141,
+          "ralphs": 132,
+          "aldi": 127,
+          "target": 125,
+          "trader-joes": 124,
+          "amazon-fresh": 124,
+          "costco": 123,
+          "sprouts": 123,
+          "whole-foods": 122
+        },
+        {
+          "timestamp": 1577836800000,
+          "sprouts": 129,
+          "trader-joes": 126,
+          "gelsons": 124,
+          "amazon-fresh": 123,
+          "target": 119,
+          "costco": 116,
+          "aldi": 116,
+          "whole-foods": 114,
+          "walmart": 112,
+          "ralphs": 109
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 0,
+        "SortDirection": 0,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  }
+}

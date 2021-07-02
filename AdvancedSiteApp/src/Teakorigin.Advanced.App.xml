@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Teakorigin.Advanced.App</name>
+    </assembly>
+    <members>
+        <member name="T:Teakorigin.Advanced.App.Constants.CacheKeys">
+            <summary>
+            Cache keys.
+            </summary>
+        </member>
+        <member name="F:Teakorigin.Advanced.App.Constants.CacheKeys.MaxDate">
+            <summary>
+            The maximum date.
+            </summary>
+        </member>
+        <member name="F:Teakorigin.Advanced.App.Constants.CacheKeys.CacheColectionKey">
+            <summary>
+            The cache colection key.
+            </summary>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Controllers.AdminController">
+            <summary>
+            Admin controller.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Controllers.CacheController">
+            <summary>
+            The Cache Controller.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.CacheController.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Logging.ILogger{Teakorigin.Advanced.App.Controllers.CacheController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Advanced.App.Controllers.CacheController" /> class.
+            </summary>
+            <param name="cache">The cache.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.CacheController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>
+            Returns the view.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.CacheController.Process">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>Return the view.</returns>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Controllers.HomeController">
+            <summary>
+            Advance site controller.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.HomeController.#ctor(Teakorigin.Domain.Models.AppSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Advanced.App.Controllers.HomeController"/> class.
+            </summary>
+            <param name="appSettings">The application settings.</param>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.HomeController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>Returns the view for advance site.</returns>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Controllers.LocationUploadController">
+            <summary>
+            Class for retailers.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.LocationUploadController.#ctor(Teakorigin.DataAccess.TeakOriginContext,Teakorigin.Domain.Models.AppSettings,Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Logging.ILogger{Teakorigin.Advanced.App.Controllers.LocationUploadController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Advanced.App.Controllers.LocationUploadController" /> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="appSettings">The application settings.</param>
+            <param name="cache">The cache.</param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:System.Exception">Storage string exception.</exception>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.LocationUploadController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>Returns the view.</returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.LocationUploadController.Index(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Indexes the specified file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns>Returns message if file sucessfully uploaded.</returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.LocationUploadController.Process(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Processes this instance.
+            </summary>
+            <returns>rETURNS TRUE OR FALSE.</returns>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Controllers.UploadController">
+            <summary>
+            Class for retailers.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.UploadController.#ctor(Teakorigin.DataAccess.TeakOriginContext,Teakorigin.Domain.Models.AppSettings,Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Logging.ILogger{Teakorigin.Advanced.App.Controllers.UploadController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Advanced.App.Controllers.UploadController" /> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="appSettings">The application settings.</param>
+            <param name="cache">The cache.</param>
+            <param name="logger">The logger.</param>
+            <exception cref="T:System.Exception">Storage string exception.</exception>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.UploadController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>
+            Returns the view.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.UploadController.Index(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Indexes the specified file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns>Returns message if file sucessfully uploaded.</returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.UploadController.Process(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Processes the specified file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns>Returned process file.</returns>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Extentions.ContextExtentions">
+            <summary>
+            Context Extentions.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.ContextExtentions.GetScanData(Teakorigin.DataAccess.TeakOriginContext,System.String,System.String,System.DateTime,System.DateTime,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Gets the scan data.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="location">The location.</param>
+            <param name="produceCodes">The produce codes.</param>
+            <param name="fromDate">From date.</param>
+            <param name="toDate">To date.</param>
+            <param name="cache">The cache.</param>
+            <returns>Retailer ranks. Also cached if required.</returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.ContextExtentions.GetMaxScanDateWeekend(Teakorigin.DataAccess.TeakOriginContext,System.String,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Gets the maximum scan date weekend.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="location">The location.</param>
+            <param name="cache">The cache.</param>
+            <returns>
+            Returns Weekend of the Maximum scan date.
+            </returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.ContextExtentions.SanitiseAndOrderProduceCodes(Teakorigin.DataAccess.TeakOriginContext,System.String,System.String,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Sanitises the and order produce codes.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="location">The location.</param>
+            <param name="produceCodes">The produce codes.</param>
+            <param name="cache">The cache.</param>
+            <returns>
+            Sanitised produce codes.
+            </returns>
+            <exception cref="T:System.NullReferenceException">Null reference.</exception>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.ContextExtentions.SanitiseAndOrderRetailerCodes(Teakorigin.DataAccess.TeakOriginContext,System.String,System.String,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Sanitises the and order produce codes.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="location">The location.</param>
+            <param name="retailerCodes">The retailer codes.</param>
+            <param name="cache">The cache.</param>
+            <returns>
+            Sanitised produce codes.
+            </returns>
+            <exception cref="T:System.NullReferenceException">Null reference exception.</exception>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.ContextExtentions.GetValidProduceCodes(Teakorigin.DataAccess.TeakOriginContext)">
+            <summary>
+            Gets the valid produce codes.
+            </summary>
+            <param name="context">The context.</param>
+            <returns>Extention method for getting valid produce.</returns>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Extentions.GeneralExtentions">
+            <summary>
+            Response extentions class.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.GeneralExtentions.GetLastNWeeks(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            Dates the time month.
+            </summary>
+            <param name="dt">The dt.</param>
+            <param name="numberOfweeks">The number ofweeks.</param>
+            <param name="lastdataFound">The lastdata found.</param>
+            <returns>
+            Returns Last Weeks
+            </returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.GeneralExtentions.GetNextWeekday(System.DateTime,System.DayOfWeek,System.DateTime)">
+            <summary>
+            Gets the next weekday.
+            </summary>
+            <param name="dt">The dt.</param>
+            <param name="day">The day.</param>
+            <param name="start">The start.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.GeneralExtentions.GetLastNMonths(System.DateTime,System.Int32)">
+            <summary>
+            Dates the time month.
+            </summary>
+            <param name="dt">The dt.</param>
+            <param name="numberOfMonths">The number of months.</param>
+            <returns>
+            Returns Last Weeks
+            </returns>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.GeneralExtentions.PercentToDouble(System.String)">
+            <summary>
+            Percents to double.
+            </summary>
+            <param name="percent">The percent.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Extentions.ServiceExtentions">
+            <summary>
+            Service Extentions.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.ServiceExtentions.ConfigurePoco``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Func{``0})">
+            <summary>
+            The configure poco.
+            </summary>
+            <typeparam name="TConfig">The type of the configuration.</typeparam>
+            <param name="services">The services.</param>
+            <param name="configuration">The configuration.</param>
+            <param name="pocoProvider">The poco provider.</param>
+            <returns>returns poco from config.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            services
+            or
+            configuration
+            or
+            pocoProvider.
+            </exception>
+            <exception cref="T:System.ArgumentNullException"> returns exception.</exception>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.ServiceExtentions.AddDistributedCache(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Teakorigin.Domain.Models.AppSettings},System.Action{Teakorigin.Domain.Models.AppSettings.ConnectionString})">
+            <summary>
+            Configures the distributed cache.
+            </summary>
+            <param name="services">The services.</param>
+            <param name="appSettingsOptions">The application settings options.</param>
+            <param name="connectionStringOptions">The connection string options.</param>
+            <exception cref="T:System.ArgumentNullException">services or appSettingsOptions.</exception>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Models.AdvanceSiteViewModel">
+            <summary>
+            Advanced site view midel.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.AdvanceSiteViewModel.AdvancedSiteLink">
+            <summary>
+            Gets or sets the advanced site link.
+            </summary>
+            <value>
+            The advanced site link.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Models.CacheViewModel">
+            <summary>
+            Cache view model class.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.CacheViewModel.CacheList">
+            <summary>
+            Gets the file blobs.
+            </summary>
+            <value>
+            The file blobs.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.CacheViewModel.ErrorMessage">
+            <summary>
+            Gets or sets the error message.
+            </summary>
+            <value>
+            The error message.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.CacheViewModel.SuccessMessage">
+            <summary>
+            Gets the upload success message.
+            </summary>
+            <value>
+            The upload success message.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Models.CsvModel">
+            <summary>
+            Csv model
+            </summary>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Models.ErrorDetails">
+            <summary>
+            Error details.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.ErrorDetails.ErrorMessage">
+            <summary>
+            Gets or sets the error message.
+            </summary>
+            <value>
+            The error message.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.ErrorDetails.ErrorCode">
+            <summary>
+            Gets or sets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Models.ErrorViewModel">
+            <summary>
+            Error view model.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.ErrorViewModel.RequestId">
+            <summary>
+            Gets or sets the request identifier.
+            </summary>
+            <value>
+            The request identifier.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.ErrorViewModel.ShowRequestId">
+            <summary>
+            Gets a value indicating whether [show request identifier].
+            </summary>
+            <value>
+              <c>true</c> if [show request identifier]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Models.FileItem">
+            <summary>
+            File item.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.FileItem.FileName">
+            <summary>
+            Gets the name of the file.
+            </summary>
+            <value>
+            The name of the file.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.FileItem.FileLink">
+            <summary>
+            Gets the file URL.
+            </summary>
+            <value>
+            The file URL.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Models.UploadViewModel">
+            <summary>
+            Upload view model class.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.UploadViewModel.FileBlobs">
+            <summary>
+            Gets the file blobs.
+            </summary>
+            <value>
+            The file blobs.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.UploadViewModel.UploadSuccess">
+            <summary>
+            Gets or sets a value indicating whether [upload success].
+            </summary>
+            <value>
+              <c>true</c> if [upload success]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.UploadViewModel.ErrorMessage">
+            <summary>
+            Gets or sets the error message.
+            </summary>
+            <value>
+            The error message.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.UploadViewModel.FileItems">
+            <summary>
+            Gets the file items.
+            </summary>
+            <value>
+            The file items.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.UploadViewModel.UploadSuccessMessage">
+            <summary>
+            Gets the upload success message.
+            </summary>
+            <value>
+            The upload success message.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Program">
+            <summary>
+            The main program.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Creates the web host builder.
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns>Returns the web host builder.</returns>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Startup">
+            <summary>
+            .The startup class.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Advanced.App.Startup"/> class.
+            </summary>
+            <param name="configuration">Configuration parameters.</param>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            // This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Services collection.</param>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">The app name.</param>
+            <param name="env">The environment name.</param>
+        </member>
+    </members>
+</doc>

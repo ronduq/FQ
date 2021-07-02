@@ -1,0 +1,25 @@
+
+@import '../../style/settings/colours';
+@import '../../style/settings/breakpoints';
+
+.RetailerHighlights {
+  margin: 0;
+  padding: 0 16px 16px;
+
+  > div {
+    display: inline-block;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  > div label { 
+    cursor: pointer;
+  }
+
+  @include respond-to('tablet', min-width) {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+}

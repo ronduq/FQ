@@ -1,0 +1,150 @@
+{
+  "child_boston": {
+    "Data": [
+      {
+        "RetailerCode": "aldi",
+        "RetailerName": "Aldi",
+        "Colour": "#1CAC69",
+        "id": "aldi"
+      },
+      {
+        "RetailerCode": "amazon-fresh",
+        "RetailerName": "Amazon Fresh",
+        "Colour": "#8DD5B3",
+        "id": "amazon-fresh"
+      },
+      {
+        "RetailerCode": "bjs",
+        "RetailerName": "BJS",
+        "Colour": "#168451",
+        "id": "bjs"
+      },
+      {
+        "RetailerCode": "costco",
+        "RetailerName": "Costco",
+        "Colour": "#FFD5A5",
+        "id": "costco"
+      },
+      {
+        "RetailerCode": "stop-n-shop",
+        "RetailerName": "Stop N Shop",
+        "Colour": "#FDA99F",
+        "id": "stop-n-shop"
+      },
+      {
+        "RetailerCode": "target",
+        "RetailerName": "Target",
+        "Colour": "#C44031",
+        "id": "target"
+      },
+      {
+        "RetailerCode": "trader-joes",
+        "RetailerName": "Trader Joes",
+        "Colour": "#6715EB",
+        "id": "trader-joes"
+      },
+      {
+        "RetailerCode": "walmart",
+        "RetailerName": "Walmart",
+        "Colour": "#B389F5",
+        "id": "walmart"
+      },
+      {
+        "RetailerCode": "wegmans",
+        "RetailerName": "Wegmans",
+        "Colour": "#410C97",
+        "id": "wegmans"
+      },
+      {
+        "RetailerCode": "whole-foods",
+        "RetailerName": "Whole Foods",
+        "Colour": "#005B82",
+        "id": "whole-foods"
+      }
+    ],
+    "Criteria": {
+      "LocationCode": "boston",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_los-angeles": {
+    "Data": [
+      {
+        "RetailerCode": "aldi",
+        "RetailerName": "Aldi",
+        "Colour": "#1CAC69",
+        "id": "aldi"
+      },
+      {
+        "RetailerCode": "amazon-fresh",
+        "RetailerName": "Amazon Fresh",
+        "Colour": "#8DD5B3",
+        "id": "amazon-fresh"
+      },
+      {
+        "RetailerCode": "costco",
+        "RetailerName": "Costco",
+        "Colour": "#FFD5A5",
+        "id": "costco"
+      },
+      {
+        "RetailerCode": "gelsons",
+        "RetailerName": "Gelsons",
+        "Colour": "#D18D3B",
+        "id": "gelsons"
+      },
+      {
+        "RetailerCode": "ralphs",
+        "RetailerName": "Ralphs",
+        "Colour": "#FB5440",
+        "id": "ralphs"
+      },
+      {
+        "RetailerCode": "sprouts",
+        "RetailerName": "Bristol Farms",
+        "Colour": "#FFAD4B",
+        "id": "sprouts"
+      },
+      {
+        "RetailerCode": "target",
+        "RetailerName": "Target",
+        "Colour": "#C44031",
+        "id": "target"
+      },
+      {
+        "RetailerCode": "trader-joes",
+        "RetailerName": "Trader Joes",
+        "Colour": "#6715EB",
+        "id": "trader-joes"
+      },
+      {
+        "RetailerCode": "walmart",
+        "RetailerName": "Walmart",
+        "Colour": "#B389F5",
+        "id": "walmart"
+      },
+      {
+        "RetailerCode": "whole-foods",
+        "RetailerName": "Whole Foods",
+        "Colour": "#005B82",
+        "id": "whole-foods"
+      }
+    ],
+    "Criteria": {
+      "LocationCode": "los-angeles",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  }
+}

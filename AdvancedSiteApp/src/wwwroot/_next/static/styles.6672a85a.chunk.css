@@ -1,0 +1,2415 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+sup {
+  vertical-align: super; }
+
+sub {
+  vertical-align: sub; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html {
+  font-family: sans-serif; }
+
+body {
+  font-size: 16px;
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  width: 100%; }
+
+button {
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+  button::-moz-focus-inner {
+    border: 0; }
+
+.recharts-bar-rectangle___1Pq4g {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.recharts-bar-rectangle___1Pq4g {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.recharts-bar-rectangle___1Pq4g {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+.layout--3-9___385hb .layout__column--1___mCLL5 {
+  width: calc(100% - 16px);
+  margin-right: 8px;
+  margin-left: 8px;
+  -ms-grid-column-span: 12;
+  grid-column-end: span 12;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @supports (display: grid) {
+    .layout--3-9___385hb .layout__column--1___mCLL5 {
+      width: auto;
+      margin-right: 0;
+      margin-left: 0; } }
+  @media (min-width: 1280px) {
+    .layout--3-9___385hb .layout__column--1___mCLL5 {
+      width: calc(25% - 16px);
+      -ms-grid-column-span: 3;
+      grid-column-end: span 3; }
+      @supports (display: grid) {
+        .layout--3-9___385hb .layout__column--1___mCLL5 {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+
+.layout--3-9___385hb .layout__column--2___YpcH4 {
+  width: calc(100% - 16px);
+  margin-right: 8px;
+  margin-left: 8px;
+  -ms-grid-column-span: 12;
+  grid-column-end: span 12;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @supports (display: grid) {
+    .layout--3-9___385hb .layout__column--2___YpcH4 {
+      width: auto;
+      margin-right: 0;
+      margin-left: 0; } }
+  @media (min-width: 1280px) {
+    .layout--3-9___385hb .layout__column--2___YpcH4 {
+      width: calc(75% - 16px);
+      -ms-grid-column-span: 9;
+      grid-column-end: span 9; }
+      @supports (display: grid) {
+        .layout--3-9___385hb .layout__column--2___YpcH4 {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+
+.layout--4-8___esjsU .layout__column--1___mCLL5 {
+  width: calc(33.33333% - 16px);
+  margin-right: 8px;
+  margin-left: 8px;
+  -ms-grid-column-span: 4;
+  grid-column-end: span 4;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @supports (display: grid) {
+    .layout--4-8___esjsU .layout__column--1___mCLL5 {
+      width: auto;
+      margin-right: 0;
+      margin-left: 0; } }
+  @media (min-width: 768px) {
+    .layout--4-8___esjsU .layout__column--1___mCLL5 {
+      width: calc(150% - 16px);
+      -ms-grid-column-span: 12;
+      grid-column-end: span 12; }
+      @supports (display: grid) {
+        .layout--4-8___esjsU .layout__column--1___mCLL5 {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+  @media (min-width: 480px) {
+    .layout--4-8___esjsU .layout__column--1___mCLL5 {
+      width: calc(600% - 16px);
+      -ms-grid-column-span: 12;
+      grid-column-end: span 12; }
+      @supports (display: grid) {
+        .layout--4-8___esjsU .layout__column--1___mCLL5 {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+
+.layout--4-8___esjsU .layout__column--2___YpcH4 {
+  width: calc(66.66667% - 16px);
+  margin-right: 8px;
+  margin-left: 8px;
+  -ms-grid-column-span: 8;
+  grid-column-end: span 8;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @supports (display: grid) {
+    .layout--4-8___esjsU .layout__column--2___YpcH4 {
+      width: auto;
+      margin-right: 0;
+      margin-left: 0; } }
+  @media (min-width: 768px) {
+    .layout--4-8___esjsU .layout__column--2___YpcH4 {
+      width: calc(150% - 16px);
+      -ms-grid-column-span: 12;
+      grid-column-end: span 12; }
+      @supports (display: grid) {
+        .layout--4-8___esjsU .layout__column--2___YpcH4 {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+  @media (min-width: 480px) {
+    .layout--4-8___esjsU .layout__column--2___YpcH4 {
+      width: calc(600% - 16px);
+      -ms-grid-column-span: 12;
+      grid-column-end: span 12; }
+      @supports (display: grid) {
+        .layout--4-8___esjsU .layout__column--2___YpcH4 {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+
+.layout__column--12___1PW-s {
+  width: calc(100% - 16px);
+  margin-right: 8px;
+  margin-left: 8px;
+  -ms-grid-column-span: 12;
+  grid-column-end: span 12;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @supports (display: grid) {
+    .layout__column--12___1PW-s {
+      width: auto;
+      margin-right: 0;
+      margin-left: 0; } }
+  @media (min-width: 768px) {
+    .layout__column--12___1PW-s {
+      width: calc(150% - 16px);
+      -ms-grid-column-span: 12;
+      grid-column-end: span 12; }
+      @supports (display: grid) {
+        .layout__column--12___1PW-s {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+  @media (min-width: 480px) {
+    .layout__column--12___1PW-s {
+      width: calc(600% - 16px);
+      -ms-grid-column-span: 12;
+      grid-column-end: span 12; }
+      @supports (display: grid) {
+        .layout__column--12___1PW-s {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+
+.layout--3-3-3___5CGmM .layout__column--1___mCLL5 {
+  width: calc(100% - 16px);
+  margin-right: 8px;
+  margin-left: 8px;
+  -ms-grid-column-span: 12;
+  grid-column-end: span 12;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @supports (display: grid) {
+    .layout--3-3-3___5CGmM .layout__column--1___mCLL5 {
+      width: auto;
+      margin-right: 0;
+      margin-left: 0; } }
+  @media (min-width: 768px) {
+    .layout--3-3-3___5CGmM .layout__column--1___mCLL5 {
+      width: calc(50% - 16px);
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4; }
+      @supports (display: grid) {
+        .layout--3-3-3___5CGmM .layout__column--1___mCLL5 {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+
+.layout--3-3-3___5CGmM .layout__column--2___YpcH4 {
+  width: calc(100% - 16px);
+  margin-right: 8px;
+  margin-left: 8px;
+  -ms-grid-column-span: 12;
+  grid-column-end: span 12;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @supports (display: grid) {
+    .layout--3-3-3___5CGmM .layout__column--2___YpcH4 {
+      width: auto;
+      margin-right: 0;
+      margin-left: 0; } }
+  @media (min-width: 768px) {
+    .layout--3-3-3___5CGmM .layout__column--2___YpcH4 {
+      width: calc(50% - 16px);
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4; }
+      @supports (display: grid) {
+        .layout--3-3-3___5CGmM .layout__column--2___YpcH4 {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+
+.layout--3-3-3___5CGmM .layout__column--3___JGaol {
+  width: calc(100% - 16px);
+  margin-right: 8px;
+  margin-left: 8px;
+  -ms-grid-column-span: 12;
+  grid-column-end: span 12;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @supports (display: grid) {
+    .layout--3-3-3___5CGmM .layout__column--3___JGaol {
+      width: auto;
+      margin-right: 0;
+      margin-left: 0; } }
+  @media (min-width: 768px) {
+    .layout--3-3-3___5CGmM .layout__column--3___JGaol {
+      width: calc(50% - 16px);
+      -ms-grid-column-span: 4;
+      grid-column-end: span 4; }
+      @supports (display: grid) {
+        .layout--3-3-3___5CGmM .layout__column--3___JGaol {
+          width: auto;
+          margin-right: 0;
+          margin-left: 0; } } }
+
+.layout___AtR4D {
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  .layout___AtR4D::before, .layout___AtR4D::after {
+    content: '';
+    display: table; }
+  .layout___AtR4D::after {
+    clear: both; }
+  @supports (display: grid) {
+    .layout___AtR4D {
+      display: -ms-grid;
+      display: grid; }
+      .layout___AtR4D:before, .layout___AtR4D:after {
+        display: none; } }
+  @media (min-width: 768px) {
+    .layout___AtR4D {
+      grid-column-gap: 16px; } }
+  @media (min-width: 1280px) {
+    .layout___AtR4D {
+      grid-column-gap: 33px; } }
+
+.container___HFV_W {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .container___HFV_W {
+      padding: 0 16px; } }
+  @media (min-width: 1280px) {
+    .container___HFV_W {
+      padding: 0 32px; } }
+
+.headerSpacing___40EJM {
+  padding-top: 64px;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 1024px) {
+    .headerSpacing___40EJM {
+      padding-top: 40px; } }
+
+body {
+  background: #F7F7F7;
+  color: #333333;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75; }
+
+a {
+  color: #333333;
+  text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: underline;
+    color: #FE744A; }
+
+h1 {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.25; }
+
+h2 {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5; }
+
+h3 {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5; }
+
+section {
+  margin-bottom: 40px; }
+  section:last-child {
+    margin-bottom: 0; }
+
+.screen-reader-text___3j70o {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important; }
+
+.screen-reader-text___3j70o:focus {
+  background-color: #eee;
+  clip: auto !important;
+  -webkit-clip-path: none;
+          clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; }
+
+.mobile-hide___1qsDv {
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .mobile-hide___1qsDv {
+      display: none !important; } }
+
+.recharts-bar-rectangle___2_1xX {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.produceProfile___NOobT {
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .produceProfile___NOobT {
+      margin-top: 35px; } }
+  .produceProfile___NOobT .logo____5K_k {
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    margin-top: -15px; }
+  .produceProfile___NOobT .title___3ezfO {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1rem;
+    line-height: 1.75;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 768px) {
+      .produceProfile___NOobT .title___3ezfO {
+        font-size: 1.5rem;
+        line-height: 1.25;
+        margin-left: 20px; } }
+  .produceProfile___NOobT .section___14Y75 {
+    margin-bottom: 20px;
+    position: relative;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (max-width: 480px) {
+      .produceProfile___NOobT .section___14Y75 {
+        text-align: center;
+        margin: 20px;
+        display: none; } }
+  .produceProfile___NOobT .time___26x0u {
+    display: inline-block;
+    margin-left: 20px;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (max-width: 480px) {
+      .produceProfile___NOobT .time___26x0u {
+        margin: 10px 0; } }
+  .produceProfile___NOobT .link___kd3_w {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (max-width: 480px) {
+      .produceProfile___NOobT .link___kd3_w {
+        position: relative; } }
+
+.recharts-bar-rectangle___3IYY- {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.container___Em4th {
+  padding: 50px 30px;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .container___Em4th {
+      padding: 10px; } }
+
+.readingMetrics___i8ucz {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  border-bottom: 1px solid #D8D8D8;
+  padding-bottom: 20px;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .readingMetrics___i8ucz {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; } }
+  .readingMetrics___i8ucz li {
+    -webkit-box-flex: 1;
+            flex: 1 1 0;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (max-width: 480px) {
+      .readingMetrics___i8ucz li {
+        -webkit-box-flex: 1;
+                flex: 1 1 100%;
+        text-align: left; } }
+
+.metric___y4bAi {
+  text-align: center;
+  position: relative; }
+
+.metricTitle___2z2Ed {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  display: inline-block;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .metricTitle___2z2Ed {
+      font-size: 1rem;
+      line-height: 1.75;
+      text-transform: capitalize; } }
+
+.metricText___1euEq {
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .metricText___1euEq {
+      position: absolute;
+      right: 25px; } }
+
+.metricSuffix___1fTQM {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .metricSuffix___1fTQM {
+      position: absolute;
+      right: 0;
+      bottom: 5px; } }
+
+.status___1W63T {
+  margin: 40px 0;
+  padding: 20px;
+  border: 1px solid #1CAC69;
+  background: rgba(28, 172, 105, 0.05);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .status___1W63T {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; } }
+  .status___1W63T.red___2WwoH {
+    background: rgba(255, 88, 83, 0.05);
+    border: 1px solid #FB5440; }
+  .status___1W63T.amber___2SyxI {
+    background: rgba(249, 162, 56, 0.05);
+    border: 1px solid #FE744A; }
+
+.statusLabel___1nbfs {
+  background: #1CAC69;
+  color: #FFFFFF;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  min-width: 100px;
+  padding: 0 10px;
+  height: 28px;
+  text-align: center;
+  -webkit-box-flex: 1;
+          flex: 1 1 0;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .statusLabel___1nbfs {
+      -webkit-box-flex: 1;
+              flex: 1 0 100%; } }
+  .red___2WwoH .statusLabel___1nbfs {
+    background: #FB5440; }
+  .amber___2SyxI .statusLabel___1nbfs {
+    background: #FE744A; }
+
+.statusText___14l9Q {
+  padding: 0 30px;
+  -webkit-box-flex: 5;
+          flex: 5 1 0;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .statusText___14l9Q {
+      -webkit-box-flex: 1;
+              flex: 1 0 100%;
+      padding: 0; } }
+
+.recharts-bar-rectangle___3sVq- {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.retailerProfile___3jqZn {
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .retailerProfile___3jqZn {
+      margin-top: 35px; } }
+  .retailerProfile___3jqZn .pageTitle___LZmnh {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.75;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 768px) {
+      .retailerProfile___3jqZn .pageTitle___LZmnh {
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 1.25; } }
+    .retailerProfile___3jqZn .pageTitle___LZmnh .seperator___1kl9F {
+      display: none;
+      /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+      @media (min-width: 768px) {
+        .retailerProfile___3jqZn .pageTitle___LZmnh .seperator___1kl9F {
+          display: inline; } }
+    .retailerProfile___3jqZn .pageTitle___LZmnh .location___139qf {
+      display: block;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+      @media (min-width: 768px) {
+        .retailerProfile___3jqZn .pageTitle___LZmnh .location___139qf {
+          display: inline-block;
+          font-size: 1.5rem;
+          line-height: 1.25; } }
+    .retailerProfile___3jqZn .pageTitle___LZmnh.highlights___1B26I {
+      padding-top: 0; }
+
+.recharts-bar-rectangle___1Tnos {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.produceTrends___2mSFF {
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .produceTrends___2mSFF {
+      margin-top: 35px; } }
+  .produceTrends___2mSFF .contentWrapper___WIZBp {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; }
+  .produceTrends___2mSFF .title___12BHx {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 16px;
+    box-shadow: 0 1px 2px 0 rgba(126, 126, 126, 0.5); }
+    .produceTrends___2mSFF .title___12BHx h2 {
+      font-family: "proxima-nova", Arial, sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.75;
+      /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+      @media (min-width: 768px) {
+        .produceTrends___2mSFF .title___12BHx h2 {
+          font-size: 1.5rem;
+          line-height: 1.25; } }
+  .produceTrends___2mSFF .chart___1vQXl {
+    position: relative;
+    width: 100%;
+    padding: 16px 16px 0;
+    box-sizing: border-box;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 1024px) {
+      .produceTrends___2mSFF .chart___1vQXl {
+        width: 70%;
+        padding: 16px 16px 16px 0; } }
+    .produceTrends___2mSFF .chart___1vQXl.noResult___3Ew17 {
+      opacity: 0.2; }
+  .produceTrends___2mSFF .legend___32AmY {
+    width: 100%;
+    padding: 22px 16px;
+    border-left: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 1024px) {
+      .produceTrends___2mSFF .legend___32AmY {
+        width: 30%; } }
+    .produceTrends___2mSFF .legend___32AmY.noResult___3Ew17 {
+      opacity: 0.2; }
+  .produceTrends___2mSFF .notFound___HelWK {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 400px; }
+
+.recharts-bar-rectangle___1tctF {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.title___2hcmy {
+  padding: 10px 15px;
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  .title___2hcmy h3 {
+    font-family: "proxima-nova", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5; }
+  @media (min-width: 768px) {
+    .title___2hcmy {
+      background: white;
+      box-shadow: 0px 2px 3px 1px rgba(126, 126, 126, 0.3);
+      text-align: left; }
+      .title___2hcmy h3 {
+        font-family: "proxima-nova", Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.75; } }
+
+.buttonInfo___Yg4-f {
+  color: #000;
+  float: right; }
+
+.body___n3sHB {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: white;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .body___n3sHB {
+      border: 1px solid #D8D8D8;
+      border-top: 0; } }
+
+.filter___3Nyh9 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+          flex: 1 1 0;
+  border-right: 1px solid #D8D8D8;
+  position: relative;
+  z-index: 3; }
+
+.content___dD6go {
+  background: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-basis: 100%;
+  -webkit-box-flex: 4;
+          flex: 4 1 0;
+  border-left: 1px solid #D8D8D8; }
+
+.contentTitle___3AnXl {
+  padding: 20px;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .contentTitle___3AnXl {
+      display: none; } }
+
+.filterButton___1WwlZ {
+  width: 100%;
+  color: #FE744A;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "futura-pt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: left;
+  padding: 10px 15px;
+  background: #F7F7F7;
+  box-sizing: border-box;
+  border-bottom: 1px solid #D8D8D8; }
+  .highlight___1tuBN .filterButton___1WwlZ {
+    background: white;
+    color: #333333; }
+  .filterButton___1WwlZ:hover {
+    color: #FE744A;
+    text-decoration: underline; }
+
+.dropdownContainer___17dP8 {
+  display: block;
+  width: 100%; }
+
+.dropdown___2CalA {
+  display: block;
+  width: calc(100% - 20px);
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2018%2011%22%3E%3Cpolyline%20stroke%3D%22%23FE744A%22%20fill%3D%22none%22%20stroke-width%3D%222%22%20points%3D%221%2C1.5%209%2C9.5%2017%2C1.5%20%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 16px top 50%, 0 0;
+  background-size: 20px 20px;
+  border-radius: 0;
+  padding: 10px;
+  margin: 0 auto;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75; }
+
+.dropdownLabel___1NGbR {
+  display: block;
+  margin: 10px; }
+
+.recharts-bar-rectangle___3_n6q {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.card___1KcSa {
+  background: white;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .card___1KcSa {
+      margin-bottom: 20px; } }
+  .card___1KcSa.noShadow___1iGKJ {
+    box-shadow: none; }
+
+.cardTop___3hnaR {
+  padding: 20px 20px 0;
+  overflow: hidden;
+  position: relative;
+  -webkit-backface-visibility: hidden; }
+
+.cardMid___CxuKu {
+  padding: 0 20px;
+  -webkit-animation: fadein___1Oogz .7s;
+          animation: fadein___1Oogz .7s;
+  position: relative;
+  -webkit-backface-visibility: hidden; }
+
+.cardBottom___17P7f {
+  -webkit-animation: fadein___1Oogz .7s;
+          animation: fadein___1Oogz .7s;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  -webkit-backface-visibility: hidden; }
+
+.cardMidBot___2YOTh {
+  padding-bottom: 30px; }
+  .noShadow___1iGKJ .cardMidBot___2YOTh {
+    padding-bottom: 0;
+    border-bottom: 1px solid #D8D8D8; }
+
+.cardLogo___PPsRF {
+  display: block;
+  margin-bottom: 15px;
+  height: 50px;
+  width: auto; }
+
+.cardImage___1hjHA {
+  height: auto;
+  margin: 0 auto 20px;
+  position: relative;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .cardImage___1hjHA {
+      position: absolute;
+      height: auto;
+      width: 100px;
+      right: 10px;
+      top: 64px; } }
+
+h3.cardTitle___3eurR {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 10px; }
+
+.cardSwitch___1uO74 {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+.dot___3wtTq {
+  display: inline-block;
+  background: #FE744A;
+  height: 8px;
+  width: 8px;
+  margin-left: 10px;
+  border-radius: 50%; }
+
+.cardOrigin___10u0H {
+  padding-bottom: 5px; }
+
+.cardOriginText___2A9Ti {
+  margin-left: 5px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  position: relative;
+  display: inline-block; }
+
+.cardOrganic___ocYcX {
+  float: right; }
+
+.organicLabel___UN8Nc {
+  margin-right: 5px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  position: relative;
+  display: inline-block;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700; }
+
+.cardInfo___3j_SF {
+  border-top: 1px solid #D8D8D8;
+  padding-top: 20px; }
+
+.cardInfoLabel___3HEiQ {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 400;
+  top: 0;
+  vertical-align: top; }
+
+.cardInfoTextLarge___341Kc {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  top: 0;
+  vertical-align: top;
+  line-height: 1;
+  text-align: right; }
+
+.cardInfoText___c-ONx {
+  font-size: 1rem;
+  line-height: 1.75;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  top: 0;
+  vertical-align: top;
+  line-height: 1.3;
+  float: right; }
+
+.cardInfoSide___S88TI {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top; }
+
+.cardInfoItem___31FFa:nth-child(2) {
+  border-top: 1px solid #D8D8D8;
+  padding-top: 10px;
+  padding-bottom: 30px; }
+
+.linkButton___381Is {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  background: #F7F7F7;
+  border-top: 1px solid #D8D8D8;
+  border-right: 1px solid #D8D8D8;
+  color: #FE744A;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 5px 0;
+  box-sizing: border-box;
+  font-family: "futura-pt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75; }
+  .linkButton___381Is:hover {
+    color: #FE744A;
+    text-decoration: underline; }
+
+.scan___mcc0I {
+  display: block;
+  margin: 17px 0 0;
+  padding-bottom: 30px; }
+
+@-webkit-keyframes fadein___1Oogz {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadein___1Oogz {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.recharts-bar-rectangle___3C02e {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.container___3NVw1 {
+  background: white;
+  border: 1px solid #D8D8D8; }
+
+.videoContainer___1CUcK {
+  padding: 20px;
+  position: relative; }
+  .videoContainer___1CUcK iframe {
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 1280px) {
+      .videoContainer___1CUcK iframe {
+        width: 100%; } }
+
+h3.title___3r911 {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75;
+  padding: 16px;
+  box-shadow: 0px 2px 3px 1px rgba(126, 126, 126, 0.3);
+  position: relative;
+  z-index: 3;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    h3.title___3r911 {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      padding: 5px 16px; } }
+
+h4.videoTitle___zdvyd {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5; }
+
+.videoText___ws0BZ {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.5; }
+
+.video___1nQxq {
+  margin-top: 20px; }
+
+.recharts-bar-rectangle___12G8e {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+a.linkButton___3GHSn {
+  color: #FE744A;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "futura-pt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75; }
+  a.linkButton___3GHSn .arrowRight___2-j_m {
+    -webkit-transform: translateY(2px) rotate(270deg);
+            transform: translateY(2px) rotate(270deg);
+    -webkit-transition: ease-in-out all .1s;
+    transition: ease-in-out all .1s; }
+  a.linkButton___3GHSn:hover {
+    color: #FE744A;
+    text-decoration: underline; }
+    a.linkButton___3GHSn:hover .arrowRight___2-j_m {
+      -webkit-transform: translateX(5px) translateY(2px) rotate(270deg);
+              transform: translateX(5px) translateY(2px) rotate(270deg); }
+
+.recharts-bar-rectangle___2FB2p {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.aggregatedScore___2kBuH {
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #D8D8D8;
+  border-bottom: 1px solid #D8D8D8;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 16px 16px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .aggregatedScore___2kBuH {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      padding: 16px 16px;
+      border: 1px solid #D8D8D8; } }
+  .aggregatedScore___2kBuH .retailerRank___3MqeP {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    width: 100%;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 768px) {
+      .aggregatedScore___2kBuH .retailerRank___3MqeP {
+        width: auto; } }
+    .aggregatedScore___2kBuH .retailerRank___3MqeP .title___3fbDj {
+      font-family: "proxima-nova", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+      @media (max-width: 480px) {
+        .aggregatedScore___2kBuH .retailerRank___3MqeP .title___3fbDj {
+          font-size: 1rem;
+          line-height: 1.75; } }
+    .aggregatedScore___2kBuH .retailerRank___3MqeP .desc___I4vJO {
+      font-family: "proxima-nova", Arial, sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.75;
+      /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+      @media (max-width: 480px) {
+        .aggregatedScore___2kBuH .retailerRank___3MqeP .desc___I4vJO {
+          font-size: 0.8rem;
+          line-height: 1.5; } }
+  .aggregatedScore___2kBuH .retailerData___1HgWf {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    width: 100%;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 768px) {
+      .aggregatedScore___2kBuH .retailerData___1HgWf {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        width: auto; } }
+    .aggregatedScore___2kBuH .retailerData___1HgWf li {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+              align-items: center;
+      padding: 0px;
+      height: 46px;
+      border-bottom: 1px solid #D8D8D8;
+      /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+      @media (min-width: 768px) {
+        .aggregatedScore___2kBuH .retailerData___1HgWf li {
+          border-bottom: none;
+          border-right: 1px solid #D8D8D8;
+          padding: 0 16px;
+          height: 72px; } }
+      .aggregatedScore___2kBuH .retailerData___1HgWf li:first-child {
+        padding-left: 0; }
+      .aggregatedScore___2kBuH .retailerData___1HgWf li:last-child {
+        padding-right: 0;
+        border-right: none; }
+      .aggregatedScore___2kBuH .retailerData___1HgWf li .heading___3c4KF {
+        font-family: "proxima-nova", Arial, sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-right: 10px;
+        /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+        @media (min-width: 768px) {
+          .aggregatedScore___2kBuH .retailerData___1HgWf li .heading___3c4KF {
+            margin-right: 6px;
+            font-size: 1rem;
+            line-height: 1.75; } }
+      .aggregatedScore___2kBuH .retailerData___1HgWf li .score___26Tpa {
+        font-family: "proxima-nova", Arial, sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.75;
+        margin-left: auto;
+        /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+        @media (min-width: 768px) {
+          .aggregatedScore___2kBuH .retailerData___1HgWf li .score___26Tpa {
+            font-size: 1.5rem;
+            line-height: 1.25;
+            margin-left: 10px; } }
+    .aggregatedScore___2kBuH .retailerData___1HgWf .starIcon___grDy4,
+    .aggregatedScore___2kBuH .retailerData___1HgWf .dollarIcon___3Q_6C,
+    .aggregatedScore___2kBuH .retailerData___1HgWf .diamondIcon___D6kkJ {
+      color: #02917F;
+      width: 20px;
+      height: 20px; }
+  .aggregatedScore___2kBuH .linkWrapper___1bTlj {
+    text-align: right;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (max-width: 768px) {
+      .aggregatedScore___2kBuH .linkWrapper___1bTlj {
+        height: 46px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+                align-items: center;
+        margin-left: auto; } }
+
+
+.recharts-bar-rectangle____Qa5U {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.table___1DL92 {
+  background: white;
+  width: 100%;
+  border: 1px solid #D8D8D8;
+  border-collapse: separate;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  .table___1DL92.noBorders___gFscv {
+    border: 0; }
+  .table___1DL92 td {
+    border-bottom: 1px solid #D8D8D8; }
+  .table___1DL92 caption {
+    opacity: 0;
+    position: absolute;
+    left: -99999999px; }
+  @media (max-width: 480px) {
+    .table___1DL92 {
+      display: block; }
+      .table___1DL92 tbody, .table___1DL92 thead {
+        display: block; } }
+
+.headerRow___3eUYW {
+  position: relative;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 400;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .headerRow___3eUYW {
+      display: none; } }
+  .headerRow___3eUYW .cellHighlight___1_y0a {
+    border-top: 1px solid #D8D8D8; }
+    .noBorders___gFscv .headerRow___3eUYW .cellHighlight___1_y0a {
+      border: 0; }
+  .headerRow___3eUYW button {
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    cursor: pointer;
+    width: 100%; }
+  .headerRow___3eUYW th:first-child {
+    text-align: left;
+    padding-left: 20px; }
+
+.bodyRow___3r35- {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid #D8D8D8;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  .bodyRow___3r35-:first-child {
+    text-align: left; }
+    .bodyRow___3r35-:first-child .cell___3nyR9 {
+      box-shadow: 0 10px 4px -9px rgba(126, 126, 126, 0.7) inset;
+      /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+      @media (max-width: 480px) {
+        .bodyRow___3r35-:first-child .cell___3nyR9 {
+          box-shadow: none; } }
+  @media (max-width: 480px) {
+    .bodyRow___3r35- {
+      display: block;
+      border-bottom: 2px solid #333333; }
+      .bodyRow___3r35- td {
+        display: block;
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        position: relative;
+        padding-left: 50%;
+        padding-right: 16px;
+        text-align: right;
+        font-size: 1rem;
+        line-height: 1.75;
+        font-family: "proxima-nova", Arial, sans-serif;
+        font-weight: 700; }
+        .bodyRow___3r35- td:nth-of-type(1) {
+          padding-top: 16px;
+          padding-bottom: 16px; }
+      .bodyRow___3r35- td:before {
+        position: absolute;
+        left: 16px;
+        width: 35%;
+        padding-right: 16px;
+        white-space: nowrap;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.75;
+        font-family: "proxima-nova", Arial, sans-serif;
+        font-weight: 400; }
+      .bodyRow___3r35- td:nth-of-type(1):before {
+        content: attr(data-title); }
+      .bodyRow___3r35- td:nth-of-type(2):before {
+        content: attr(data-title); }
+      .bodyRow___3r35- td:nth-of-type(3):before {
+        content: attr(data-title); }
+      .bodyRow___3r35- td:nth-of-type(4):before {
+        content: attr(data-title); } }
+
+.cell___3nyR9 {
+  padding: 16px 0;
+  text-align: center;
+  box-sizing: border-box;
+  vertical-align: middle; }
+
+.cellImage___3d3vS {
+  padding: 0px 0px 0px 16px;
+  text-align: left; }
+
+.cellChampion___2waEM {
+  color: #02917F;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .cellChampion___2waEM {
+      color: #333333; } }
+
+.largeText___2brDH {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.5; }
+
+.cellHighlight___1_y0a {
+  background: #F7F7F7;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .cellHighlight___1_y0a {
+      background: none;
+      font-family: "proxima-nova", Arial, sans-serif;
+      font-weight: 500; } }
+  .cellHighlight___1_y0a button {
+    font-family: "proxima-nova", Arial, sans-serif;
+    font-weight: 700; }
+
+.filterButton___104LA {
+  cursor: pointer; }
+
+.logo___3y7ks {
+  height: 30px;
+  position: relative;
+  display: block;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (max-width: 480px) {
+    .logo___3y7ks {
+      margin-left: auto; } }
+
+.arrowsContainer___3Rfks {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 5px; }
+
+.arrow___30yw1 {
+  position: absolute;
+  -webkit-transition: ease-in-out transform .1s;
+  transition: ease-in-out transform .1s; }
+
+.arrowUp___31fS- {
+  -webkit-transform: translateY(-4px) rotate(180deg);
+          transform: translateY(-4px) rotate(180deg); }
+  .filterButton___104LA:hover .arrowUp___31fS- {
+    -webkit-transform: translateY(-6px) rotate(180deg);
+            transform: translateY(-6px) rotate(180deg); }
+
+.arrowDown___7_6qq {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px); }
+  .filterButton___104LA:hover .arrowDown___7_6qq {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+
+.iconRosette___24pdp {
+  vertical-align: middle;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px); }
+
+.recharts-bar-rectangle___-Cjto {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.checkbox___16H7h input[type="checkbox"] {
+  opacity: 0;
+  position: absolute; }
+
+.checkbox___16H7h label {
+  position: relative;
+  display: inline-block;
+  padding-left: 34px;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75;
+  width: calc(100% - 34px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer; }
+  .checkbox___16H7h label:hover {
+    text-decoration: underline; }
+
+.checkbox___16H7h label::before,
+.checkbox___16H7h label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  -webkit-transition: ease-in-out .1s all;
+  transition: ease-in-out .1s all; }
+
+/*Outer box of the fake checkbox*/
+.checkbox___16H7h input[type="checkbox"] + label::before {
+  height: 24px;
+  width: 24px;
+  border-radius: 2px;
+  background-color: #FE744A;
+  left: 0px;
+  top: 3px; }
+
+.checkbox___16H7h input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 0 2px dodgerblue; }
+
+.checkbox___16H7h input[type="checkbox"]:not(:checked) + label::before {
+  box-sizing: border-box;
+  border: 1px solid #D8D8D8;
+  background-color: #F7F7F7; }
+
+.checkbox___16H7h input[type="checkbox"]:disabled + label:hover {
+  text-decoration: none; }
+
+.checkbox___16H7h input[type="checkbox"]:disabled + label span {
+  cursor: default;
+  opacity: 0.5; }
+
+/*Checkmark of the fake checkbox*/
+.checkbox___16H7h label::after {
+  color: white;
+  height: 7px;
+  width: 14px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 4px;
+  top: 7px; }
+
+/* Line of the fake secondary checkbox*/
+.checkboxChild___ifbvL label::after {
+  border-left: none;
+  border-bottom: 2px solid;
+  -webkit-transform: rotate(0deg) translateX(1px);
+          transform: rotate(0deg) translateX(1px); }
+
+.checkboxParent___1LjEG {
+  display: block; }
+
+/*Hide the checkmark by default*/
+.checkbox___16H7h input[type="checkbox"] + label::after {
+  content: none; }
+
+/*Unhide on the checked state*/
+.checkbox___16H7h input[type="checkbox"]:checked + label::after {
+  content: ""; }
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox___16H7h input[type="checkbox"]:focus + label::before {
+  outline: #3b99fc auto 5px; }
+
+.recharts-bar-rectangle___Bcxjf {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.header___1qQ0R {
+  cursor: pointer;
+  background: white;
+  border: none;
+  border-bottom: solid 1px #D8D8D8;
+  padding: 15px;
+  height: 60px;
+  width: 100%;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75; }
+  .header___1qQ0R:focus {
+    outline: solid #32a1ce; }
+  .header___1qQ0R:hover .title___1rRl_ {
+    text-decoration: underline; }
+
+.content___2W_-P {
+  cursor: pointer;
+  padding: 15px; }
+
+.title___1rRl_ {
+  padding-left: 10px;
+  float: left;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px); }
+
+.titleIcon___1GHrt {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  float: left; }
+
+.arrowIcon___1Se2D {
+  float: right;
+  -webkit-transform: translateY(4px) rotate(180deg);
+          transform: translateY(4px) rotate(180deg);
+  -webkit-transition: ease-in-out transform .2s;
+  transition: ease-in-out transform .2s; }
+
+.arrowDown___1BOJn {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px); }
+
+.list___3s5dY {
+  list-style-type: none;
+  padding: 15px;
+  -webkit-animation: fadein___Mh-UF .4s;
+          animation: fadein___Mh-UF .4s; }
+
+.listItem___2IM_f {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 50%;
+  vertical-align: top; }
+
+.listItemMain___4hki0 {
+  display: block; }
+
+@-webkit-keyframes fadein___Mh-UF {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes fadein___Mh-UF {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.recharts-bar-rectangle___2_1rP {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.filterContainer___1GVNb {
+  background: white;
+  border: 1px solid #D8D8D8;
+  border-top: none;
+  padding: 15px 15px; }
+
+.filterTitle___3YVfz {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75;
+  background: white;
+  border: 1px solid #D8D8D8;
+  padding: 5px 15px;
+  box-shadow: 0 4px 2px -2px rgba(126, 126, 126, 0.4);
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .filterTitle___3YVfz {
+      font-size: 1.25rem;
+      line-height: 1.5; } }
+
+.recharts-bar-rectangle___13khh {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.radio___eJkxo {
+  position: relative;
+  margin-bottom: 0.5em;
+  line-height: 20px;
+  display: block;
+  margin-left: 10px;
+  cursor: pointer;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .radio___eJkxo {
+      display: inline-block; } }
+
+fieldset :last-child {
+  margin-bottom: 0; }
+
+input[type="radio"] {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  opacity: 0; }
+
+input[type="radio"] + label:before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  content: " ";
+  vertical-align: top;
+  background: #F7F7F7;
+  border: 1px solid #D8D8D8;
+  border-radius: 50%;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px); }
+
+input[type="radio"]:hover + label:before {
+  border: 1px solid #FE744A; }
+
+input[type="radio"]:checked:focus + label:before {
+  box-shadow: 0 0px 0px 4px white inset, 0 0 0 2px dodgerblue; }
+
+input[type="radio"]:checked + label:before {
+  background: #FE744A;
+  box-shadow: 0 0px 0px 4px white inset; }
+
+input[type="radio"]:checked + label {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700; }
+
+.recharts-bar-rectangle___2MsYr {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+.container___W662O {
+  background: white;
+  padding: 45px 15px 15px;
+  border-left: 1px solid #D8D8D8;
+  border-right: 1px solid #D8D8D8;
+  position: relative; }
+  .container___W662O legend {
+    position: absolute;
+    top: 10px;
+    left: 25px; }
+
+.recharts-bar-rectangle___2lQXX {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+.RetailerHighlights___1aIYy {
+  margin: 0;
+  padding: 0 16px 16px;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  .RetailerHighlights___1aIYy > div {
+    display: inline-block; }
+    .RetailerHighlights___1aIYy > div:first-child {
+      margin-left: 0; }
+  .RetailerHighlights___1aIYy > div label {
+    cursor: pointer; }
+  @media (min-width: 768px) {
+    .RetailerHighlights___1aIYy {
+      padding: 0;
+      margin-bottom: 16px; } }
+
+.recharts-bar-rectangle___PLTIZ {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.filterContainer___X1JyS {
+  background: white;
+  border: 1px solid #D8D8D8;
+  padding: 15px 15px; }
+
+.filterTitle___1p4eE {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75;
+  background: white;
+  border: 1px solid #D8D8D8;
+  padding: 5px 15px;
+  box-shadow: 0 4px 2px -2px rgba(126, 126, 126, 0.4);
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .filterTitle___1p4eE {
+      font-size: 1.25rem;
+      line-height: 1.5; } }
+
+.recharts-bar-rectangle___2VrHI {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.chart___2hT0b {
+  width: 100%;
+  height: 250px;
+  max-height: 250px;
+  position: relative;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 1024px) {
+    .chart___2hT0b {
+      height: 600px;
+      max-height: 600px; } }
+
+.recharts-cartesian-grid {
+  cursor: pointer; }
+
+.recharts-cartesian-axis-tick text {
+  font-size: 0.8rem;
+  line-height: 1.5; }
+
+.recharts-bar-rectangle___1Hcnm {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.retailerTrendslegend___2QSMT {
+  width: 100%; }
+  .retailerTrendslegend___2QSMT h2 {
+    font-family: "proxima-nova", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.75;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    .retailerTrendslegend___2QSMT h2::first-letter {
+      text-transform: capitalize; }
+    @media (min-width: 768px) {
+      .retailerTrendslegend___2QSMT h2 {
+        font-size: 1.25rem;
+        line-height: 1.5; } }
+  .retailerTrendslegend___2QSMT .date___PWm7V {
+    color: #02917F;
+    font-family: "proxima-nova", Arial, sans-serif;
+    font-weight: 700; }
+  .retailerTrendslegend___2QSMT .produceList___IB1u3 {
+    width: 100%;
+    margin-top: 16px; }
+    .retailerTrendslegend___2QSMT .produceList___IB1u3 caption {
+      position: absolute;
+      left: -99999px; }
+    .retailerTrendslegend___2QSMT .produceList___IB1u3 thead tr {
+      border-bottom: 1px solid #333333; }
+      .retailerTrendslegend___2QSMT .produceList___IB1u3 thead tr th:first-child {
+        text-align: left; }
+    .retailerTrendslegend___2QSMT .produceList___IB1u3 tbody tr {
+      border-bottom: 1px solid #D8D8D8;
+      font-family: "proxima-nova", Arial, sans-serif;
+      font-weight: 500; }
+      .retailerTrendslegend___2QSMT .produceList___IB1u3 tbody tr td {
+        text-align: center;
+        height: 48px;
+        vertical-align: middle; }
+        .retailerTrendslegend___2QSMT .produceList___IB1u3 tbody tr td:first-child {
+          text-align: left;
+          padding-left: 26px;
+          position: relative; }
+  .retailerTrendslegend___2QSMT .dot___2BHSp {
+    height: 16px;
+    width: 16px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .retailerTrendslegend___2QSMT .produceScore___KVBpr {
+    font-family: "proxima-nova", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.5; }
+
+.recharts-bar-rectangle___3U5Bd {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.recharts-bar-rectangle___3U5Bd {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+.viewBy___2Reg6 {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .viewBy___2Reg6 {
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+              justify-content: space-between;
+      padding-left: 16px; } }
+  .viewBy___2Reg6 p {
+    font-family: "proxima-nova", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.75;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    .viewBy___2Reg6 p::first-letter {
+      text-transform: capitalize; }
+    @media (min-width: 768px) {
+      .viewBy___2Reg6 p {
+        font-size: 1.25rem;
+        line-height: 1.5; } }
+  .viewBy___2Reg6 .customSelect___106rP {
+    margin-top: 16px;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 768px) {
+      .viewBy___2Reg6 .customSelect___106rP {
+        margin-top: 0; } }
+    .viewBy___2Reg6 .customSelect___106rP label {
+      font-size: 1rem;
+      line-height: 1.75;
+      font-family: "proxima-nova", Arial, sans-serif;
+      font-weight: 700; }
+    .viewBy___2Reg6 .customSelect___106rP select {
+      width: 192px;
+      height: 40px;
+      padding: 0 16px;
+      border-radius: 2px;
+      border: 1px solid #D8D8D8;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      background-color: #FFFFFF;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2018%2011%22%3E%3Cpolyline%20stroke%3D%22%23FE744A%22%20fill%3D%22none%22%20stroke-width%3D%222%22%20points%3D%221%2C1.5%209%2C9.5%2017%2C1.5%20%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+      background-repeat: no-repeat, repeat;
+      background-position: right 16px top 50%, 0 0;
+      background-size: 20px 20px;
+      box-sizing: border-box;
+      margin: 0 16px;
+      background-color: #F7F7F7;
+      margin-right: 0;
+      text-transform: capitalize; }
+      .viewBy___2Reg6 .customSelect___106rP select::-ms-expand {
+        display: none; }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.recharts-bar-rectangle___2NgLu {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+.locationSelector___2UG2e {
+  display: -webkit-box;
+  display: flex;
+  margin: 16px;
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 1024px) {
+    .locationSelector___2UG2e {
+      margin: 0 0 16px 0; } }
+  .locationSelector___2UG2e img {
+    height: 40px;
+    display: none;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 768px) {
+      .locationSelector___2UG2e img {
+        display: block; } }
+  .locationSelector___2UG2e .customSelect___-JXe1 label {
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "proxima-nova", Arial, sans-serif;
+    font-weight: 700; }
+  .locationSelector___2UG2e .customSelect___-JXe1 select {
+    width: 192px;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 2px;
+    border: 1px solid #D8D8D8;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2018%2011%22%3E%3Cpolyline%20stroke%3D%22%23FE744A%22%20fill%3D%22none%22%20stroke-width%3D%222%22%20points%3D%221%2C1.5%209%2C9.5%2017%2C1.5%20%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat, repeat;
+    background-position: right 16px top 50%, 0 0;
+    background-size: 20px 20px;
+    box-sizing: border-box;
+    margin: 0 16px; }
+    .locationSelector___2UG2e .customSelect___-JXe1 select::-ms-expand {
+      display: none; }
+
+.recharts-bar-rectangle___2SrOs {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+.spinner___3Ft0L {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  z-index: 100; }
+  .spinner___3Ft0L div {
+    -webkit-transform-origin: 32px 32px;
+            transform-origin: 32px 32px;
+    -webkit-animation: spinner___3Ft0L 1.2s linear infinite;
+            animation: spinner___3Ft0L 1.2s linear infinite; }
+    .spinner___3Ft0L div:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 29px;
+      width: 5px;
+      height: 14px;
+      border-radius: 20%;
+      background: #333333; }
+    .spinner___3Ft0L div:nth-child(1) {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-animation-delay: -1.1s;
+              animation-delay: -1.1s; }
+    .spinner___3Ft0L div:nth-child(2) {
+      -webkit-transform: rotate(30deg);
+              transform: rotate(30deg);
+      -webkit-animation-delay: -1s;
+              animation-delay: -1s; }
+    .spinner___3Ft0L div:nth-child(3) {
+      -webkit-transform: rotate(60deg);
+              transform: rotate(60deg);
+      -webkit-animation-delay: -0.9s;
+              animation-delay: -0.9s; }
+    .spinner___3Ft0L div:nth-child(4) {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      -webkit-animation-delay: -0.8s;
+              animation-delay: -0.8s; }
+    .spinner___3Ft0L div:nth-child(5) {
+      -webkit-transform: rotate(120deg);
+              transform: rotate(120deg);
+      -webkit-animation-delay: -0.7s;
+              animation-delay: -0.7s; }
+    .spinner___3Ft0L div:nth-child(6) {
+      -webkit-transform: rotate(150deg);
+              transform: rotate(150deg);
+      -webkit-animation-delay: -0.6s;
+              animation-delay: -0.6s; }
+    .spinner___3Ft0L div:nth-child(7) {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      -webkit-animation-delay: -0.5s;
+              animation-delay: -0.5s; }
+    .spinner___3Ft0L div:nth-child(8) {
+      -webkit-transform: rotate(210deg);
+              transform: rotate(210deg);
+      -webkit-animation-delay: -0.4s;
+              animation-delay: -0.4s; }
+    .spinner___3Ft0L div:nth-child(9) {
+      -webkit-transform: rotate(240deg);
+              transform: rotate(240deg);
+      -webkit-animation-delay: -0.3s;
+              animation-delay: -0.3s; }
+    .spinner___3Ft0L div:nth-child(10) {
+      -webkit-transform: rotate(270deg);
+              transform: rotate(270deg);
+      -webkit-animation-delay: -0.2s;
+              animation-delay: -0.2s; }
+    .spinner___3Ft0L div:nth-child(11) {
+      -webkit-transform: rotate(300deg);
+              transform: rotate(300deg);
+      -webkit-animation-delay: -0.1s;
+              animation-delay: -0.1s; }
+    .spinner___3Ft0L div:nth-child(12) {
+      -webkit-transform: rotate(330deg);
+              transform: rotate(330deg);
+      -webkit-animation-delay: 0s;
+              animation-delay: 0s; }
+
+@-webkit-keyframes spinner___3Ft0L {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes spinner___3Ft0L {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.recharts-bar-rectangle___k8GM- {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.notFoundDisplay___2aWzf {
+  text-align: center; }
+
+.notFoundDisplayImg___-F2GX {
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  background: rgba(2, 145, 127, 0.07);
+  margin: 120px auto 20px;
+  position: relative; }
+  .notFoundDisplayImg___-F2GX .icon___XZxND {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+.notFoundDisplayTitle___2VgAA {
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.25; }
+
+.notFoundDisplayText___3B7d5 {
+  font-size: 1.4rem;
+  line-height: 1.5; }
+
+.recharts-bar-rectangle___2fxqS {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+.filterToggle___3YSwD {
+  position: relative; }
+  .filterToggle___3YSwD > button {
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    background: none;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 768px) {
+      .filterToggle___3YSwD > button {
+        right: 1px; } }
+    @media (min-width: 1280px) {
+      .filterToggle___3YSwD > button {
+        display: none; } }
+    .filterToggle___3YSwD > button .toggleIcon___TZnN_ {
+      width: 26px;
+      height: 26px; }
+  .filterToggle___3YSwD .close___3_v5J {
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: relative; }
+    .filterToggle___3YSwD .close___3_v5J:before, .filterToggle___3YSwD .close___3_v5J:after {
+      position: absolute;
+      content: '';
+      height: 26px;
+      left: 12px;
+      top: 0px;
+      width: 2px;
+      background-color: #333333;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .filterToggle___3YSwD .close___3_v5J:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .filterToggle___3YSwD .twoColumn___2h_60 {
+    display: none; }
+  .filterToggle___3YSwD .showFilters___JfVKT {
+    display: block;
+    position: absolute;
+    z-index: 50;
+    top: 60px; }
+
+.recharts-bar-rectangle___6xn1w {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); }
+
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+.overallRank___2W4rY {
+  /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+  @media (min-width: 768px) {
+    .overallRank___2W4rY {
+      margin-top: 35px; } }
+  .overallRank___2W4rY .filterContainer___1lzuu {
+    background: white;
+    border: 1px solid #D8D8D8;
+    padding: 16px 16px; }
+  .overallRank___2W4rY .filterTitle___2EYbS {
+    font-family: "proxima-nova", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.75;
+    background: white;
+    border: 1px solid #D8D8D8;
+    padding: 5px 16px;
+    box-shadow: 0 4px 2px -2px rgba(126, 126, 126, 0.4);
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 768px) {
+      .overallRank___2W4rY .filterTitle___2EYbS {
+        font-size: 1.25rem;
+        line-height: 1.5; } }
+  .overallRank___2W4rY .pageTitle___1012Y {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.75;
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */ }
+    @media (min-width: 768px) {
+      .overallRank___2W4rY .pageTitle___1012Y {
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 1.25; } }
+

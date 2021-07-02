@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Teakorigin.Business</name>
+    </assembly>
+    <members>
+        <member name="T:Teakorigin.Business.Builder.SitemapBuilder">
+            <summary>
+            Sitemap builder.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Business.Builder.SitemapBuilder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Business.Builder.SitemapBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Business.Builder.SitemapBuilder.AddUrl(System.String,System.Nullable{System.DateTime},System.Nullable{Teakorigin.Domain.Models.ChangeFrequency},System.Nullable{System.Double})">
+            <summary>
+            Adds the URL.
+            </summary>
+            <param name="url">The URL.</param>
+            <param name="modified">The modified.</param>
+            <param name="changeFrequency">The change frequency.</param>
+            <param name="priority">The priority.</param>
+        </member>
+        <member name="M:Teakorigin.Business.Builder.SitemapBuilder.ToString">
+            <summary>
+            Converts to string.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:Teakorigin.Business.Services.ContentService">
+            <summary>
+            Content service.
+            </summary>
+            <seealso cref="T:Teakorigin.Domain.Interfaces.IContentService" />
+        </member>
+        <member name="M:Teakorigin.Business.Services.ContentService.#ctor(System.Net.Http.HttpClient,Teakorigin.Domain.Models.AppSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Business.Services.ContentService" /> class.
+            </summary>
+            <param name="contentClient">The content client.</param>
+            <param name="appSettings">The application settings.</param>
+        </member>
+        <member name="M:Teakorigin.Business.Services.ContentService.GetData(System.String)">
+            <summary>
+            Gets the data.
+            </summary>
+            <param name="keys">The keys.</param>
+            <returns>
+            Returns data.
+            </returns>
+        </member>
+        <member name="T:Teakorigin.Business.Services.SendgridSubscriptionService">
+            <summary>
+            Content service.
+            </summary>
+            <seealso cref="T:Teakorigin.Domain.Interfaces.IContentService" />
+        </member>
+        <member name="M:Teakorigin.Business.Services.SendgridSubscriptionService.#ctor(System.Net.Http.HttpClient,Teakorigin.Domain.Models.AppSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Business.Services.SendgridSubscriptionService"/> class.
+            </summary>
+            <param name="subscriptionClient">The subscription client.</param>
+            <param name="appSettings">The application settings.</param>
+        </member>
+        <member name="M:Teakorigin.Business.Services.SendgridSubscriptionService.Subscribe(System.String)">
+            <summary>
+            Gets the data.
+            </summary>
+            <param name="email">The email.</param>
+            <returns>
+            Returns data.
+            </returns>
+            <exception cref="T:System.Exception">Subscription service config incorrect.</exception>
+        </member>
+        <member name="T:Teakorigin.Business.SqlBuilder.RetailerRankBuilder">
+            <summary>
+            Retailer rank query builder.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Business.SqlBuilder.RetailerRankBuilder.#ctor(Teakorigin.DataAccess.TeakOriginContext,System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Business.SqlBuilder.RetailerRankBuilder" /> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="location">The location.</param>
+            <param name="fromDate">From date.</param>
+            <param name="toDate">To date.</param>
+            <param name="produceCodes">The produce codes.</param>
+        </member>
+        <member name="M:Teakorigin.Business.SqlBuilder.RetailerRankBuilder.Finalise">
+            <summary>
+            Finalises this instance.
+            </summary>
+            <returns>Returns finalised query.</returns>
+        </member>
+        <member name="M:Teakorigin.Business.SqlBuilder.RetailerRankBuilder.GetRetailerRanks">
+            <summary>
+            Gets the retailer ranks.
+            </summary>
+            <returns>Returns the retailer ranks.</returns>
+        </member>
+    </members>
+</doc>

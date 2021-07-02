@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Teakorigin.Advanced.App</name>
+    </assembly>
+    <members>
+        <member name="T:Teakorigin.Advanced.App.Controllers.AdvancedSiteController">
+            <summary>
+            Advance site controller.
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller" />
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.AdvancedSiteController.#ctor(Teakorigin.Domain.Models.AppSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Advanced.App.Controllers.AdvancedSiteController"/> class.
+            </summary>
+            <param name="appSettings">The application settings.</param>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Controllers.AdvancedSiteController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns>Returns the view for advance site.</returns>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Extentions.ServiceExtentions">
+            <summary>
+            Service Extentions.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Extentions.ServiceExtentions.ConfigurePoco``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.Func{``0})">
+            <summary>
+            The configure poco.
+            </summary>
+            <typeparam name="TConfig">The type of the configuration.</typeparam>
+            <param name="services">The services.</param>
+            <param name="configuration">The configuration.</param>
+            <param name="pocoProvider">The poco provider.</param>
+            <returns>returns poco from config.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">
+            services
+            or
+            configuration
+            or
+            pocoProvider.
+            </exception>
+            <exception cref="T:System.ArgumentNullException"> returns exception.</exception>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Models.AdvanceSiteViewModel">
+            <summary>
+            Advanced site view midel.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Models.AdvanceSiteViewModel.AdvancedSiteLink">
+            <summary>
+            Gets or sets the advanced site link.
+            </summary>
+            <value>
+            The advanced site link.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Program">
+            <summary>
+            The main program.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Creates the web host builder.
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns>Returns the web host builder.</returns>
+        </member>
+        <member name="T:Teakorigin.Advanced.App.Startup">
+            <summary>
+            .The startup class.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Teakorigin.Advanced.App.Startup"/> class.
+            </summary>
+            <param name="configuration">Configuration parameters.</param>
+        </member>
+        <member name="P:Teakorigin.Advanced.App.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            // This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Services collection.</param>
+        </member>
+        <member name="M:Teakorigin.Advanced.App.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">The app name.</param>
+            <param name="env">The environment name.</param>
+        </member>
+    </members>
+</doc>

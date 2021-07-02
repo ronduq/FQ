@@ -1,0 +1,90 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ecom-editor-web
+spec:
+  revisionHistoryLimit: 2
+  template:
+    metadata:
+      labels:
+        app: ecom-editor-web
+        monitored: 'true'
+        name: ecom-editor-web
+        tier: api
+        track: stable
+      annotations:
+        prometheus.io/scrape: 'true'
+        prometheus.io/path: /admin/metrics
+    spec:
+      containers:
+      - env:
+        - name: ENVIRONMENT
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+
+        - name: ENABLE_APP_DYNAMICS_EUM
+          value: {% if env['CLUSTER_ENVIRONMENT'] == 'production' %}
+                    'true'
+                 {% elif env['NAMESPACE'].startswith('jenkins') %}
+                    'true'
+                 {% else %}
+                    'false'
+                 {%  endif %}
+        - name: ENABLE_APP_DYNAMICS
+          value: {% if env['CLUSTER_ENVIRONMENT'] == 'production' %}
+                    'true'
+                 {% elif env['NAMESPACE'].startswith('jenkins') %}
+                    'true'
+                 {% else %}
+                    'false'
+                 {%  endif %}
+        - name: NODE_ENV
+          value: {% if env['CLUSTER_ENVIRONMENT'] == 'production' or env['NAMESPACE'] == 'staging' %}
+                    'production'
+                 {% else %}
+                    'development'
+                 {%  endif %}
+        image: 496870459963.dkr.ecr.eu-west-1.amazonaws.com/photobox/ecom-editor-web:latest
+        livenessProbe:
+          httpGet:
+            httpHeaders:
+            - name: X-Health-Check
+              value: Kubernetes-liveness-probe
+            path: /admin/healthz
+            port: 3000
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 30
+          timeoutSeconds: 5
+        name: ecom-editor-web
+        resources:
+          requests:
+            memory: {{ '900Mi' if env['NAMESPACE'] == 'production' or env['NAMESPACE'] == 'staging' else '700Mi' }}
+            cpu: {{ '500m' if env['NAMESPACE'] == 'production' or env['NAMESPACE'] == 'staging' else '100m' }}
+          limits:
+            memory: {{ '1500Mi' if env['NAMESPACE'] == 'production' or env['NAMESPACE'] == 'staging' else '800Mi' }}
+            cpu: {{ '1' if env['NAMESPACE'] == 'production' or env['NAMESPACE'] == 'staging' else '250m' }}
+        ports:
+        - containerPort: 3000
+          protocol: TCP
+        readinessProbe:
+          httpGet:
+            httpHeaders:
+            - name: X-Health-Check
+              value: Kubernetes-readiness-probe
+            path: /admin/readiness
+            port: 3000
+            scheme: HTTP
+          initialDelaySeconds: 5
+          timeoutSeconds: 20
+        volumeMounts:
+      volumes:

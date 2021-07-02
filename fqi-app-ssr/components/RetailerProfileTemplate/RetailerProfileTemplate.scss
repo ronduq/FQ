@@ -1,0 +1,35 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.retailerProfile {
+
+  @include respond-to('tablet', min-width) {
+    margin-top: 35px;
+  }
+
+  .pageTitle {
+    padding: 16px 0;
+    text-align: center;
+    @include font-size('medium');
+
+    @include respond-to('tablet', min-width) {
+      text-align: left;
+      @include font-size('xlarge');
+    }
+
+    &.highlights {
+      padding-top: 0;
+    }
+  }
+  
+  .columnHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  
+    @include respond-to('tablet', min-width) {
+      padding: 0;
+    }
+  }
+}

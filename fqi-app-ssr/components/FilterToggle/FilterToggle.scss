@@ -1,0 +1,66 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/breakpoints';
+
+.filterToggle {
+  position: relative;
+
+  > button {
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    background: none;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+
+     @include respond-to('tablet', min-width) {
+      right: 1px;
+    }
+
+    @include respond-to('two-column', min-width) {
+      display: none;
+    }
+
+    .toggleIcon{
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .close {
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: relative;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      height: 26px;
+      left: 12px;
+      top: 0px;
+      width: 2px;
+      background-color: #333333;
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .twoColumn {
+    display: none;
+  }
+
+  .showFilters {
+    display: block;
+    position: absolute;
+    z-index: 50;
+    top: 60px;
+    width: 100%;
+  }
+ 
+}

@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RetailerProfileTemplate RetailerProfileTemplate snapshot" 1`] = `
+<div
+  className="container retailerProfile"
+>
+  <div
+    className="layout layout--3-9 "
+  >
+    <div
+      className="layout__column--1"
+    >
+      <div
+        className="filterToggle"
+      >
+        <button
+          aria-controls="FilterMenu"
+          aria-expanded={false}
+          aria-haspopup="true"
+          aria-label="Toggle Filters"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="toggleIcon"
+            focusable="false"
+          >
+            <use
+              xlinkHref="#mobileFilter"
+            />
+          </svg>
+        </button>
+        <div
+          className="twoColumn"
+          id="FilterMenu"
+        />
+      </div>
+    </div>
+    <div
+      className="layout__column--2"
+    >
+      <h1
+        className="pageTitle"
+      >
+        aldi
+         
+        <span
+          className="seperator"
+        >
+          in
+        </span>
+         
+        <span
+          className="location"
+        >
+          Boston
+        </span>
+      </h1>
+      <div
+        className="notFoundDisplay"
+      >
+        <div
+          className="notFoundDisplayImg"
+        >
+          <svg
+            aria-hidden="true"
+            className="icon iconHuge iconTeal"
+            focusable="false"
+          >
+            <use
+              xlinkHref="#apple"
+            />
+          </svg>
+        </div>
+        <p
+          className="notFoundDisplayTitle"
+        >
+          test
+        </p>
+        <p
+          className="notFoundDisplayText"
+        >
+          text aldi
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

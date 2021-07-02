@@ -1,0 +1,44 @@
+@import '../../style/settings/colours';
+
+// Icon sizes
+.iconXSmall {
+  height: 10px;
+  width: 10px;
+}
+
+.iconSmall {
+  height: 18px;
+  width: 18px;
+}
+
+.iconMedium {
+  height: 22px;
+  width: 22px;
+}
+
+.iconLarge {
+  height: 32px;
+  width: 32px;
+}
+
+.iconHuge {
+  height: 115px;
+  width: 115px;
+}
+
+// Icon colours
+.iconTeal {
+  fill: $colour-main;
+}
+
+.iconOrange {
+  stroke: $colour-secondary;
+}
+
+.iconOrangeFill {
+  fill: $colour-secondary;
+}
+
+.iconBlack {
+  stroke: $colour-grey-dark;
+}

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing CompareByFilter snapshot" 1`] = `
+<fieldset
+  className="container"
+>
+  <legend />
+  <div
+    className="radio"
+  >
+    <input
+      autoComplete="off"
+      checked={true}
+      id="quality"
+      name="compareBy"
+      onChange={[Function]}
+      tabIndex="0"
+      type="radio"
+      value="quality"
+    />
+    <label
+      htmlFor="quality"
+    />
+  </div>
+  <div
+    className="radio"
+  >
+    <input
+      autoComplete="off"
+      checked={false}
+      id="value"
+      name="compareBy"
+      onChange={[Function]}
+      tabIndex="0"
+      type="radio"
+      value="value"
+    />
+    <label
+      htmlFor="value"
+    />
+  </div>
+  <div
+    className="radio"
+  >
+    <input
+      autoComplete="off"
+      checked={false}
+      id="perception"
+      name="compareBy"
+      onChange={[Function]}
+      tabIndex="0"
+      type="radio"
+      value="perception"
+    />
+    <label
+      htmlFor="perception"
+    />
+  </div>
+</fieldset>
+`;

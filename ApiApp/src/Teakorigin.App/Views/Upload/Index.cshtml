@@ -1,0 +1,62 @@
+﻿@model UploadViewModel
+
+
+@{
+    ViewData["Title"] = "Upload";
+}
+
+<partial name="_UploadFileNavigation" />
+
+<h1>Data file upload</h1>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div style="color:red">
+        <p> @Model.ErrorMessage </p>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Model.UploadSuccessMessage))
+{
+    <div style="color:green">
+        <p> @Model.UploadSuccessMessage </p>
+    </div>
+}
+
+<br />
+<br />
+
+<h2>Upload a new data file.</h2>
+<p>
+    You cannot upload two files with same name. Each file must have a unique name.
+</p>
+
+<br />
+
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit" style="border:solid">Upload</button>
+</form>
+
+<br />
+<br />
+
+
+<h3>Previous successful uploads</h3>
+<table class="table___1DL92" role="grid" aria-readonly="true">
+    <thead>
+        <tr class="headerRow___3eUYW">
+            <th class="cell___3nyR9 cellHighlight___1_y0a" scope="col">File Name</th>
+            <th class="cell___3nyR9 cellHighlight___1_y0a" scope="col">File Url</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.FileItems)
+        {
+            <tr class="bodyRow___3r35-">
+                <td class="cell___3nyR9 cellImage___3d3vS">@item.FileName</td>
+                <td class="cell___3nyR9 cellImage___3d3vS" style="text-align:center"><a class="linkButton___3GHSn" href="@item.FileLink">view in Azure portal</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

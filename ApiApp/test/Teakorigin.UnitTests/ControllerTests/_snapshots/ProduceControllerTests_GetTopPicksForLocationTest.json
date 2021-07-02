@@ -1,0 +1,875 @@
+{
+  "child_boston_apple,strawberry_wegmans,aldi_Quality": {
+    "Value": {
+      "Data": {
+        "TopPicks": [
+          {
+            "ProduceCode": "strawberry",
+            "RetailerCode": "wegmans",
+            "Quality": 83,
+            "QualAvg": 83.1,
+            "Value": 9,
+            "PerceptionScore": 1,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": true
+              }
+            ],
+            "ScanDateTime": "2019-12-18T03:09:00",
+            "ScanDate": "12/18/2019",
+            "ScanTime": "03:09 AM"
+          }
+        ],
+        "RetailerTopPicks": [
+          {
+            "RetailerCode": "wegmans",
+            "Score": "83",
+            "IsSameRankValue": false,
+            "TopPicks": [
+              {
+                "ProduceCode": "strawberry",
+                "RetailerCode": "wegmans",
+                "Quality": 83,
+                "QualAvg": 83.1,
+                "Value": 9,
+                "PerceptionScore": 1,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": true
+                  }
+                ],
+                "ScanDateTime": "2019-12-18T03:09:00",
+                "ScanDate": "12/18/2019",
+                "ScanTime": "03:09 AM"
+              }
+            ]
+          },
+          {
+            "RetailerCode": "aldi",
+            "Score": "79",
+            "IsSameRankValue": false,
+            "TopPicks": [
+              {
+                "ProduceCode": "strawberry",
+                "RetailerCode": "aldi",
+                "Quality": 79,
+                "QualAvg": 79.0909090909091,
+                "Value": 4,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-19T01:12:00",
+                "ScanDate": "12/19/2019",
+                "ScanTime": "01:12 AM"
+              }
+            ]
+          }
+        ]
+      },
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 0,
+        "SortDirection": 0,
+        "ProduceCodes": [
+          "strawberry"
+        ],
+        "RetailerCodes": [
+          "aldi,wegmans"
+        ]
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_boston_empty_empty_Perception": {
+    "Value": {
+      "Data": {
+        "TopPicks": [],
+        "RetailerTopPicks": []
+      },
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 2,
+        "SortDirection": 0,
+        "ProduceCodes": [
+          "empty"
+        ],
+        "RetailerCodes": [
+          "empty"
+        ]
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_boston_all_all_Value": {
+    "Value": {
+      "Data": {
+        "TopPicks": [
+          {
+            "ProduceCode": "apple-fuji",
+            "RetailerCode": "costco",
+            "Quality": 65,
+            "QualAvg": 65.0,
+            "Value": 1,
+            "PerceptionScore": 2,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-13T22:39:00",
+            "ScanDate": "12/13/2019",
+            "ScanTime": "10:39 PM"
+          },
+          {
+            "ProduceCode": "apple-gala",
+            "RetailerCode": "aldi",
+            "Quality": 51,
+            "QualAvg": 51.111111111111114,
+            "Value": 1,
+            "PerceptionScore": 5,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-18T18:09:00",
+            "ScanDate": "12/18/2019",
+            "ScanTime": "06:09 PM"
+          },
+          {
+            "ProduceCode": "apple-honeycrisp",
+            "RetailerCode": "aldi",
+            "Quality": 46,
+            "QualAvg": 45.8,
+            "Value": 1,
+            "PerceptionScore": 5,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-18T21:18:00",
+            "ScanDate": "12/18/2019",
+            "ScanTime": "09:18 PM"
+          },
+          {
+            "ProduceCode": "apple-red-delicious",
+            "RetailerCode": "costco",
+            "Quality": 59,
+            "QualAvg": 58.714285714285715,
+            "Value": 1,
+            "PerceptionScore": 2,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-14T00:45:00",
+            "ScanDate": "12/14/2019",
+            "ScanTime": "12:45 AM"
+          },
+          {
+            "ProduceCode": "avocado",
+            "RetailerCode": "aldi",
+            "Quality": 151,
+            "QualAvg": 150.66666666666666,
+            "Value": 1,
+            "PerceptionScore": 5,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "Mexico",
+                "IsOrganic": true
+              },
+              {
+                "CountryName": "Mexico",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-18T16:48:00",
+            "ScanDate": "12/18/2019",
+            "ScanTime": "04:48 PM"
+          },
+          {
+            "ProduceCode": "blueberry",
+            "RetailerCode": "aldi",
+            "Quality": 78,
+            "QualAvg": 77.777777777777771,
+            "Value": 1,
+            "PerceptionScore": 5,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "Peru",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-19T04:03:00",
+            "ScanDate": "12/19/2019",
+            "ScanTime": "04:03 AM"
+          },
+          {
+            "ProduceCode": "grape-green",
+            "RetailerCode": "aldi",
+            "Quality": 110,
+            "QualAvg": 110.05,
+            "Value": 1,
+            "PerceptionScore": 5,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-19T08:33:00",
+            "ScanDate": "12/19/2019",
+            "ScanTime": "08:33 AM"
+          },
+          {
+            "ProduceCode": "grape-red",
+            "RetailerCode": "aldi",
+            "Quality": 104,
+            "QualAvg": 103.95,
+            "Value": 1,
+            "PerceptionScore": 5,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-19T10:03:00",
+            "ScanDate": "12/19/2019",
+            "ScanTime": "10:03 AM"
+          },
+          {
+            "ProduceCode": "spinach",
+            "RetailerCode": "bjs",
+            "Quality": 124,
+            "QualAvg": 124.22222222222223,
+            "Value": 1,
+            "PerceptionScore": 6,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": true
+              }
+            ],
+            "ScanDateTime": "2019-12-16T12:00:00",
+            "ScanDate": "12/16/2019",
+            "ScanTime": "12:00 PM"
+          },
+          {
+            "ProduceCode": "strawberry",
+            "RetailerCode": "costco",
+            "Quality": 94,
+            "QualAvg": 94.066666666666663,
+            "Value": 1,
+            "PerceptionScore": 2,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-14T06:36:00",
+            "ScanDate": "12/14/2019",
+            "ScanTime": "06:36 AM"
+          },
+          {
+            "ProduceCode": "tomato",
+            "RetailerCode": "aldi",
+            "Quality": 89,
+            "QualAvg": 88.933333333333337,
+            "Value": 1,
+            "PerceptionScore": 5,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-18T23:33:00",
+            "ScanDate": "12/18/2019",
+            "ScanTime": "11:33 PM"
+          }
+        ],
+        "RetailerTopPicks": [
+          {
+            "RetailerCode": "aldi",
+            "Score": "1",
+            "IsSameRankValue": false,
+            "TopPicks": [
+              {
+                "ProduceCode": "apple-gala",
+                "RetailerCode": "aldi",
+                "Quality": 51,
+                "QualAvg": 51.111111111111114,
+                "Value": 1,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-18T18:09:00",
+                "ScanDate": "12/18/2019",
+                "ScanTime": "06:09 PM"
+              },
+              {
+                "ProduceCode": "apple-honeycrisp",
+                "RetailerCode": "aldi",
+                "Quality": 46,
+                "QualAvg": 45.8,
+                "Value": 1,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-18T21:18:00",
+                "ScanDate": "12/18/2019",
+                "ScanTime": "09:18 PM"
+              },
+              {
+                "ProduceCode": "avocado",
+                "RetailerCode": "aldi",
+                "Quality": 151,
+                "QualAvg": 150.66666666666666,
+                "Value": 1,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "Mexico",
+                    "IsOrganic": true
+                  },
+                  {
+                    "CountryName": "Mexico",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-18T16:48:00",
+                "ScanDate": "12/18/2019",
+                "ScanTime": "04:48 PM"
+              },
+              {
+                "ProduceCode": "blueberry",
+                "RetailerCode": "aldi",
+                "Quality": 78,
+                "QualAvg": 77.777777777777771,
+                "Value": 1,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "Peru",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-19T04:03:00",
+                "ScanDate": "12/19/2019",
+                "ScanTime": "04:03 AM"
+              },
+              {
+                "ProduceCode": "grape-green",
+                "RetailerCode": "aldi",
+                "Quality": 110,
+                "QualAvg": 110.05,
+                "Value": 1,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-19T08:33:00",
+                "ScanDate": "12/19/2019",
+                "ScanTime": "08:33 AM"
+              },
+              {
+                "ProduceCode": "grape-red",
+                "RetailerCode": "aldi",
+                "Quality": 104,
+                "QualAvg": 103.95,
+                "Value": 1,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-19T10:03:00",
+                "ScanDate": "12/19/2019",
+                "ScanTime": "10:03 AM"
+              },
+              {
+                "ProduceCode": "tomato",
+                "RetailerCode": "aldi",
+                "Quality": 89,
+                "QualAvg": 88.933333333333337,
+                "Value": 1,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-18T23:33:00",
+                "ScanDate": "12/18/2019",
+                "ScanTime": "11:33 PM"
+              },
+              {
+                "ProduceCode": "apple-fuji",
+                "RetailerCode": "aldi",
+                "Quality": 51,
+                "QualAvg": 51.285714285714285,
+                "Value": 2,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-18T19:12:00",
+                "ScanDate": "12/18/2019",
+                "ScanTime": "07:12 PM"
+              },
+              {
+                "ProduceCode": "apple-red-delicious",
+                "RetailerCode": "aldi",
+                "Quality": 54,
+                "QualAvg": 54.222222222222221,
+                "Value": 2,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-18T20:33:00",
+                "ScanDate": "12/18/2019",
+                "ScanTime": "08:33 PM"
+              },
+              {
+                "ProduceCode": "strawberry",
+                "RetailerCode": "aldi",
+                "Quality": 79,
+                "QualAvg": 79.0909090909091,
+                "Value": 4,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-19T01:12:00",
+                "ScanDate": "12/19/2019",
+                "ScanTime": "01:12 AM"
+              },
+              {
+                "ProduceCode": "spinach",
+                "RetailerCode": "aldi",
+                "Quality": 103,
+                "QualAvg": 103.0,
+                "Value": 8,
+                "PerceptionScore": 5,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": true
+                  }
+                ],
+                "ScanDateTime": "2019-12-19T02:42:00",
+                "ScanDate": "12/19/2019",
+                "ScanTime": "02:42 AM"
+              }
+            ]
+          },
+          {
+            "RetailerCode": "bjs",
+            "Score": "2",
+            "IsSameRankValue": false,
+            "TopPicks": [
+              {
+                "ProduceCode": "spinach",
+                "RetailerCode": "bjs",
+                "Quality": 124,
+                "QualAvg": 124.22222222222223,
+                "Value": 1,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": true
+                  }
+                ],
+                "ScanDateTime": "2019-12-16T12:00:00",
+                "ScanDate": "12/16/2019",
+                "ScanTime": "12:00 PM"
+              },
+              {
+                "ProduceCode": "apple-gala",
+                "RetailerCode": "bjs",
+                "Quality": 55,
+                "QualAvg": 55.333333333333336,
+                "Value": 2,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": true
+                  },
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-15T08:42:00",
+                "ScanDate": "12/15/2019",
+                "ScanTime": "08:42 AM"
+              },
+              {
+                "ProduceCode": "apple-honeycrisp",
+                "RetailerCode": "bjs",
+                "Quality": 52,
+                "QualAvg": 52.07692307692308,
+                "Value": 3,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-15T06:00:00",
+                "ScanDate": "12/15/2019",
+                "ScanTime": "06:00 AM"
+              },
+              {
+                "ProduceCode": "blueberry",
+                "RetailerCode": "bjs",
+                "Quality": 72,
+                "QualAvg": 71.777777777777771,
+                "Value": 3,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "Peru",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-15T21:45:00",
+                "ScanDate": "12/15/2019",
+                "ScanTime": "09:45 PM"
+              },
+              {
+                "ProduceCode": "grape-green",
+                "RetailerCode": "bjs",
+                "Quality": 112,
+                "QualAvg": 112.1,
+                "Value": 3,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-15T18:54:00",
+                "ScanDate": "12/15/2019",
+                "ScanTime": "06:54 PM"
+              },
+              {
+                "ProduceCode": "strawberry",
+                "RetailerCode": "bjs",
+                "Quality": 74,
+                "QualAvg": 74.36,
+                "Value": 3,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-15T17:24:00",
+                "ScanDate": "12/15/2019",
+                "ScanTime": "05:24 PM"
+              },
+              {
+                "ProduceCode": "grape-red",
+                "RetailerCode": "bjs",
+                "Quality": 108,
+                "QualAvg": 107.8,
+                "Value": 4,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-15T20:24:00",
+                "ScanDate": "12/15/2019",
+                "ScanTime": "08:24 PM"
+              },
+              {
+                "ProduceCode": "tomato",
+                "RetailerCode": "bjs",
+                "Quality": 97,
+                "QualAvg": 97.333333333333329,
+                "Value": 4,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "Mexico",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-15T13:39:00",
+                "ScanDate": "12/15/2019",
+                "ScanTime": "01:39 PM"
+              },
+              {
+                "ProduceCode": "avocado",
+                "RetailerCode": "bjs",
+                "Quality": 157,
+                "QualAvg": 157.4,
+                "Value": 6,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "Mexico",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-15T10:57:00",
+                "ScanDate": "12/15/2019",
+                "ScanTime": "10:57 AM"
+              }
+            ]
+          }
+        ]
+      },
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 1,
+        "SortDirection": 0,
+        "ProduceCodes": [
+          "apple-fuji",
+          "apple-gala",
+          "apple-honeycrisp",
+          "apple-red-delicious",
+          "avocado",
+          "banana",
+          "blueberry",
+          "grape-green",
+          "grape-red",
+          "spinach",
+          "strawberry",
+          "tomato"
+        ],
+        "RetailerCodes": [
+          "aldi,amazon-fresh,bjs,costco,stop-n-shop,target,trader-joes,walmart,wegmans,whole-foods"
+        ]
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_boston_apple-fuji_walmart,stop-n-shop_Quality": {
+    "Value": {
+      "Data": {
+        "TopPicks": [
+          {
+            "ProduceCode": "apple-fuji",
+            "RetailerCode": "walmart",
+            "Quality": 64,
+            "QualAvg": 64.2,
+            "Value": 3,
+            "PerceptionScore": 10,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "USA",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-14T15:36:00",
+            "ScanDate": "12/14/2019",
+            "ScanTime": "03:36 PM"
+          }
+        ],
+        "RetailerTopPicks": [
+          {
+            "RetailerCode": "walmart",
+            "Score": "64",
+            "IsSameRankValue": false,
+            "TopPicks": [
+              {
+                "ProduceCode": "apple-fuji",
+                "RetailerCode": "walmart",
+                "Quality": 64,
+                "QualAvg": 64.2,
+                "Value": 3,
+                "PerceptionScore": 10,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-14T15:36:00",
+                "ScanDate": "12/14/2019",
+                "ScanTime": "03:36 PM"
+              }
+            ]
+          },
+          {
+            "RetailerCode": "stop-n-shop",
+            "Score": "58",
+            "IsSameRankValue": false,
+            "TopPicks": [
+              {
+                "ProduceCode": "apple-fuji",
+                "RetailerCode": "stop-n-shop",
+                "Quality": 58,
+                "QualAvg": 58.0,
+                "Value": 6,
+                "PerceptionScore": 8,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "USA",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-17T09:09:00",
+                "ScanDate": "12/17/2019",
+                "ScanTime": "09:09 AM"
+              }
+            ]
+          }
+        ]
+      },
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 0,
+        "SortDirection": 0,
+        "ProduceCodes": [
+          "apple-fuji"
+        ],
+        "RetailerCodes": [
+          "stop-n-shop,walmart"
+        ]
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles_avocado_aldi_Quality": {
+    "Value": {
+      "Data": {
+        "TopPicks": [
+          {
+            "ProduceCode": "avocado",
+            "RetailerCode": "aldi",
+            "Quality": 116,
+            "QualAvg": 115.53333333333333,
+            "Value": 1,
+            "PerceptionScore": 6,
+            "CountriesOfOrigin": [
+              {
+                "CountryName": "Mexico",
+                "IsOrganic": false
+              }
+            ],
+            "ScanDateTime": "2019-12-17T03:54:00",
+            "ScanDate": "12/17/2019",
+            "ScanTime": "03:54 AM"
+          }
+        ],
+        "RetailerTopPicks": [
+          {
+            "RetailerCode": "aldi",
+            "Score": "116",
+            "IsSameRankValue": false,
+            "TopPicks": [
+              {
+                "ProduceCode": "avocado",
+                "RetailerCode": "aldi",
+                "Quality": 116,
+                "QualAvg": 115.53333333333333,
+                "Value": 1,
+                "PerceptionScore": 6,
+                "CountriesOfOrigin": [
+                  {
+                    "CountryName": "Mexico",
+                    "IsOrganic": false
+                  }
+                ],
+                "ScanDateTime": "2019-12-17T03:54:00",
+                "ScanDate": "12/17/2019",
+                "ScanTime": "03:54 AM"
+              }
+            ]
+          }
+        ]
+      },
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 0,
+        "SortDirection": 0,
+        "ProduceCodes": [
+          "avocado"
+        ],
+        "RetailerCodes": [
+          "aldi"
+        ]
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  }
+}

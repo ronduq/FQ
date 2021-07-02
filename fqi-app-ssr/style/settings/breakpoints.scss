@@ -1,0 +1,35 @@
+// Map of breakpoints to be used in the `respond-to` mixin. These will generally match common device sizes. Any breakpoint in this list should be considered globally-available. If you need per-component "tweakpoints", create a `$tweakpoints` map inside your component Sass file rather than adding to the global breakpoints map.
+$breakpoints: (
+  'two-column': 1280px,
+  'large': 1024px,
+  'medium': 940px,
+  'tablet': 768px,
+  'mobile': 480px
+);
+
+@mixin respond-to($point, $condition: max-width) {
+
+  // Ensure media query isn't in quotes
+  $condition: unquote($condition);
+
+  // Check global breakpoints first
+  @if map-has-key($breakpoints, $point) {
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+    @media ($condition: map-get($breakpoints, $point)) {
+      @content;
+    }
+
+    // Failing that, check local tweakpoints
+  }
+
+  @else if map-has-key($tweakpoints, $point) {
+    /* stylelint-disable-next-line scss/media-feature-value-dollar-variable */
+    @media ($condition: map-get($tweakpoints, $point)) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn 'Could not find `#{$point}` in both local ($tweakpoints) and global ($breakpoints) contexts. Media block omitted.';
+  }
+}

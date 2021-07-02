@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing AnalyteReading snapshot" 1`] = `
+<div
+  className="container"
+>
+  <ul
+    className="readingMetrics"
+  >
+    <li>
+      <h3>
+         
+      </h3>
+    </li>
+    <li
+      className="metric"
+    >
+      <span
+        className="metricTitle"
+      />
+       
+      <span
+        className="metricText"
+      />
+      <span
+        className="metricSuffix"
+      />
+    </li>
+    <li
+      className="metric"
+    >
+      <span
+        className="metricTitle"
+      />
+       
+      <span
+        className="metricText"
+      />
+      <span
+        className="metricSuffix"
+      />
+    </li>
+    <li
+      className="metric"
+    >
+      <span
+        className="metricTitle"
+      />
+       
+      <span
+        className="metricText"
+      />
+      <span
+        className="metricSuffix"
+      />
+    </li>
+  </ul>
+  <div
+    className="status"
+  >
+    <div
+      className="statusLabel"
+    />
+    <div
+      className="statusText"
+    >
+       
+       
+       
+    </div>
+  </div>
+  <div>
+    <h3>
+       & 
+    </h3>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "undefined",
+        }
+      }
+    />
+  </div>
+</div>
+`;

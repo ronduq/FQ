@@ -1,0 +1,42 @@
+@import './colours';
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin supports-grid {
+  @supports(display: grid) {
+    @content;
+  }
+}
+
+@mixin customSelect {
+  width: 192px;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 2px;
+  border: 1px solid $colour-grey-medium;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  @include font-size('small');
+  background-color: $white;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2018%2011%22%3E%3Cpolyline%20stroke%3D%22%23FE744A%22%20fill%3D%22none%22%20stroke-width%3D%222%22%20points%3D%221%2C1.5%209%2C9.5%2017%2C1.5%20%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat, repeat;
+  background-position: right 16px top 50%, 0 0;
+  background-size: 20px 20px;
+  box-sizing: border-box;
+  margin: 0 16px;
+  
+  &::-ms-expand {
+    display: none;
+  }
+}

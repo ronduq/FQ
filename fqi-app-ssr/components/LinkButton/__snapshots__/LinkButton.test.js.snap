@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing LinkButton snapshot" 1`] = `
+<a
+  className="linkButton"
+  href="/"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+>
+   
+  <svg
+    aria-hidden="true"
+    className="arrowIcon iconSmall iconOrange arrowRight"
+    focusable="false"
+  >
+    <use
+      xlinkHref="#chevron"
+    />
+  </svg>
+</a>
+`;

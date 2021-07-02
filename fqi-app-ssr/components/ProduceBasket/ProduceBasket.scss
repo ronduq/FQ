@@ -1,0 +1,85 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.produceBasket {
+  background-color: $white;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid $colour-grey;
+  border-bottom: none;
+  // flex: 1 1 auto;
+  min-height: 300px;
+
+  .basketHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    border-bottom: 1px solid $colour-grey;
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      p {
+        @include font-size('medium');
+        @include font-family('proxima-bold');
+      }
+      
+      .basketIcon {
+        height: 22px;
+        width: 18px;
+        margin-right: 8px;
+      }
+    }
+
+    .location {
+      @include font-size('xsmall');
+    }
+  }
+
+  .basketItems {
+    padding: 16px 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+      margin-bottom: 8px;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      img {
+        max-width: 92px;
+        height: auto;
+      }
+  
+      .produceLabel {
+        @include font-size('medium');
+        line-height: 1.5;
+        margin: 0 4px;
+      }
+
+      button {
+        margin-left: auto;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        span {
+          display: inline-block;
+          text-indent: -99999px;
+        }
+
+        .closeIcon {
+          width: 30px;
+          height: 30px;
+        }
+      } 
+    }
+  }
+}

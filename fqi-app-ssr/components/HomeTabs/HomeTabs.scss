@@ -1,0 +1,98 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.tabNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to('large', min-width) {
+    flex-direction: row;
+  }
+
+  li {
+    width: 100%;
+    background-color: $white;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+
+    @include respond-to('large', min-width) {
+      width: 50%;
+      height: 100px;
+      margin-bottom: 0px;
+    }
+
+    button {
+      @include font-family('proxima-light');
+    }
+
+    &.tabSelected {
+      border: 2px solid $colour-main;
+      
+      @include respond-to('large', min-width) {
+        border-bottom: none;
+      }
+
+      button {
+        color: $colour-main;
+        @include font-family('proxima-bold');
+      }
+    }
+
+    &.retailerNotSelect,
+    &.produceNotSelect {
+      border: 1px solid $colour-grey;
+    }
+
+    @include respond-to('large', min-width) {
+      &.retailerNotSelect,
+      &.produceNotSelect {
+        border-bottom: 2px solid $colour-main;
+      }
+
+      &.retailerNotSelect {
+        border-right: none;
+      }
+
+      &.produceNotSelect {
+        border-left: none;
+      }  
+    }
+
+    button {
+      background: none;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include font-size('medium');
+      cursor: pointer;
+
+      @include respond-to('large', min-width) {
+        @include font-size('large');
+      }
+  
+      &:hover,
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    .tabIcon {
+      height: 28px;
+      width: 28px;
+      margin-right: 20px;
+
+      @include respond-to('large', min-width) {
+        height: 56px;
+        width: 56px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.container {
+  background: white;
+  border: 1px solid $colour-grey-medium;
+}
+
+.videoContainer {
+  padding: 20px;
+  position: relative;
+  max-width: 400px;
+
+  iframe {
+    @include respond-to('two-column', min-width) {
+      width: 100%;
+    }
+  }
+}
+
+h3.title {
+  @include font-family('proxima-regular');
+  @include font-size('medium');
+  padding: 16px;
+  border-bottom: 1px solid $colour-grey-medium;
+  position: relative;
+  z-index: 3;
+  
+  @include respond-to('tablet', min-width) {
+    @include font-size('medium-20');
+    padding: 5px 16px;
+  }
+}
+
+h4.videoTitle {
+  @include font-family('proxima-regular');
+  @include font-size('medium-20');
+}
+
+.videoText {
+  @include font-family('proxima-regular');
+  @include font-size('small');
+}
+.video {
+  margin-top: 20px;
+}

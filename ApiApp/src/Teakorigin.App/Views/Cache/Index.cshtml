@@ -1,0 +1,52 @@
+﻿@model CacheViewModel
+
+@{
+    ViewData["Title"] = "Cache";
+}
+
+<partial name="_UploadFileNavigation" />
+
+<h1>Cache Admin</h1>
+<br />
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div style="color:red">
+        <p> @Model.ErrorMessage </p>
+    </div>
+    <br />
+}
+
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div style="color:green">
+        <p> @Model.SuccessMessage </p>
+    </div>
+    <br />
+}
+<form method="post">
+    <button style="color:red" asp-controller="Cache" asp-action="Process">Click here to purge the cache</button>
+</form>
+
+<h3>Cache Keys</h3>
+<table class="table___1DL92" role="grid" aria-readonly="true">
+    <thead>
+        <tr class="headerRow___3eUYW">
+            <th class="cell___3nyR9 cellHighlight___1_y0a" scope="col">Keys</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null &&  Model.CacheList != null)
+        {
+            foreach (var item in Model.CacheList)
+            {
+                <tr class="bodyRow___3r35-">
+                    <td class="cell___3nyR9 cellImage___3d3vS">@item</td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
+
+

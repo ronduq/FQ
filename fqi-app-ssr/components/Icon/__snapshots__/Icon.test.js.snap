@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Icon snapshot" 1`] = `
+<svg
+  aria-hidden="true"
+  className="test"
+  focusable="false"
+>
+  <use
+    xlinkHref="#test"
+  />
+</svg>
+`;

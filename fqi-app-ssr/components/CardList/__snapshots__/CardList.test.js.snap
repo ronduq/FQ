@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Card snapshot" 1`] = `
+<ul
+  className="layout layout--3-3-3 cardContainer"
+/>
+`;

@@ -1,0 +1,110 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.produceBasket {
+  width: 100%;
+  box-sizing: border-box;
+
+  > div {
+    padding: 16px;
+  }
+  
+  @include respond-to('tablet', min-width) {
+    margin-top: 35px;
+    > div {
+      padding: 0px;
+    }
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $colour-grey;
+  }
+
+  h1 {
+    @include font-size('medium');
+    text-align: center;
+
+    @include respond-to('tablet', min-width) {
+      @include font-size('medium-20');
+      text-align: left;
+    }
+  }
+
+  .basketIcon {
+    display: none;
+    height: 60px;
+    width: 47px;
+    margin-right: 16px;
+    
+    @include respond-to('tablet', min-width) {
+      display: block;
+    }
+  }
+
+  .produceCards {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+
+    .locationTitle {
+      margin-bottom: 8px;
+      text-align: center;
+      @include font-size('medium');
+
+    }
+
+    @include respond-to('tablet', min-width) {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .locationTitle {
+        margin-bottom: 0;
+      }
+    }   
+  }
+  
+  .basketWrapper {
+    position: relative;
+
+    .basket {
+      @include respond-to('two-column', min-width) {
+        position: sticky;
+        top: 99px; //Header 64px + 35px margin-top
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100vh - 134px); //Top 99 + margin-bottom 35px
+      }
+    }
+
+    .continueButton {
+      display: block;
+      height: 46px;
+      width: 100%;
+      color: $white;
+      background-color: $colour-secondary;
+      box-sizing: border-box;
+      text-align: center;
+      text-transform: uppercase;
+      @include font-family('futura');
+      @include font-size('medium');
+      line-height: 46px;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: $colour-secondary-dark;
+      }
+
+      @include respond-to('tablet', min-width) {
+        max-width: calc((100% - 32px) / 3);
+      }
+
+      @include respond-to('two-column', min-width) {
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.intro {
+  padding: 30px 0 20px;
+  border-bottom: 1px solid $colour-grey-medium;
+}
+h2.subtitle {
+  @include font-family('proxima-regular');
+  @include font-size('medium');
+}
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  
+  h2 {
+    margin-bottom: 5px;
+    @include font-family('proxima-bold');
+    @include font-size('small');
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  input {
+    width: 100%;
+    border: 1px solid $colour-grey-medium;
+    padding: 0 8px;
+  }
+
+}
+
+.description {
+  font-style: italic;
+  // @include font-family('proxima-bold');
+  margin-top: 5px;
+  @include font-size('small');
+}
+.subscribeButton {
+  background: $colour-secondary;
+  border: none;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: $white;
+  @include font-family('futura');
+  @include font-size('medium');
+  text-decoration: none;
+  box-sizing: border-box;
+  text-indent: -99999px;
+
+  .ctaIcon {
+    width: 30px;
+    height: 20px;
+    fill: $white;
+  }
+
+  .ctaText {
+    @media all and (-ms-high-contrast:none) {
+      margin-left: 5px;
+    }
+  }
+
+  &:hover {
+    background-color: $colour-secondary-dark;
+  } 
+
+  @include respond-to('large', min-width) {
+    padding: 0 24px;
+
+    .ctaIcon {
+      margin-right:10px;
+      @media all and (-ms-high-contrast:none) {
+        margin-right:0px;
+        width: 40px;
+         height: 30px
+      }
+    }
+
+    span {
+      text-indent: 0px;
+    }
+  }
+}
+
+.thanks {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.largeIcon {
+  fill: $colour-main;
+  width: 70px;
+  height: 60px;
+}
+
+.linkButton {
+  display: inline-block;
+  width: auto;
+  color: $white;
+  background-color: $colour-secondary;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  @include font-family('futura');
+  @include font-size('medium');
+  margin: 40px auto 0;
+  padding: 10px 30px;
+
+  &:hover, &:focus {
+    background-color: $colour-secondary-dark;
+    color: white;
+  }
+}
+
+.error {
+  color: red;
+  @include font-family('proxima-bold');
+  @include font-size('small');
+}

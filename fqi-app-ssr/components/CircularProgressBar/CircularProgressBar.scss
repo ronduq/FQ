@@ -1,0 +1,55 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.circleBackground,
+.circleProgress {
+  fill: none;
+}
+
+.circleBackground {
+  stroke: #ddd;
+}
+
+.circleProgress {
+  stroke: $colour-main;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.circleNumber {
+  @include font-size('large-64');
+  @include font-family('proxima-regular');
+  fill: $colour-main;
+
+  @include respond-to('tablet') {
+    @include font-size('large-32');
+  }
+}
+
+.circleText {
+  @include font-size('large');
+  @include font-family('proxima-regular');
+  @include respond-to('tablet') {
+    @include font-size('medium');
+    transform: translateY(-4px);
+  }
+  fill: $colour-main;
+}
+
+.circleNumberSuffix {
+  @include font-size('large');
+  @include font-family('proxima-regular');
+  @include respond-to('tablet') {
+    @include font-size('large');
+    transform: translateY(-4px);
+    transform: translateX(5px);
+  }
+  fill: $colour-main;
+}
+.circleNumberSuffixFirst {
+  transform: translateX(-8px);
+  @include respond-to('tablet') {
+    transform: translateX(0px);
+  }
+}

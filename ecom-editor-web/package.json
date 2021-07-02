@@ -1,0 +1,83 @@
+{
+  "name": "parent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Photobox Editor",
+  "homepage": "https://www.photobox.co.uk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/photobox/ecom-editor-web.git"
+  },
+  "license": "SEE LICENSE IN <LICENSE>",
+  "workspaces": [
+    "packages/**"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build:prod --stream && yarn filesize",
+    "clean": "lerna clean --yes",
+    "cypress": "cd packages/ecom-editor-cypress && yarn start",
+    "cypress:staging": "yarn cypress --env config=staging || true",
+    "cypress:production": "yarn cypress --env config=production || true",
+    "cypress:report": "cd packages/ecom-editor-cypress && yarn report:export",
+    "cypress:report:logs": "cd packages/ecom-editor-cypress && yarn report:logs",
+    "cypress:status": "cd packages/ecom-editor-cypress && yarn status",
+    "dev": "lerna run dev --scope @photobox/ecom-editor-web --stream",
+    "filesize": "lerna run filesize --stream",
+    "lint": "lerna run lint:js --stream",
+    "prettier": "lerna run prettier --stream",
+    "publish:npm": "lerna run publish:npm --stream",
+    "start": "cd packages/ecom-editor-web && yarn start",
+    "test": "lerna run test:coverage --stream"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run --concurrency 1 --stream precommit"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.3.1",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^24.0.0",
+    "babel-jest-assertions": "^0.1.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-pbx": "^1.0.2",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-cypress": "^2.6.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.7.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-wyze": "^3.4.0",
+    "husky": "^3.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.0.0",
+    "jsdom": "^11.11.0",
+    "lerna": "^3.4.0",
+    "lint-staged": "^9.2.3",
+    "prettier": "^1.13.5",
+    "prettier-config-pbx": "^1.0.0",
+    "jest-chain": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">=3.10"
+  }
+}

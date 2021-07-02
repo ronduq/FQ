@@ -1,0 +1,261 @@
+{
+  "child_boston_apple-gala_aldi": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "aldi",
+          "quality": 51,
+          "Value": 1,
+          "Perception": 5,
+          "QualityChampion": false,
+          "ValueChampion": true,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 0,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_boston_apple-fuji_wegmans": {
+    "Value": {
+      "Data": [],
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 0,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_boston_all_walmart": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "walmart",
+          "quality": 90,
+          "Value": 6,
+          "Perception": 10,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 0,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles_strawberry_trader-joes": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "trader-joes",
+          "quality": 72,
+          "Value": 7,
+          "Perception": 5,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 0,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles__stop-n-shop": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "target",
+          "quality": 88,
+          "Value": 8,
+          "Perception": 9,
+          "QualityChampion": true,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "aldi",
+          "quality": 87,
+          "Value": 1,
+          "Perception": 6,
+          "QualityChampion": false,
+          "ValueChampion": true,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "trader-joes",
+          "quality": 86,
+          "Value": 5,
+          "Perception": 5,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "walmart",
+          "quality": 84,
+          "Value": 2,
+          "Perception": 10,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "sprouts",
+          "quality": 83,
+          "Value": 4,
+          "Perception": 3,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "whole-foods",
+          "quality": 81,
+          "Value": 9,
+          "Perception": 4,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "gelsons",
+          "quality": 80,
+          "Value": 10,
+          "Perception": 1,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": true,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "costco",
+          "quality": 75,
+          "Value": 3,
+          "Perception": 2,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "amazon-fresh",
+          "quality": 75,
+          "Value": 7,
+          "Perception": 8,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "ralphs",
+          "quality": 75,
+          "Value": 6,
+          "Perception": 7,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 0,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles_avocado_target": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "target",
+          "quality": 119,
+          "Value": 6,
+          "Perception": 9,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 0,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  }
+}

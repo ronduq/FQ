@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing NotFoundDisplay snapshot" 1`] = `
+<div
+  className="notFoundDisplay"
+>
+  <div
+    className="notFoundDisplayImg"
+  >
+    <svg
+      aria-hidden="true"
+      className="icon iconHuge iconTeal"
+      focusable="false"
+    >
+      <use
+        xlinkHref="#apple"
+      />
+    </svg>
+  </div>
+  <p
+    className="notFoundDisplayTitle"
+  >
+    Not found
+  </p>
+  <p
+    className="notFoundDisplayText"
+  >
+    No results
+  </p>
+</div>
+`;

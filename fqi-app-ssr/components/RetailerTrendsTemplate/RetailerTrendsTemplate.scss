@@ -1,0 +1,92 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.produceTrends {
+
+  @include respond-to('tablet', min-width) {
+    margin-top: 35px;
+  }
+
+  .contentWrapper {
+    width: 100%;
+    background-color: $white;
+    border: 1px solid $colour-grey-medium;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .title {
+    width: 100%;
+    background-color: $white;
+    padding: 16px;
+    box-shadow: 0 1px 2px 0 rgba(126,126,126,0.5);
+    h2 {
+      @include font-family('proxima-regular');
+      @include font-size('medium');
+
+      @include respond-to('tablet', min-width) {
+        @include font-size('xlarge');
+      }
+    }
+  }
+
+  .columnHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+  
+    @include respond-to('tablet', min-width) {
+      margin: 0 0 16px 0;
+    }
+  }
+
+  .chart {
+    position: relative;
+    width: 100%;
+    padding: 16px 16px 0;
+    box-sizing: border-box;
+
+    @include respond-to('large', min-width) {
+      width: 70%;
+      padding: 16px 16px 16px 0
+    }
+
+    &.noResult {
+      opacity: 0.2;
+    }
+  }
+
+  .legend {
+    width: 100%;
+    padding: 22px 16px 0;
+    border-left: 1px solid $colour-grey-medium;
+    box-sizing: border-box;
+
+    @include respond-to('large', min-width) {
+      width: 30%;
+      padding: 22px 16px;
+    }
+
+    &.noResult {
+      opacity: 0.2;
+    }
+  }
+
+  .notFound {
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 400px;
+  }
+
+}
+
+.emptyContainer {
+  height: 80vh;
+}

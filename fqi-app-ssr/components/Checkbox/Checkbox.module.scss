@@ -1,0 +1,101 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 34px;
+  padding-bottom: 2px;
+  @include font-family('proxima-regular');
+  @include font-size('medium');
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  box-sizing: border-box;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  transition: ease-in-out .1s all;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox input[type="checkbox"] + label::before{
+  height: 24px;	
+  width: 24px;	
+  border-radius: 2px;	
+  background-color: $colour-secondary;
+  left: 0;
+  top: 0;
+}
+.checkboxChild input[type="checkbox"] + label::before{
+  background-color: $colour-secondary-light;
+}
+
+.checkbox input[type="checkbox"]:focus  + label::before{
+  box-shadow: 0 0 0 2px dodgerblue
+}
+
+.checkbox input[type="checkbox"]:not(:checked) + label::before{
+  box-sizing: border-box;
+  border: 1px solid $colour-grey-medium;
+  background-color: $colour-grey-light;
+}
+
+.checkbox input[type="checkbox"]:disabled + label {
+  &:hover {
+    text-decoration: none;
+  }
+
+  span { 
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+  color: white;
+  height: 7px;
+  width: 14px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 4px;
+}
+
+/* Line of the fake secondary checkbox*/
+
+.checkboxParent {
+  display: block;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}

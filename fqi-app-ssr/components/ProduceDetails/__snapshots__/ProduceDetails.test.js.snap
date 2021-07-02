@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Card snapshot" 1`] = `
+<div
+  className="container"
+>
+  <h3
+    className="title"
+  >
+    Produce Metrics
+  </h3>
+  <div
+    className="card noShadow"
+  >
+    <div
+      className="cardTop"
+    >
+      <img
+        alt="retailer name"
+        className="cardLogo"
+        src=""
+      />
+      <img
+        alt=""
+        className="cardImage"
+        src="test"
+      />
+      <h3
+        className="cardTitle"
+      >
+        test
+      </h3>
+    </div>
+    <div
+      className="cardMidBot"
+    >
+      <div
+        className="cardMid"
+      >
+        <div
+          className="cardOrigin"
+        >
+          <svg
+            aria-hidden="true"
+            className="iconMedium iconTeal"
+            focusable="false"
+          >
+            <use
+              xlinkHref="#globe"
+            />
+          </svg>
+          <span
+            className="cardOriginText"
+          >
+            <span>
+              2
+            </span>
+             
+            n/a
+          </span>
+        </div>
+        <div
+          className="cardInfo"
+        >
+          <div
+            className="cardInfoSide cardInfoLeft"
+          >
+            <div
+              className="cardInfoItem"
+            >
+              <span
+                className="cardInfoLabel"
+              />
+              <span
+                className="cardInfoTextLarge"
+              >
+                98
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="cardInfoSide cardInfoRight"
+          >
+            <div
+              className="cardInfoItem"
+            >
+              <span
+                className="cardInfoLabel"
+              />
+              <span
+                className="cardInfoText"
+              >
+                2
+              </span>
+            </div>
+            <div
+              className="cardInfoItem"
+            >
+              <span
+                className="cardInfoLabel"
+              />
+              <span
+                className="cardInfoText"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="videoContainer"
+  >
+    <h4
+      className="videoTitle"
+    >
+      About 
+      test
+    </h4>
+    <p
+      className="videoText"
+    >
+      test
+    </p>
+    <div
+      className="video"
+    >
+      <iframe
+        autoPlay="0"
+        controls="0"
+        frameBorder="0"
+        modestbranding="1"
+        rel="0"
+        showinfo="0"
+        src="https://www.youtube.com/embed/test"
+      />
+    </div>
+  </div>
+</div>
+`;

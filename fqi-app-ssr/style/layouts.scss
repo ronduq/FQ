@@ -1,0 +1,117 @@
+.layout--3-9 {
+  .layout__column--1 {
+    @include grid-item(12, ('two-column': 3));
+  }
+  .layout__column--2 {
+    @include grid-item(12, ('two-column': 9,));
+  }
+}
+
+.layout--3-6-3 {
+  .layout__column--1 {
+    @include grid-item(3, ('tablet': 3));
+  }
+
+  .layout__column--2 {
+    @include grid-item(6, ('tablet': 6));
+  }
+
+  .layout__column--3 {
+    @include grid-item(3, ('tablet': 3));
+  }
+}
+
+.layout--4-8 {
+  .layout__column--1 {
+    @include grid-item(4, ('tablet': 12, 'mobile': 12));
+  }
+
+  .layout__column--2 {
+    @include grid-item(8, ('tablet': 12, 'mobile': 12));
+  }
+}
+
+.layout__column--12 {
+  @include grid-item(12, ('tablet': 12, 'mobile': 12));
+}
+
+.layout--3-3-3 {
+  .layout__column--1 {
+    @include grid-item(12, ('tablet': 4));
+    @media all and (-ms-high-contrast:none) {
+      width: 31%;
+    }
+  }
+  .layout__column--2 {
+    @include grid-item(12, ('tablet': 4));
+    @media all and (-ms-high-contrast:none) {
+      width: 31%;
+    }
+  }
+  .layout__column--3 {
+    @include grid-item(12, ('tablet': 4));
+    @media all and (-ms-high-contrast:none) {
+      width: 31%;
+    }
+  }
+}
+
+.layout--7-5 {
+  .layout__column--1 {
+    @include grid-item(12, ('tablet': 7));
+  }
+
+  .layout__column--2 {
+    @include grid-item(12, ('tablet': 5));
+  }
+}
+
+.layout--5-7 {
+  .layout__column--1 {
+    @include grid-item(12, ('tablet': 5));
+  }
+
+  .layout__column--2 {
+    @include grid-item(12, ('tablet': 7));
+  }
+}
+
+
+
+.layout {
+  @include clearfix;
+  grid-template-columns: repeat(12, $column-width);
+  grid-column-gap: 0;
+  max-width: $grid-width;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include supports-grid {
+    display: grid;
+
+    &:before,
+    &:after {
+      // clearfix breaks display grid so remove it
+      display: none;
+    }
+  }
+
+  // @include respond-to('grid') {
+  //   margin: 0 $space-s;
+  // }
+
+  @include respond-to('tablet', min-width) {
+    grid-column-gap: 16px;
+  }
+
+  @include respond-to('two-column', min-width) {
+    grid-column-gap: $column-gap;
+  }
+
+  // @include respond-to('mobile') {
+  //   clear: both;
+  //   display: block;
+  //   margin: 0 $space-mb-s;
+  // }
+}

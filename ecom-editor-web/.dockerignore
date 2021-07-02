@@ -1,0 +1,9 @@
+# packages
+packages/ecom-editor-cypress
+
+# git
+.github
+.git
+
+# yarn cache
+.cache

@@ -1,0 +1,72 @@
+@import './settings/breakpoints';
+
+// We are using CSS Grid with a Flexbox fallback for IE11
+$grid-gutter: 16px;
+$grid-columns: (
+  "two-column": 12,
+  "medium": 12,
+  "tablet": 8,
+  "mobile": 2
+);
+
+// Calculate column fallback width
+@function column-width($fraction) {
+  @return calc(#{$fraction} - #{$grid-gutter});
+}
+
+// Get number of columns for a breakpoint
+@function columns($breakpoint) {
+  @return map-get($grid-columns, $breakpoint);
+}
+
+// If CSS Grid is supported reset the fallback values
+@mixin supports-grid-column {
+  @supports (display: grid) {
+    width: auto;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@mixin grid-container {
+
+  // Apply flexbox as a fallback
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  // Apply grid when supported
+  @supports (display: grid) {
+    display: grid;
+    grid-column-gap: $grid-gutter;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  // Apply different column per breakpoint
+  @each $breakpoint, $columns in $grid-columns {
+    @include respond-to($breakpoint) {
+      grid-template-columns: repeat($columns, 1fr);
+    }
+  }
+}
+
+// Mixin to set column span per breakpoint
+@mixin grid-item($default, $breakpoints) {
+  // Apply fallback widths and spacing
+  width: column-width(percentage($default/12));
+  margin-right: $grid-gutter/2;
+  margin-left: $grid-gutter/2;
+  grid-column-end: span $default;
+  max-width: $default;
+
+  @include supports-grid-column;
+
+  @each $breakpoint, $value in $breakpoints {
+    @include respond-to($breakpoint, 'min-width') {
+      width: column-width(percentage($value/columns($breakpoint)));
+      grid-column-end: span $value;
+
+      @include supports-grid-column;
+    }
+  }
+}

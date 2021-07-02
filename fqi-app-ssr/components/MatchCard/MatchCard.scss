@@ -1,0 +1,40 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.card {
+  background: $colour-grey-light;
+  box-sizing: border-box;
+  border: 2px solid $colour-grey-medium;
+  position: relative;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  padding: 30px;
+  @include respond-to('mobile') {
+    margin-bottom: 20px;
+  }
+}
+
+.progressCircle {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.cardLogo {
+  display: block;
+  margin: 30px auto 15px;
+  height: 50px;
+  width: auto;
+  max-width: 100%;
+
+  @include respond-to('mobile') {
+    height: 35px;
+    width: auto;
+    max-width: 47%;
+  }
+}
+
+.cardText {
+  text-align: center;
+}

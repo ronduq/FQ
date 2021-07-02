@@ -1,0 +1,220 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+@import '../../style/settings/mixins';
+
+.headerWrapper {
+  background-color: $colour-main;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  position: relative;
+
+  @include respond-to('tablet') {
+    padding: 0 16px;
+  }
+
+  @include respond-to('large', min-width) {
+    height: 64px;
+  }
+
+  .backLink {
+    stroke: $white;
+    margin-right: 10px;
+    height: 18px;
+    width: 20px;
+    transform: rotate(90deg);
+    transition: ease-in-out all .1s;
+    display: block;
+
+    @include respond-to('mobile') {
+      transform: rotate(90deg) translateY(3px);
+    }
+  }
+
+  .title {
+    color: $white;
+    @include font-family('proxima-bold');
+    @include font-size('medium');
+
+    span {
+      @include font-family('proxima-regular');
+    }
+
+    @include respond-to('large', min-width) {
+      @include font-size('large');
+    }
+
+    @include respond-to('mobile') {
+      text-align: center;
+    }
+  }
+
+  .backLinkWrapper {  
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .title {
+        text-decoration: underline;
+      }
+      .backLink {
+        transform: translateX(-3px) rotate(90deg);
+      }
+    } 
+    @include respond-to('mobile') {
+      margin: 0 auto;
+    }
+  }
+
+  .breadcrumb {
+    margin-left: 48px;
+    color: $white;
+    @include font-family('proxima-regular');
+    @include font-size('medium');
+    @include respond-to('large', min-width) {
+      @include font-size('large');
+    }
+    @include respond-to('large') {
+      max-width: 305px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    @include respond-to('tablet') {
+      display: none;
+    }
+    .currentPage {
+      @include font-family('proxima-bold');
+    }
+    
+    a {
+      color: $white;
+      cursor: pointer;
+    }
+
+    .breadcrumbsParent {
+      margin-right: 5px;
+    }
+  }
+
+  .alignRight {
+    margin-left: auto;
+    display: flex;
+    position: relative;
+
+    @include respond-to('mobile') {
+      position: absolute;
+      right: 10px;
+    }
+  }
+
+  .subscribe {
+    border: none;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: $white;
+    @include font-family('futura');
+    @include font-size('medium');
+    text-decoration: none;
+    box-sizing: border-box;
+    text-indent: -99999px;
+
+    .ctaIcon {
+      width: 30px;
+      height: 20px;
+      fill: $white;
+    }
+
+    &:hover {
+      color: $colour-main;
+      background-color: $white;
+      .ctaIcon {
+        fill: $colour-main;
+      }
+    } 
+
+    @include respond-to('large', min-width) {
+      border: 1px solid $white;
+      padding: 0 24px;
+
+      .ctaIcon {
+        margin-right:10px
+      }
+
+      span {
+        text-indent: 0px;
+      }
+    }
+  }
+
+  .locationButton {
+    margin-right: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    
+    .locationIcon {
+      height: 18px;
+      width: 18px;
+      fill: $white;
+      margin-right: 8px;
+    }
+
+    @include respond-to('mobile') {
+      margin-right: 0px;
+    }
+
+    span {
+      color: $white;
+      @include font-size('medium');
+      @include font-family('proxima-regular');
+
+      @include respond-to('mobile') {
+       display: none;
+      }
+    }
+
+    @include respond-to('large') {
+      display: flex;
+      align-items: center
+    }
+  }
+  
+
+  .locationSelect {
+    label {
+      color: $white;
+      @include font-size('small');
+    }
+
+    select {
+      @include customSelect();
+      border: none;
+    }      
+  }
+
+  .locationDropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: $colour-main;
+    padding: 0 16px 16px;
+
+    @include respond-to('tablet') {
+      padding: 0 8px 8px;
+    }
+
+    select {
+      margin: 0px;
+    }
+  }
+}
+}

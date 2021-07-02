@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing TableFilter snapshot" 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="title"
+  >
+    <div
+      className="wrapper"
+    >
+      <span
+        className="content"
+      >
+        <h3>
+          All Produce
+        </h3>
+      </span>
+      
+    </div>
+  </div>
+  <div
+    className="body"
+  >
+    <ul
+      className="filter"
+      id="tableFilterButton"
+    >
+      <li
+        className=""
+        id="test0"
+      >
+        <button
+          className="filterButton"
+          onClick={[Function]}
+        >
+          Avocado
+        </button>
+      </li>
+      <li
+        className=""
+        id="test1"
+      >
+        <button
+          className="filterButton"
+          onClick={[Function]}
+        >
+          Banana
+        </button>
+      </li>
+    </ul>
+    <div
+      className="content"
+    >
+      <h3
+        className="contentTitle"
+      >
+        
+      </h3>
+      <table
+        aria-readonly="true"
+        className="table noBorders"
+        role="grid"
+      >
+        <caption>
+          Retailers table sorted by 
+          quality
+          , 
+          <span>
+            ascending
+          </span>
+           
+           
+        </caption>
+        <thead>
+          <tr
+            className="headerRow"
+          >
+            <th
+              className="tableHeader cell"
+              scope="col"
+            >
+              Retailer
+            </th>
+            <th
+              className="tableHeader cell filterButton cellHighlight"
+              id="tableHeaderQualityButton"
+              scope="col"
+            >
+              <div
+                className="wrapper"
+              >
+                
+                <span
+                  className="content"
+                >
+                  <button
+                    onClick={[Function]}
+                  >
+                    Quality Score
+                    <div
+                      className="arrowsContainer"
+                    >
+                      <span
+                        className="arrow arrowDown"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="iconXSmall iconBlack"
+                          focusable="false"
+                        >
+                          <use
+                            xlinkHref="#chevron"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </button>
+                </span>
+              </div>
+            </th>
+            <th
+              className="tableHeader cell filterButton"
+              id="tableHeaderValueButton"
+              scope="col"
+            >
+              <div
+                className="wrapper"
+              >
+                
+                <span
+                  className="content"
+                >
+                  <button
+                    onClick={[Function]}
+                  >
+                    Value Rank
+                    <div
+                      className="arrowsContainer"
+                    >
+                      <span
+                        className="arrow arrowUp"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="iconXSmall iconBlack"
+                          focusable="false"
+                        >
+                          <use
+                            xlinkHref="#chevron"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        className="arrow arrowDown"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="iconXSmall iconBlack"
+                          focusable="false"
+                        >
+                          <use
+                            xlinkHref="#chevron"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </button>
+                </span>
+              </div>
+            </th>
+            <th
+              className="tableHeader cell filterButton"
+              id="tableHeaderPerceptionButton"
+              scope="col"
+            >
+              <div
+                className="wrapper"
+              >
+                
+                <span
+                  className="content"
+                >
+                  <button
+                    onClick={[Function]}
+                  >
+                    Perception Rank
+                    <div
+                      className="arrowsContainer"
+                    >
+                      <span
+                        className="arrow arrowUp"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="iconXSmall iconBlack"
+                          focusable="false"
+                        >
+                          <use
+                            xlinkHref="#chevron"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        className="arrow arrowDown"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="iconXSmall iconBlack"
+                          focusable="false"
+                        >
+                          <use
+                            xlinkHref="#chevron"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </button>
+                </span>
+              </div>
+            </th>
+            <th />
+          </tr>
+        </thead>
+        <tbody />
+      </table>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,108 @@
+{
+  "child_boston_aldi": {
+    "Data": [
+      {
+        "RetailerCode": "aldi",
+        "RetailerName": "Aldi",
+        "Colour": "#1CAC69",
+        "id": "aldi"
+      }
+    ],
+    "Criteria": {
+      "LocationCode": "boston",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_boston_wegmans": {
+    "Data": [
+      {
+        "RetailerCode": "wegmans",
+        "RetailerName": "Wegmans",
+        "Colour": "#410C97",
+        "id": "wegmans"
+      }
+    ],
+    "Criteria": {
+      "LocationCode": "boston",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_boston_all": {
+    "Data": [],
+    "Criteria": {
+      "LocationCode": "boston",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_los-angeles_walmart": {
+    "Data": [
+      {
+        "RetailerCode": "walmart",
+        "RetailerName": "Walmart",
+        "Colour": "#B389F5",
+        "id": "walmart"
+      }
+    ],
+    "Criteria": {
+      "LocationCode": "los-angeles",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_los-angeles_": {
+    "Data": [],
+    "Criteria": {
+      "LocationCode": "los-angeles",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  },
+  "child_los-angeles_trader-joes": {
+    "Data": [
+      {
+        "RetailerCode": "trader-joes",
+        "RetailerName": "Trader Joes",
+        "Colour": "#6715EB",
+        "id": "trader-joes"
+      }
+    ],
+    "Criteria": {
+      "LocationCode": "los-angeles",
+      "SortBy": 0,
+      "SortDirection": 0,
+      "ProduceCodes": null,
+      "RetailerCodes": null
+    },
+    "Message": null,
+    "DidError": false,
+    "ErrorDetails": null
+  }
+}

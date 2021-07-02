@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Card snapshot" 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="cardTop"
+  >
+    <img
+      alt="retailer name"
+      className="cardLogo"
+      src="https://cdn.buttercms.com/Bi087WwSQGi55NK09dsA"
+    />
+    <button
+      aria-pressed={false}
+      className="cardSwitch"
+      onClick={[Function]}
+    >
+      <span
+        className="dot"
+      />
+      <span
+        className="dot"
+      />
+      <span
+        className="dot"
+      />
+    </button>
+    <img
+      alt=""
+      className="cardImage"
+      src="https://cdn.buttercms.com/mlIKiElrQdeZ8m7syIMx"
+    />
+    <h3
+      className="cardTitle"
+    >
+      Gala Apples
+    </h3>
+  </div>
+  <div
+    className="cardMidBot"
+  >
+    <div
+      className="cardMid"
+    >
+      <div
+        className="cardOrigin"
+      >
+        <svg
+          aria-hidden="true"
+          className="iconMedium iconTeal"
+          focusable="false"
+        >
+          <use
+            xlinkHref="#globe"
+          />
+        </svg>
+        <span
+          className="cardOriginText"
+        >
+          <span>
+            2
+          </span>
+           
+          Countries of origin
+        </span>
+      </div>
+      <div
+        className="cardInfo"
+      >
+        <div
+          className="cardInfoSide cardInfoLeft"
+        >
+          <div
+            className="cardInfoItem"
+          >
+            <span
+              className="cardInfoLabel"
+            >
+              Quality
+            </span>
+            <span
+              className="cardInfoTextLarge"
+            >
+              98
+              %
+            </span>
+          </div>
+        </div>
+        <div
+          className="cardInfoSide cardInfoRight"
+        >
+          <div
+            className="cardInfoItem"
+          >
+            <span
+              className="cardInfoLabel"
+            >
+              Value
+            </span>
+            <span
+              className="cardInfoText"
+            >
+              2
+            </span>
+          </div>
+          <div
+            className="cardInfoItem"
+          >
+            <span
+              className="cardInfoLabel"
+            >
+              Perception
+            </span>
+            <span
+              className="cardInfoText"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="cardBottom"
+    >
+      <a
+        className="linkButton"
+        href="/boston/produce/apple-gala/trends"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Trends
+      </a>
+      <a
+        className="linkButton"
+        href="/boston/produce/apple-gala/aldi/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Profile
+      </a>
+    </div>
+  </div>
+</div>
+`;

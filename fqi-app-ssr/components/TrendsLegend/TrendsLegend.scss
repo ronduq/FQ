@@ -1,0 +1,102 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.trendslegend {
+  width: 100%;
+
+  h2 {
+    @include font-family('proxima-regular');
+    @include font-size('medium');
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+
+    @include respond-to('tablet', min-width) {
+      @include font-size('medium-20');
+    }
+  }
+
+  .date {
+    color: $colour-main;
+    @include font-family('proxima-bold');
+  }
+
+  .produceList {
+    width: 100%;
+    margin-top: 16px;
+
+    caption {
+      position: absolute;
+      left: -99999px;
+    }
+
+    thead {
+      tr {
+        border-bottom: 1px solid $colour-grey-dark;
+
+        th:first-child {
+          text-align: left;
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid $colour-grey-medium;
+        @include font-family('proxima-regular');
+
+        td {
+          text-align: center;
+          height: 48px;
+          vertical-align: middle;
+
+          &:first-child {
+            text-align: left;
+            padding-left: 26px;
+            position: relative;
+          }
+        }
+        
+      }
+    }
+  }
+
+  .dot {
+    height: 16px;
+    width: 16px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+
+    /* IE11 hack */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      top:16px;
+    }
+  }
+
+  .produceScore {
+    @include font-family('proxima-bold');
+    @include font-size('large');
+  }
+}
+
+.arrowLink {
+  a {
+    display: block;
+
+    @include respond-to('large', min-width) {
+      display: none;
+    }
+  }
+  .arrowRight {
+    transform: translateY(2px) rotate(270deg);
+    stroke: $colour-secondary;
+    height: 18px;
+    width: 18px; 
+  }
+}

@@ -1,0 +1,193 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+
+.table {
+  background: white;
+  width: 100%;
+  border: 1px solid $colour-grey-medium;
+  border-collapse: separate;
+  @include font-family('proxima-regular');
+  &.noBorders {
+    border: 0;
+  }
+  td {
+    border-bottom: 1px solid $colour-grey-medium;
+  }
+  caption {
+    opacity: 0;
+    position: absolute;
+    left: -99999999px;
+  }
+
+  @include respond-to('mobile') {
+    display: block;
+    & tbody, thead {
+      display: block;
+    }
+  }
+};
+
+.headerRow {
+  position:relative;
+  @include font-family('proxima-light');
+
+  @include respond-to('mobile') {
+    display: none;
+  }
+  .cellHighlight {
+    border-top: 1px solid $colour-grey-medium;
+    .noBorders & {
+      border: 0;
+    }
+  }
+  button {
+    background: none;
+    border: none;
+    appearance: none;
+    @include font-size('small');
+    cursor: pointer;
+    width: 100%;
+  }
+  & th:first-child {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+.bodyRow {
+  position:relative;
+  z-index: 1;
+  border-bottom: 1px solid $colour-grey-medium;
+  &:first-child {
+    text-align: left;
+    .cell {
+      box-shadow: 0 10px 4px -9px rgba(126,126,126, 0.7) inset;
+      @include respond-to('mobile') {
+        box-shadow: none;
+      }
+    }
+  }
+  
+  @include respond-to('mobile') {
+    display: block;
+    border-bottom: 2px solid $colour-grey-dark;
+
+    td { 
+      display: block;
+      border: none;
+      border-bottom: 1px solid $colour-grey-medium; 
+      position: relative;
+      padding-left: 50%; 
+      padding-right: 16px;
+      text-align: right;
+      @include font-size('medium');
+      @include font-family('proxima-bold');
+
+      &:nth-of-type(1) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+    }
+    
+    td:before { 
+      position: absolute;
+      left: 16px;
+      width: 35%; 
+      padding-right: 16px; 
+      white-space: nowrap;
+      text-align: left;
+      @include font-size('medium');
+      @include font-family('proxima-light');
+    }
+    td:nth-of-type(1):before { content: attr(data-title); }
+    td:nth-of-type(2):before { content: attr(data-title); }
+    td:nth-of-type(3):before { content: attr(data-title); }
+    td:nth-of-type(4):before { content: attr(data-title); }
+  }
+}
+
+.cell {
+  padding: 16px 0;
+  text-align: center;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.cellImage {
+  padding: 0px 0px 0px 16px;
+  text-align: left;
+}
+
+.cellChampion {
+  color: $colour-main;
+  @include respond-to('mobile') {
+    color: $colour-grey-dark;
+  }
+}
+
+.largeText {
+  @include font-family('proxima-regular');
+  @include font-size('large');
+}
+
+.cellHighlight {
+  background: $colour-grey-light;
+  @include font-family('proxima-bold');
+  @include respond-to('mobile') {
+    background: none;
+    @include font-family('proxima-regular');
+  }
+
+  button {
+    @include font-family('proxima-bold');
+  }
+
+}
+
+.filterButton {
+  cursor: pointer;
+}
+
+.logo {
+  height: 30px;
+  position: relative;
+  display: block;
+  
+  @include respond-to('mobile') {
+   margin-left: auto;
+   height: 20px;
+  }
+}
+
+.arrowsContainer {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 5px;
+  @include respond-to('tablet') {
+    display: none;
+  }
+}
+.arrow {
+  position: absolute;
+  transition: ease-in-out transform .1s;
+}
+.arrowUp {
+  transform: translateY(-4px) rotate(180deg);
+  .filterButton:hover &{
+    transform: translateY(-6px) rotate(180deg);
+  }
+}
+.arrowDown {
+  transform: translateY(4px);
+  .filterButton:hover &{
+    transform: translateY(6px);
+  }
+}
+
+.iconRosette {
+  vertical-align: middle;
+  transform: translateY(-2px);
+  margin-left: -6px;
+}

@@ -1,0 +1,106 @@
+/*
+ * Map of typography scale used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-size` or `line-height` properties.
+ * Access these values through the various font mixins. Each font size has an associated line height. A nested set of breakpoints
+ * allows you to define how this font size should change at different screen widths. The breakpoint names should match keys in the
+ */
+ $font-sizes: (
+  'xsmall': (
+    font-size: 8, line-height: 1.5,
+    breakpoints: (
+      tablet: (font-size: 10, line-height: 1.25)
+    )
+  ),
+  'small': (
+    font-size: 9, line-height: 1.5,
+    breakpoints: (
+      tablet: (font-size: 12, line-height: 1.25)
+    )
+  ),
+  'medium': (
+    font-size: 10, line-height: 1.75,
+    breakpoints: (
+      tablet: (font-size: 14, line-height: 1.5)
+    )
+  ),
+  'medium-20': (
+    font-size: 12.5, line-height: 1.5,
+    breakpoints: (
+      tablet: (font-size: 12.5, line-height: 1.5)
+    )
+  ),
+  'large': (
+    font-size: 14, line-height: 1.5,
+    breakpoints: (
+      tablet: (font-size: 16, line-height: 1.45)
+    )
+  ),
+  'xlarge': (
+    font-size: 15, line-height: 1.25,
+    breakpoints: (
+      tablet: (font-size: 14.5, line-height: 1.25)
+    )
+  ),
+  'large-32': (
+    font-size: 20, line-height: 1.5,
+    breakpoints: (
+      tablet: (font-size: 16, line-height: 1.45)
+    )
+  ),
+  'large-64': (
+    font-size: 40, line-height: 1.25,
+    breakpoints: (
+      tablet: (font-size: 16, line-height: 1.45)
+    )
+  ),
+);
+
+// The font stack to fall back to if web fonts do not load
+$font-stack-fallback: Arial, sans-serif;
+
+/*
+ * Map of font families used in the project.
+ * Ideally this will cover all required styles so that you rarely need to use explicit `font-family` properties.
+ * Access these values through the various font mixins.
+ */
+
+$font-stacks: (
+  'proxima-light':     (font-family: ('proxima-nova', $font-stack-fallback), font-weight: 400),
+  'proxima-regular':    (font-family: ('proxima-nova', $font-stack-fallback), font-weight: 500),
+  'proxima-bold':  (font-family: ('proxima-nova', $font-stack-fallback), font-weight: 700),
+  'futura':     (font-family: ('futura-pt', $font-stack-fallback), font-weight: 500)
+);
+
+@mixin font-family($font-stack, $important: false) {
+  $font-stack: map-get($font-stacks, $font-stack);
+
+  @if $font-stack {
+    @if $important == false {
+      font-family: map-get($font-stack, font-family);
+    }
+
+    @else {
+      font-family: map-get($font-stack, font-family) !important; // stylelint-disable-line declaration-no-important
+    }
+
+    font-weight: map-get($font-stack, font-weight);
+  }
+
+  @else {
+    @error 'The font family '#{$font-stack}' does not exist in the list of font families!';
+  }
+}
+
+@mixin font-size($size) {
+  $font-size-properties: map-get($font-sizes, $size);
+
+  @if $font-size-properties {
+    @include font-size(map-get($font-size-properties, font-size));
+
+    line-height: map-get($font-size-properties, line-height);
+  }
+
+  @else {
+    font-size: #{$size / 11}rem;
+  }
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Teakorigin.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Teakorigin.Domain.Constants.StringConstants">
+            <summary>
+            String constants.
+            </summary>
+        </member>
+        <member name="F:Teakorigin.Domain.Constants.StringConstants.ConfigError">
+            <summary>
+            The configuration error.
+            </summary>
+        </member>
+        <member name="T:Teakorigin.Domain.Interfaces.IContentService">
+            <summary>
+            Content Service.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Domain.Interfaces.IContentService.GetData(System.String)">
+            <summary>
+            Gets the data.
+            </summary>
+            <param name="relativePath">The relative path.</param>
+            <returns>
+            Returns data.
+            </returns>
+        </member>
+        <member name="T:Teakorigin.Domain.Interfaces.ISubscriptionService">
+            <summary>
+            Content Service.
+            </summary>
+        </member>
+        <member name="M:Teakorigin.Domain.Interfaces.ISubscriptionService.Subscribe(System.String)">
+            <summary>
+            Gets the data.
+            </summary>
+            <param name="email">The email.</param>
+            <returns>
+            Returns data.
+            </returns>
+        </member>
+        <member name="T:Teakorigin.Domain.Model.CustomerPerception">
+            <summary>
+            Class for customer perception.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.CustomerPerception.PerceptionId">
+            <summary>
+            Gets or sets the perception identifier.
+            </summary>
+            <value>
+            The perception identifier.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.CustomerPerception.LocationCode">
+            <summary>
+            Gets or sets the location code.
+            </summary>
+            <value>
+            The location code.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.CustomerPerception.RetailerCode">
+            <summary>
+            Gets or sets the retailer code.
+            </summary>
+            <value>
+            The retailer code.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.CustomerPerception.PerceptionScore">
+            <summary>
+            Gets or sets the perception score.
+            </summary>
+            <value>
+            The perception score.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.Produce.ProduceId">
+            <summary>
+            Gets the identifier. Only required for frontend. Same as Produce Code.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.Retailer.ProduceId">
+            <summary>
+            Gets the identifier. Only required for frontend. Same as Retailer Code.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.RetailerRanks.Quality">
+            <summary>
+            Gets or sets the Quality in output.
+            </summary>
+            <value>
+            The total value rank.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.RetailerRanks.ActualValueRank">
+            <summary>
+            Gets or sets the actual value rank. The value param in output.
+            </summary>
+            <value>
+            The actual value rank.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.RetailerRanks.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.RetailerRanks.Perception">
+            <summary>
+            Gets the perception.
+            </summary>
+            <value>
+            The perception.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.RetailerRanks.CountryOfOrigin">
+            <summary>
+            Gets or sets the country of origin.
+            </summary>
+            <value>
+            The country of origin.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.RetailerRanks.IsOrganic">
+            <summary>
+            Gets or sets a value indicating whether this instance is organic.
+            </summary>
+            <value>
+              <c>true</c> if this instance is organic; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.ScanData.CountryOfOrigin">
+            <summary>
+            Gets or sets the country of origin.
+            </summary>
+            <value>
+            The country of origin.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Model.ScanData.IsOrganic">
+            <summary>
+            Gets or sets a value indicating whether this instance is organic.
+            </summary>
+            <value>
+              <c>true</c> if this instance is organic; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Domain.Models.AppSettings">
+            <summary>
+            Appsettings.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Domain.Models.AppSettings.CacheConfig">
+            <summary>
+            Gets or sets the cache configuration.
+            </summary>
+            <value>
+            The cache configuration.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Domain.Models.CacheConfig">
+            <summary>
+            Cache config.
+            </summary>
+        </member>
+        <member name="P:Teakorigin.Domain.Models.CacheConfig.UseDistributedSqlServerCache">
+            <summary>
+            Gets or sets a value indicating whether [use distributed SQL server cache].
+            </summary>
+            <value>
+              <c>true</c> if [use distributed SQL server cache]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Teakorigin.Domain.Models.CacheConfig.DbCacheTable">
+            <summary>
+            Gets or sets the database cache table.
+            </summary>
+            <value>
+            The database cache table.
+            </value>
+        </member>
+        <member name="T:Teakorigin.Domain.Models.Payloads.SubscriptionPayload">
+            <summary>
+            Subscription payload.
+            </summary>
+        </member>
+        <member name="T:Teakorigin.Domain.Models.Payloads.Contact">
+            <summary>
+            Contact class.
+            </summary>
+        </member>
+    </members>
+</doc>

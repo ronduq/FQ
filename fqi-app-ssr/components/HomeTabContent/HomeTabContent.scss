@@ -1,0 +1,67 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+@import '../../style/settings/breakpoints';
+@import '../../style/settings/mixins';
+
+.tabContent {
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to('tablet', min-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include respond-to('large', min-width) {
+    align-items: center;
+    border: 2px solid $colour-main;
+    border-top: none;
+    padding: 50px;
+  }
+
+  .locationSelect {
+    display: inline-block;
+
+    label {
+      @include font-size('medium');
+      @include font-family('proxima-regular');
+
+      @include respond-to('large', min-width) {
+        @include font-size('large');
+        @include font-family('proxima-light');
+      }
+    }
+
+    select {
+      @include customSelect();
+      width: 250px;
+      height: 50px;
+      margin: 0;
+      display: block;
+
+      @include respond-to('large', min-width) {
+        margin-left: 16px;
+        display: inline-block;
+        background-color: $colour-grey-light;
+      }
+    }      
+  }
+
+  .comingSoon {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 0 0;
+    @include font-size('xsmall');
+
+    @include respond-to('large', min-width) {
+      @include font-size('large');
+      margin: 0;
+    }
+
+    .locationIcon {
+      width: 24px;
+      height: 30px;
+      margin-right: 8px;
+    }
+  }
+}

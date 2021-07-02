@@ -1,0 +1,321 @@
+{
+  "child_boston_aldi_apple-gala_DSC": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "aldi",
+          "quality": 51,
+          "Value": 1,
+          "Perception": 5,
+          "QualityChampion": false,
+          "ValueChampion": true,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 0,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_boston_wegmans_apple-gala_ASC": {
+    "Value": {
+      "Data": [],
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 1,
+        "SortDirection": 0,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_boston_all_apple-gala_DSC": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "walmart",
+          "quality": 61,
+          "Value": 3,
+          "Perception": 10,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "stop-n-shop",
+          "quality": 53,
+          "Value": 6,
+          "Perception": 8,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "amazon-fresh",
+          "quality": 58,
+          "Value": 8,
+          "Perception": 7,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "bjs",
+          "quality": 55,
+          "Value": 2,
+          "Perception": 6,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "aldi",
+          "quality": 51,
+          "Value": 1,
+          "Perception": 5,
+          "QualityChampion": false,
+          "ValueChampion": true,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "trader-joes",
+          "quality": 51,
+          "Value": 7,
+          "Perception": 4,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "whole-foods",
+          "quality": 67,
+          "Value": 4,
+          "Perception": 3,
+          "QualityChampion": true,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "costco",
+          "quality": 62,
+          "Value": 5,
+          "Perception": 2,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": true,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "boston",
+        "SortBy": 2,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles_walmart_apple-gala_DSC": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "walmart",
+          "quality": 63,
+          "Value": 2,
+          "Perception": 10,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 0,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles__apple-gala_DSC": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "amazon-fresh",
+          "quality": 53,
+          "Value": 9,
+          "Perception": 8,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "gelsons",
+          "quality": 60,
+          "Value": 8,
+          "Perception": 1,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": true,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "ralphs",
+          "quality": 58,
+          "Value": 7,
+          "Perception": 7,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "whole-foods",
+          "quality": 59,
+          "Value": 6,
+          "Perception": 4,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "trader-joes",
+          "quality": 63,
+          "Value": 5,
+          "Perception": 5,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "costco",
+          "quality": 58,
+          "Value": 4,
+          "Perception": 2,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "target",
+          "quality": 73,
+          "Value": 3,
+          "Perception": 9,
+          "QualityChampion": true,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "walmart",
+          "quality": 63,
+          "Value": 2,
+          "Perception": 10,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        },
+        {
+          "RetailerCode": "aldi",
+          "quality": 64,
+          "Value": 1,
+          "Perception": 6,
+          "QualityChampion": false,
+          "ValueChampion": true,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 1,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  },
+  "child_los-angeles_trader-joes_apple-gala_DSC": {
+    "Value": {
+      "Data": [
+        {
+          "RetailerCode": "trader-joes",
+          "quality": 63,
+          "Value": 5,
+          "Perception": 5,
+          "QualityChampion": false,
+          "ValueChampion": false,
+          "PerceptionChampion": false,
+          "CountriesOfOrigin": null
+        }
+      ],
+      "Criteria": {
+        "LocationCode": "los-angeles",
+        "SortBy": 2,
+        "SortDirection": 1,
+        "ProduceCodes": null,
+        "RetailerCodes": null
+      },
+      "Message": null,
+      "DidError": false,
+      "ErrorDetails": null
+    },
+    "Formatters": [],
+    "ContentTypes": [],
+    "DeclaredType": null,
+    "StatusCode": 200
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../style/settings/colours';
+@import '../../style/settings/fonts';
+
+a.linkButton {
+  color: $colour-secondary;
+  cursor: pointer;
+  text-transform: uppercase;
+  @include font-family('futura');
+  @include font-size('medium');
+
+  .arrowRight {
+    transform: translateY(2px) rotate(270deg);
+    transition: ease-in-out all .1s;
+  }
+
+  &:hover {
+    color: $colour-secondary;
+    text-decoration: underline;
+  }
+}
+

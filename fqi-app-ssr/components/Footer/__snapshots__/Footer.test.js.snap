@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Footer snapshot" 1`] = `
+<footer
+  className="container footer"
+>
+  <a
+    aria-label="Teak Origin (opens in new window)"
+    href="https://www.teakorigin.com"
+    target="_blank"
+  >
+    <svg
+      aria-hidden="true"
+      className="logo themeBlack"
+      focusable="false"
+    >
+      <use
+        xlinkHref="#logo"
+      />
+    </svg>
+  </a>
+  <ul>
+    <li>
+      <a
+        className=""
+        href="www.aaa.com"
+        target="_blank"
+      >
+        link 1
+        <span
+          className="screen-reader-text"
+        >
+          (opens in new window)
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        className=""
+        href="www.bbb.com"
+        target="_blank"
+      >
+        link 2
+        <span
+          className="screen-reader-text"
+        >
+          (opens in new window)
+        </span>
+      </a>
+    </li>
+  </ul>
+</footer>
+`;

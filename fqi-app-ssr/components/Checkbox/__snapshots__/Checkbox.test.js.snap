@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing Checkbox snapshot" 1`] = `
+<div
+  className="checkbox"
+>
+  <input
+    autoComplete="off"
+    id="undefinedundefined"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    aria-hidden="true"
+    htmlFor="undefinedundefined"
+  >
+    <span>
+      
+    </span>
+  </label>
+</div>
+`;

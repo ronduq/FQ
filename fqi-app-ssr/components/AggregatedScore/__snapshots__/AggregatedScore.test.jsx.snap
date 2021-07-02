@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AggregatedScore AggregatedScore snapshot" 1`] = `
+<div
+  className="aggregatedScore"
+>
+  <div
+    className="retailerRank"
+  >
+    <p
+      className="title"
+    >
+      Retailer Rank
+    </p>
+    <p
+      className="desc"
+    >
+      Single produce
+    </p>
+  </div>
+  <ul
+    className="retailerData"
+  >
+    <li>
+      <span
+        className="heading"
+      >
+        quality
+      </span>
+      <svg
+        aria-hidden="true"
+        className="starIcon"
+        focusable="false"
+      >
+        <use
+          xlinkHref="#star"
+        />
+      </svg>
+      <span
+        className="score"
+      >
+        n/a
+        %
+      </span>
+    </li>
+    <li>
+      <span
+        className="heading"
+      >
+        value
+      </span>
+      <svg
+        aria-hidden="true"
+        className="dollarIcon"
+        focusable="false"
+      >
+        <use
+          xlinkHref="#dollar"
+        />
+      </svg>
+      <span
+        className="score"
+      >
+        n/a
+      </span>
+    </li>
+    <li>
+      <span
+        className="heading"
+      >
+        perception
+      </span>
+      <svg
+        aria-hidden="true"
+        className="diamondIcon"
+        focusable="false"
+      >
+        <use
+          xlinkHref="#diamond"
+        />
+      </svg>
+      <span
+        className="score"
+      >
+        n/a
+      </span>
+    </li>
+  </ul>
+  <div
+    className="linkWrapper"
+  >
+    <a
+      className="linkButton"
+      href="/boston/retailers/aldi/trends"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      View Retailer Trends
+       
+      <svg
+        aria-hidden="true"
+        className="arrowIcon iconSmall iconOrange arrowRight"
+        focusable="false"
+      >
+        <use
+          xlinkHref="#chevron"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
